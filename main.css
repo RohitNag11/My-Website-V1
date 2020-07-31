@@ -514,6 +514,17 @@ li{
     color: #00ffb3;
 }
 
+.project-description dl{
+    font-family: 'consolas', sans-serif;
+}
+
+.project-description dl dt{
+    margin-top: 1rem;
+    color: #009dff;
+    opacity: 0.8;
+}
+
+
 .members h3{
     font-family: 'consolas', sans-serif;
     display: inline-block;
@@ -524,16 +535,24 @@ li{
 }
 .members ul{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     list-style: none;
     padding: 0.8rem;
     justify-content: flex-start;
     align-content: space-between;
 }
 
+.members li {
+    font-family: 'lato', sans-serif;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #009dff;
+    opacity: 0.8;
+}
+
 .members li a{
     font-family: 'lato', sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 1.4rem;
     color: #009dff;
     opacity: 0.8;
