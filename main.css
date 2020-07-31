@@ -33,7 +33,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: #292D3E;
-    background: url("images/background.png") no-repeat center fixed;
+    background: url("images/background.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -731,7 +731,7 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px) {
     body{
-        background: url("images/background\ 2.png") no-repeat center fixed;
+        background: url("images/background.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
