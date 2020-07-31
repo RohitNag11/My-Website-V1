@@ -115,6 +115,7 @@ img{
 }
 /*End reusable*/
 
+
 /*Start header*/
 header{
     width: 100%;
@@ -502,7 +503,7 @@ li{
 .project-description .cta{
     font-family: 'consolas', sans-serif;
     display: inline-block;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     font-size: 1.5rem;
     text-transform: uppercase;
     color: #009dff;
@@ -510,6 +511,35 @@ li{
 }
 
 .project-description .cta:hover{
+    color: #00ffb3;
+}
+
+.members h3{
+    font-family: 'consolas', sans-serif;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.members ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 0.8rem;
+    justify-content: flex-start;
+    align-content: space-between;
+}
+
+.members li a{
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #009dff;
+    opacity: 0.8;
+}
+
+.members li a:hover{
     color: #00ffb3;
 }
 /*End projects*/
