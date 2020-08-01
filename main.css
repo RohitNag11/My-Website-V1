@@ -866,18 +866,32 @@ input[type="submit"]:hover{
         font-size: 4rem;
     }
 
-    .timeline ul{
-        margin: 0 0 0 auto;
-    }
-
+    
     .timeline .date:before{
-        left: -22rem;
+        text-align: left;
+        left: 0;
+        top: 0em;
+        padding-bottom: 2rem;
     }
 
     .timeline .date:after{
-        left: -8.1rem;
+        display: none;
     }
 
+    .timeline ul{
+        margin: 0 0 0 auto;
+        position: relative;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .timeline h1{
+        margin-top: 3rem;
+    }
+    
+    .timeline :last-child{
+        margin-bottom: 2rem;
+    }
     .gallery-section .image{
         flex: 50%;
     }
