@@ -15,12 +15,61 @@
 }
 
 
+/* Add Spiner */
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #00ffb3;
+  
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #292D3E;
+    z-index: 999999;
+    }
+/* End Spinner */
+
+
 
 /*Start global*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 html{
@@ -251,6 +300,43 @@ li{
 }
 /*End header*/
 
+/*Add Mouse Animations */
+.scroll-downs {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #00ffb3;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #009dff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+/* End Mouse Animation */
 
 /*Start about*/
 .about .container{
@@ -751,6 +837,10 @@ input[type="submit"]:hover{
         font-size: 4.5rem;
     }
 
+    .scroll-downs {
+        display: none;
+    }
+      
     .about-heading h1{
         font-size: 8rem;
     }
@@ -794,6 +884,7 @@ input[type="submit"]:hover{
 }
 
 @media screen and (max-width: 600px) {
+    
 
     .menu-toggler{
         top: 2rem;
@@ -810,6 +901,10 @@ input[type="submit"]:hover{
 
     .nav-link{
         font-size: 3.5rem;
+    }
+
+    .scroll-downs {
+        display: none;
     }
 
     .about .container{

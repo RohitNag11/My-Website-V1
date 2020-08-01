@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    //Preloader
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
