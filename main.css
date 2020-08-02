@@ -409,6 +409,20 @@ li{
 .fa-facebook-square:hover{
     color: #4267b2
 }
+
+
+.general-link{
+    color: #0077B5
+}
+
+.general-link:hover{
+    color: #00ffb3
+}
+
+.disclaimer{
+    font-style: italic;
+    font-size: 1.2rem;
+}
 /*End about*/
 
 /*Start skills*/
