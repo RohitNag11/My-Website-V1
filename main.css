@@ -509,6 +509,14 @@ li{
     opacity: 0.6;
 }
 
+.timeline h3{
+    font-family: 'lato thin', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+    color: #e09494
+}
+
 .timeline .date{
     border-bottom: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 1rem;
