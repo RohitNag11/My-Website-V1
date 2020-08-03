@@ -322,10 +322,10 @@ li{
     box-sizing: content-box;
   }
   .scroller {
-    width: 3px;
+    width: 5px;
     height: 10px;
     border-radius: 25%;
-    background-color: #009dff;
+    background-color: #00ffb3;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
