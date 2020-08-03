@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    Preloader
+    //Preloader
     preloaderFadeOutTime = 500;
     function hidePreloader() {
         var preloader = $('.spinner-wrapper');
@@ -57,5 +57,6 @@ $(document).ready(function () {
 });
 
 document.addEventListener('touchstart', onTouchStart, { passive: true });
+
 
 
