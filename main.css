@@ -15,8 +15,8 @@
 }
 
 
-/* Add Spiner */
-.spinner {
+/* SECTION Add Spiner */
+/* .spinner {
     width: 40px;
     height: 40px;
     background-color: #00ffb3;
@@ -55,8 +55,16 @@
     bottom: 0;
     background-color: #292D3E;
     z-index: 999999;
-    }
-/* End Spinner */
+    } */
+/* !SECTION End Spinner */
+
+.loader{
+    height: 10px;
+    background-color: #00ffb3;
+    position: absolute;
+  }
+
+
 
 
 
