@@ -75,7 +75,7 @@ html, body {
 html{
     font-size: 10px;
     font-family: 'lato', sans-serif;
-    color: #A6ACCD
+    color: #A6ACCD;
 }
 
 body{
@@ -301,6 +301,7 @@ li{
 /*End header*/
 
 /*Add Mouse Animations */
+
 .scroll-downs {
     position: absolute;
     top: 80%;
@@ -308,24 +309,25 @@ li{
     bottom: 0;
     left: 0;
     margin: auto;
-    
     width :34px;
     height: 55px;
   }
   .mousey {
     width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #00ffb3;
+    padding: 10px;
+    height: 20px;
+    border: 2px solid #A6ACCD;
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
   }
   .scroller {
-    width: 5px;
+      margin-top: -2px;
+      margin-left: -3px;
+    width: 10px;
     height: 10px;
-    border-radius: 25%;
-    background-color: #00ffb3;
+    border-radius: 50%;
+    background-color: #A6ACCD;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
@@ -336,6 +338,14 @@ li{
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
   }
+
+    .scroll a:hover > div > div {
+        border-color: #00ffb3;
+  }
+
+  .scroll a:hover > div > div > div {
+    background-color: #00ffb3;
+    }
 /* End Mouse Animation */
 
 /*Start about*/
@@ -811,11 +821,13 @@ input[type="submit"]:hover{
 .up:hover{
     background-color: #292D3E;
 } 
-.up i:hover{
+
+.up:hover > i{
     color: #00ffb3;
     font-size: 3rem;
     margin: auto;
 }
+
 
 .copyright p{
     margin-top: 3rem;
@@ -862,9 +874,9 @@ input[type="submit"]:hover{
         font-size: 4.5rem;
     }
 
-    .scroll-downs {
+    /* .scroll-downs {
         display: none;
-    }
+    } */
       
     .about-heading h1{
         font-size: 8rem;
