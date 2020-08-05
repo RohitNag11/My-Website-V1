@@ -122,7 +122,7 @@ img{
 }
 
 .section-heading h1{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 7rem;
     color: rgba(255,255, 255, .2);
     text-transform: uppercase;
@@ -135,23 +135,23 @@ img{
 .section-heading h1::after{
     content: '';
     position: absolute;
-    bottom: -.5rem;
+    bottom: -3px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0,255,179, 0.75);
+    background-color: #00ffb3;
 }
 
 .section-heading h1::before{
     width: 10rem;
     height: 3px;
-    border-radius: .8rem;
+    border-radius: 50%;
 }
 
 .section-heading h1::after{
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 100%;
-    bottom: -0.9rem;
+    bottom: -6.5px;
 }
 
 .section-heading h6{
@@ -199,7 +199,7 @@ li{
 
 
 .nav-link{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 4rem;
     padding: 1rem; 
 }
@@ -280,7 +280,7 @@ li{
 
 .landing-text h1{
     font-size: 16rem;
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     background: linear-gradient(to top, #00ffb3, #009dff);
     -webkit-background-clip: text;
             background-clip: text;
@@ -354,14 +354,14 @@ li{
 
 
 .about-heading h1{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-weight:300;
     font-size: 10rem;
     opacity: .2
 }
 
 .about-heading h6{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 2rem;
     font-weight: 300;
     color:#00ffb3
@@ -443,7 +443,7 @@ li{
 }
 
 .skill h1{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 2rem;
     color: #00ffb3;
     font-weight:300;
@@ -452,7 +452,7 @@ li{
 }
 
 .skill h2{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 2rem;
     color: #00ffb3;
     font-weight:300;
@@ -509,7 +509,7 @@ li{
 }
 
 .timeline h1{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 100;
@@ -517,7 +517,7 @@ li{
 }
 
 #cancelled{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 100;
@@ -596,7 +596,7 @@ li{
 }
 
 .project-description h1{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 3rem;
     font-weight: 300;
     margin: 1rem 0;
@@ -604,7 +604,7 @@ li{
 }
 
 .project-description h6{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -612,7 +612,7 @@ li{
 }
 
 .project-description .cta{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     display: inline-block;
     margin-top: 1.5rem;
     font-size: 1.5rem;
@@ -626,7 +626,7 @@ li{
 }
 
 .project-description dl{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
 }
 
 .project-description dl dt{
@@ -637,7 +637,7 @@ li{
 
 
 .members h3{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     display: inline-block;
     font-size: 1.5rem;
     margin-top: 1.5rem;
@@ -743,14 +743,14 @@ form{
 }
 
 form label{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 1.6rem;
 }
 
 input,
 select,
 textarea{
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     width: 100%;
     padding: 1rem;
     margin-bottom: 5px;
@@ -763,7 +763,7 @@ textarea{
 
 input[type="submit"]{
     margin-top: 2rem;
-    font-family: 'consolas', sans-serif;
+    font-family: 'consolas', Consolas, monaco, monospace;
     font-size: 1.6rem;
     width: initial;
     box-shadow: 5px 5px 5px #202331;
