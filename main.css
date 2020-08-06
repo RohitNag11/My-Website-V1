@@ -14,9 +14,103 @@
     src: url(fonts/Consolas.ttf)
 }
 
+.preloader-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+    background: #292D3E;
+    z-index : 2; 
+  }
+  
+  .percentage {
+    z-index: 100;
+    border: none;
+    text-align:center;
+    color: #A6ACCD;
+    line-height: 30px;
+    font-size : 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 51%; 
+    left: 0; 
+    right: 0;
+  }
 
+  
+  .loader{
+    height: 10px;
+    max-width: 50%; 
+    border: 2px solid #202331;
+    border-radius: 50%;
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin : auto; 
+  }
+
+  .loader:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .trackbar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: #A6ACCD;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.99;
+  }
+  
+  .loadbar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(to right,#009dff,#00ffb3); /* Stripes Background Gradient */
+    box-shadow: 0px 0px 14px 1px #00ffb3; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: flicker 5s infinite;
+    overflow: hidden;
+  }
+  
+  .glow {
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 3px #00ffb3;
+    position: absolute;
+    animation: animation 5s infinite;
+  }
+  
+  @keyframes animation {
+    10% {
+      opacity: 0.9;
+    }
+    30% {
+      opacity: 0.86;
+    }
+    60% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.75;
+    }
+  }
 /* Add Spiner */
-.spinner {
+/* .spinner {
     width: 40px;
     height: 40px;
     background-color: #00ffb3;
@@ -55,7 +149,7 @@
     bottom: 0;
     background-color: #292D3E;
     z-index: 999999;
-    }
+    } */
 /* End Spinner */
 
 
