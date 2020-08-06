@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     // Fading Out Loadbar on Finised
     setTimeout(function () {
-        $('.preloader-wrap').fadeOut(300);
+        $('.preloader-wrap').fadeOut(500);
     }, time);
 
 
