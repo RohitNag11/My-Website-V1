@@ -21,13 +21,13 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #292D3E;
-  background: #3C435E;
+  box-shadow: inset 0 0 5px black;
+  background: #292D3E;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #A6ACCD; 
+  background-color: #7c83ad; 
   border-radius: 10px;
 }
 
@@ -1052,7 +1052,7 @@ input[type="submit"]:hover{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     
 
     .menu-toggler{
