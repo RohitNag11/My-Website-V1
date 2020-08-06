@@ -90,7 +90,7 @@
     width: 0%;
     height: 0%;
     border-radius: 50%;
-    box-shadow: 0px 0px 30px 3px #00ffb3;
+    box-shadow: 0px 0px 60px 3px #00ffb3;
     position: absolute;
     animation: animation 5s infinite;
   }
