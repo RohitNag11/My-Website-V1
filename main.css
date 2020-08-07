@@ -106,7 +106,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: flicker 5s infinite;
+    /* animation: flicker 5s infinite; */
     overflow: hidden;
   }
   
