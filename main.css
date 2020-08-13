@@ -248,6 +248,26 @@ header{
     height: 100vh;
 }
 
+.header {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 2000;
+}
+
+.progress-container {
+background-color: rgba(0, 0, 0, 0.3);
+height: 5px;
+width: 100%;
+}
+
+.progress-bar {
+background: linear-gradient(to left, #00ffb3, #009dff);
+height: 5px;
+width: 0%;
+border-radius: 5px;
+}
+
 .top-nav{
     width: 100%;
     height: 100vh;
@@ -792,7 +812,7 @@ li{
     align-items: center;
 }
 
-
+.swiper-slide{z-index:1}
 
 .swiper-slide img{
     box-shadow: none;
