@@ -196,3 +196,5 @@ function flyPlane() {
 
 // Go!
 flyPlane();
+
+chart.logo.height = -15;
