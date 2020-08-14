@@ -23,28 +23,60 @@ chart.projection = new am4maps.projections.Orthographic();
 chart.panBehavior = "rotateLongLat";
 chart.deltaLongitude = -55;
 chart.deltaLatitude = -30;
+chart.padding(10, 10, 10, 10);
+
+
 
 // limits vertical rotation
 chart.adapter.add("deltaLatitude", function (delatLatitude) {
     return am4core.math.fitToRange(delatLatitude, -90, 90);
 })
 
+// Zoom control
+chart.zoomControl = new am4maps.ZoomControl();
+
+var homeButton = new am4core.Button();
+homeButton.events.on("hit", function () {
+    chart.goHome();
+});
+
+homeButton.icon = new am4core.Sprite();
+homeButton.padding(7, 5, 7, 5);
+homeButton.width = 30;
+homeButton.icon.path = "M16,8 L14,8 L14,16 L10,16 L10,10 L6,10 L6,16 L2,16 L2,8 L0,8 L8,0 L16,8 Z M16,8";
+homeButton.marginBottom = 10;
+homeButton.parent = chart.zoomControl;
+homeButton.insertBefore(chart.zoomControl.plusButton);
+
+// Center on the groups by default
+chart.homeZoomLevel = -3;
+
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 polygonSeries.useGeodata = true;
-polygonSeries.mapPolygons.template.fill = chart.colors.getIndex(0).lighten(-0.5);
-polygonSeries.mapPolygons.template.nonScalingStroke = true;
-polygonSeries.exclude = ["AQ"];
+// polygonSeries.mapPolygons.template.fill = chart.colors.getIndex(0).lighten(-0.5);
+// polygonSeries.mapPolygons.template.nonScalingStroke = true;
+// polygonSeries.calculateVisualCenter = true;
+
+var template = polygonSeries.mapPolygons.template;
+template.nonScalingStroke = true;
+template.fill = am4core.color("#3C435E");
+template.stroke = am4core.color("#202331");
+
+polygonSeries.calculateVisualCenter = true;
+template.propertyFields.id = "id";
+template.tooltipPosition = "fixed";
+template.fillOpacity = 1;
 
 // Add line bullets
 var cities = chart.series.push(new am4maps.MapImageSeries());
 cities.mapImages.template.nonScaling = true;
 
 var city = cities.mapImages.template.createChild(am4core.Circle);
-city.radius = 6;
-city.fill = chart.colors.getIndex(0).brighten(-0.1);
+city.radius = 5;
+city.fill = am4core.color("#202331");
 city.strokeWidth = 2;
-city.stroke = am4core.color("#fff");
+city.stroke = am4core.color("#00ffb3");
 
 function addCity(coords, title) {
     var city = cities.mapImages.create();
@@ -65,8 +97,8 @@ var london = addCity({ "latitude": 51.5074, "longitude": 0.1278 }, "London");
 // Add lines
 var lineSeries = chart.series.push(new am4maps.MapArcSeries());
 lineSeries.mapLines.template.line.strokeWidth = 2;
-lineSeries.mapLines.template.line.strokeOpacity = 0.9;
-lineSeries.mapLines.template.line.stroke = city.fill;
+lineSeries.mapLines.template.line.strokeOpacity = 0.3;
+lineSeries.mapLines.template.line.stroke = city.stroke;
 lineSeries.mapLines.template.line.nonScalingStroke = true;
 lineSeries.mapLines.template.line.strokeDasharray = "1,1";
 lineSeries.zIndex = 10;
@@ -105,7 +137,7 @@ plane.adapter.add("scale", function (scale, target) {
 })
 
 var planeImage = plane.createChild(am4core.Sprite);
-planeImage.scale = 0.1;
+planeImage.scale = 0.12;
 planeImage.horizontalCenter = "middle";
 planeImage.verticalCenter = "middle";
 planeImage.path = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
@@ -118,7 +150,7 @@ shadowPlane.width = 48;
 shadowPlane.height = 48;
 
 var shadowPlaneImage = shadowPlane.createChild(am4core.Sprite);
-shadowPlaneImage.scale = 0.07;
+shadowPlaneImage.scale = 0.1;
 shadowPlaneImage.horizontalCenter = "middle";
 shadowPlaneImage.verticalCenter = "middle";
 shadowPlaneImage.path = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
