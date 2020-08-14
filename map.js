@@ -54,19 +54,19 @@ chart.homeZoomLevel = -3;
 // Create map polygon series
 var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
 polygonSeries.useGeodata = true;
-// polygonSeries.mapPolygons.template.fill = chart.colors.getIndex(0).lighten(-0.5);
-// polygonSeries.mapPolygons.template.nonScalingStroke = true;
-// polygonSeries.calculateVisualCenter = true;
 
-var template = polygonSeries.mapPolygons.template;
-template.nonScalingStroke = true;
-template.fill = am4core.color("#3C435E");
-template.stroke = am4core.color("#202331");
+var polygontemplate = polygonSeries.mapPolygons.template;
+polygontemplate.nonScalingStroke = true;
+polygontemplate.fill = am4core.color("#3C435E");
+polygontemplate.stroke = am4core.color("#202331");
+polygontemplate.zIndex = 1;
 
 polygonSeries.calculateVisualCenter = true;
-template.propertyFields.id = "id";
-template.tooltipPosition = "fixed";
-template.fillOpacity = 1;
+polygontemplate.propertyFields.id = "id";
+polygontemplate.tooltipPosition = "fixed";
+polygontemplate.fillOpacity = 1;
+
+
 
 // Add line bullets
 var cities = chart.series.push(new am4maps.MapImageSeries());
@@ -82,7 +82,7 @@ function addCity(coords, title) {
     var city = cities.mapImages.create();
     city.latitude = coords.latitude;
     city.longitude = coords.longitude;
-    city.tooltipText = title;
+    // city.tooltipText = none;
     return city;
 }
 
@@ -101,13 +101,13 @@ lineSeries.mapLines.template.line.strokeOpacity = 0.3;
 lineSeries.mapLines.template.line.stroke = city.stroke;
 lineSeries.mapLines.template.line.nonScalingStroke = true;
 lineSeries.mapLines.template.line.strokeDasharray = "1,1";
-lineSeries.zIndex = 10;
+lineSeries.zIndex = 100;
 
 var shadowLineSeries = chart.series.push(new am4maps.MapLineSeries());
 shadowLineSeries.mapLines.template.line.strokeOpacity = 0;
 shadowLineSeries.mapLines.template.line.nonScalingStroke = true;
 shadowLineSeries.mapLines.template.shortestDistance = false;
-shadowLineSeries.zIndex = 5;
+shadowLineSeries.zIndex = 50;
 
 function addLine(from, to) {
     var line = lineSeries.mapLines.create();
@@ -226,7 +226,180 @@ function flyPlane() {
 
 }
 
+
 // Go!
 flyPlane();
 
 chart.logo.height = -15;
+
+
+var groupData = [
+    {
+        "name": "Home",
+        "color": chart.colors.getIndex(0),
+        "data": [
+            {
+                "title": "Born in India",
+                "id": "IN", // With MapPolygonSeries.useGeodata = true, it will try and match this id, then apply the other properties as custom data
+                "customData": ", 2000"
+            }, {
+                "title": "Moved to Oman",
+                "id": "OM",
+                "customData": " after being born"
+            }, {
+                "title": "Moved to Libya",
+                "id": "LY",
+                "customData": " in 2005"
+            }, {
+                "title": "Moved to Brunei",
+                "id": "BN",
+                "customData": " in 2006"
+            }, {
+                "title": "Moved to Qatar",
+                "id": "QA",
+                "customData": " in 2013"
+            }, {
+                "title": "Moved to the UK for uni",
+                "id": "GB",
+                "customData": " in 2018"
+            }
+        ]
+    },
+    {
+        "name": "Visited",
+        "color": chart.colors.getIndex(2),
+        "data": [
+            {
+                "title": "Visited Shanghai and Beijing",
+                "id": "CN",
+                "customData": " in 2011"
+            }, {
+                "title": "Visited Melbourne and Sydney",
+                "id": "AU",
+                "customData": " in 2008"
+            }, {
+                "title": "Explored South Island",
+                "id": "NZ",
+                "customData": " in 2008"
+            }, {
+                "title": "Been to KL, Miri and Langkawi",
+                "id": "MY",
+                "customData": ""
+            }, {
+                "title": "Explored Kathmandu, Pokhara and Mustang",
+                "id": "NP",
+                "customData": " (2019)"
+            }, {
+                "title": "Visited Dubai",
+                "id": "AE",
+                "customData": " as a kid"
+            }, {
+                "title": "Explored the Knuckles mountain range",
+                "id": "LK",
+                "customData": " (DofE Silver 2017)"
+            }, {
+                "title": "Visited Paris",
+                "id": "FR",
+                "customData": " in 2009"
+            }, {
+                "title": "Visited Brussels",
+                "id": "BE",
+                "customData": " in 2009"
+            }, {
+                "title": "Visited Amsterdam and The Haag",
+                "id": "NL",
+                "customData": " in 2009"
+            }, {
+                "title": "Visited Cologne",
+                "id": "DE",
+                "customData": " in 2009"
+            }
+        ]
+    },
+];
+
+
+// This array will be populated with country IDs to exclude from the world series
+var excludedCountries = [];
+
+// Create a series for each group, and populate the above array
+groupData.forEach(function (group) {
+    var series = chart.series.push(new am4maps.MapPolygonSeries());
+    series.name = group.name;
+    series.useGeodata = true;
+    var includedCountries = [];
+    group.data.forEach(function (country) {
+        includedCountries.push(country.id);
+        excludedCountries.push(country.id);
+    });
+    series.include = includedCountries;
+
+    series.fill = am4core.color(group.color);
+
+    // By creating a hover state and setting setStateOnChildren to true, when we
+    // hover over the series itself, it will trigger the hover SpriteState of all
+    // its countries (provided those countries have a hover SpriteState, too!).
+    series.setStateOnChildren = true;
+    series.calculateVisualCenter = true;
+
+    // Country shape properties & behaviors
+    var mapPolygonTemplate = series.mapPolygons.template;
+    // Instead of our custom title, we could also use {name} which comes from geodata  
+    mapPolygonTemplate.fill = am4core.color(group.color);
+    mapPolygonTemplate.fillOpacity = 0.5;
+    mapPolygonTemplate.nonScalingStroke = true;
+    mapPolygonTemplate.tooltipPosition = "fixed"
+
+    mapPolygonTemplate.events.on("over", function (event) {
+        series.mapPolygons.each(function (mapPolygon) {
+            mapPolygon.isHover = true;
+        })
+        event.target.isHover = false;
+        event.target.isHover = true;
+    })
+
+    mapPolygonTemplate.events.on("out", function (event) {
+        series.mapPolygons.each(function (mapPolygon) {
+            mapPolygon.isHover = false;
+        })
+    })
+
+    // States  
+    var hoverState = mapPolygonTemplate.states.create("hover");
+    hoverState.properties.fill = am4core.color("#009dff");
+
+    // Tooltip
+    mapPolygonTemplate.tooltipText = "{title}{customData}"; // enables tooltip
+    // series.tooltip.getFillFromObject = false; // prevents default colorization, which would make all tooltips red on hover
+    // series.tooltip.background.fill = am4core.color(group.color);
+
+    // MapPolygonSeries will mutate the data assigned to it, 
+    // we make and provide a copy of the original data array to leave it untouched.
+    // (This method of copying works only for simple objects, e.g. it will not work
+    //  as predictably for deep copying custom Classes.)
+    series.data = JSON.parse(JSON.stringify(group.data));
+});
+
+// // The rest of the world.
+// var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
+// var worldSeriesName = "world";
+// worldSeries.name = worldSeriesName;
+// worldSeries.useGeodata = true;
+// worldSeries.exclude = excludedCountries;
+// worldSeries.fillOpacity = 0;
+// worldSeries.hiddenInLegend = true;
+// worldSeries.mapPolygons.template.nonScalingStroke = true;
+
+// // This auto-generates a legend according to each series' name and fill
+// // chart.legend = new am4maps.Legend();
+
+// // Legend styles
+// // chart.legend.paddingLeft = 27;
+// // chart.legend.paddingRight = 27;
+// // chart.legend.marginBottom = 15;
+// // chart.legend.width = am4core.percent(90);
+// // chart.legend.valign = "bottom";
+// // chart.legend.contentAlign = "left";
+
+// // // Legend items
+// // chart.legend.itemContainers.template.interactionsEnabled = false;
