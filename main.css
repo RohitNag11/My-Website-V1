@@ -304,7 +304,7 @@ border-radius: 5px;
 .navbar-link:hover,
 .navbar-link:focus{
     background-color: #292D3E;
-    box-shadow: 0px 10px 10px #292D3E;
+    box-shadow: 0px 8px 10px #292D3E;
     color: #00ffb3;
 }
 
