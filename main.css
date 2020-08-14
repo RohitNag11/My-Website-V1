@@ -532,6 +532,13 @@ li{
     flex: 1;
 }
 
+#chartdiv {
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    padding: 2rem;
+  }
+
 .social-media {
     margin-top: 5rem;
 }
