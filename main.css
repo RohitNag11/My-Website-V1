@@ -356,6 +356,8 @@ li{
     border-radius: initial;
 }
 
+
+
 .menu-toggler{
     position: fixed;
     top: 1.4rem;
@@ -374,6 +376,9 @@ li{
     transform: rotate(-45deg);
 }
 
+.menu-toggler{
+    display: none;
+}
 
 .bar{
     background: linear-gradient(to right, #00ffb3, #009dff);
@@ -1010,18 +1015,13 @@ input[type="submit"]:hover{
         margin: 2 rem 0;
     }
 
-    
     .navbar-link{
         font-size: 1.2em;
-        padding-left: 7px;
-    padding-right: 7px;
+        padding-left: 2px;
+    padding-right: 2px;
     }
     .nav-link{
         font-size: 4.5rem;
-    }
-
-    .menu-toggler{
-        display: none;
     }
     /* .scroll-downs {
         display: none;
