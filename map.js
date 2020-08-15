@@ -439,6 +439,7 @@ chart.logo.height = -15;
 // Add line bullets
 var cities = chart.series.push(new am4maps.MapImageSeries());
 cities.mapImages.template.nonScaling = true;
+cities.hiddenInLegend = true;
 
 var city = cities.mapImages.template.createChild(am4core.Circle);
 city.radius = 4;
