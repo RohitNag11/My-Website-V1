@@ -537,6 +537,8 @@ li{
     width: 100%;
     height: 400px;
     padding: 2rem;
+    font-family: 'consolas', Consolas, monaco, monospace;
+    font-size: 1.2rem;
   }
 
 .social-media {
