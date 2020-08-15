@@ -269,9 +269,10 @@ cities.hiddenInLegend = true;
 
 var city = cities.mapImages.template.createChild(am4core.Circle);
 city.radius = 4;
-city.fill = am4core.color("#202331");
+city.fill = am4core.color("#00ffb3");
+// city.fillOpacity = 0.3;
 city.strokeWidth = 1.5;
-city.stroke = am4core.color("#00ffb3");
+city.stroke = am4core.color("#000");
 
 function addCity(coords, title) {
     var city = cities.mapImages.create();
@@ -293,7 +294,7 @@ var london = addCity({ "latitude": 51.5074, "longitude": 0.1278 }, "London");
 var lineSeries = chart.series.push(new am4maps.MapArcSeries());
 lineSeries.mapLines.template.line.strokeWidth = 2;
 lineSeries.mapLines.template.line.strokeOpacity = 0.3;
-lineSeries.mapLines.template.line.stroke = city.stroke;
+lineSeries.mapLines.template.line.stroke = am4core.color("#00ffb3");
 lineSeries.mapLines.template.line.nonScalingStroke = true;
 lineSeries.mapLines.template.line.strokeDasharray = "1,1";
 lineSeries.zIndex = 100;
@@ -335,7 +336,7 @@ plane.adapter.add("scale", function (scale, target) {
 })
 
 var planeImage = plane.createChild(am4core.Sprite);
-planeImage.scale = 0.12;
+planeImage.scale = 0.14;
 planeImage.horizontalCenter = "middle";
 planeImage.verticalCenter = "middle";
 planeImage.path = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
@@ -348,7 +349,7 @@ shadowPlane.width = 48;
 shadowPlane.height = 48;
 
 var shadowPlaneImage = shadowPlane.createChild(am4core.Sprite);
-shadowPlaneImage.scale = 0.1;
+shadowPlaneImage.scale = 0.12;
 shadowPlaneImage.horizontalCenter = "middle";
 shadowPlaneImage.verticalCenter = "middle";
 shadowPlaneImage.path = "m2,106h28l24,30h72l-44,-133h35l80,132h98c21,0 21,34 0,34l-98,0 -80,134h-35l43,-133h-71l-24,30h-28l15,-47";
