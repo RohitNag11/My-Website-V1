@@ -788,9 +788,10 @@ li{
 }
 
 .project-description h6{
-    font-family: var(--subhead-font-family);
+    font-family: var(--fancy-font-family);
     font-size: 1.8rem;
     font-weight: 300;
+    text-transform: uppercase;
     color: #00ffb3;
     opacity: 0.6;
     margin-bottom: 1.5rem; 
