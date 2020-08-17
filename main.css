@@ -374,16 +374,15 @@ li{
 
 .nav-link{
     font-family: var(--fancy-font-family);
+    text-transform: uppercase;
     font-size: 4rem;
     padding: 1rem; 
 }
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #00ffb3, #009dff);
-    -webkit-background-clip: text;
-            background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #00ffb3;
+    font-style: italic;
 }
 
 .top-nav.open{
