@@ -1108,6 +1108,19 @@ input[type="submit"]:hover{
     /* .scroll-downs {
         display: none;
     } */
+      .mousey {
+        border:none;
+      }
+      .scroller {
+        width: 40px;
+        height: 40px;
+        background-color: #4f5c8d;
+        animation-name: swipeup;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+      }
+      
       
     .about-heading h1{
         font-size: 8rem;
@@ -1189,6 +1202,10 @@ input[type="submit"]:hover{
         display: flex;
         
     } */
+
+    .landing-text{
+        top: 45%;
+    }
     
     .landing-text h1{
         font-size: 10rem;
@@ -1196,8 +1213,9 @@ input[type="submit"]:hover{
         /* padding-left:3rem;
         padding-right:3rem; */
         margin-left: -5px;
-        padding: 2.5rem 0rem 3rem 0rem;
+        padding: 1rem 0rem 1rem 0rem;
         line-height: 0.9;
+        text-transform: uppercase;
     }
 
     .landing-text h1:after{
@@ -1221,9 +1239,11 @@ input[type="submit"]:hover{
         padding-right:3rem; */
     }
 
-    .scroll-downs {
+    
+
+    /* .scroll-downs {
         display: none;
-    }
+    } */
 
     .about .container{
         flex-direction: column;
@@ -1291,3 +1311,8 @@ input[type="submit"]:hover{
     }
 }
 
+@keyframes swipeup {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-40px); opacity: 0;}
+  }
