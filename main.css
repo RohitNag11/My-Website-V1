@@ -247,7 +247,7 @@ img{
 }
 
 .section-heading h1::before{
-    width: 10rem;
+    width: 20rem;
     height: 3px;
     border-radius: 50%;
     background: linear-gradient(to right, #009dff, #00ffb3, #009dff);
@@ -262,7 +262,8 @@ img{
 }
 
 .section-heading h6{
-    font-size: 1.8rem;
+    padding-top: 3px;
+    font-size: 2rem;
     font-family: var(--subheading-font-family);
     font-weight: 900;
 }
