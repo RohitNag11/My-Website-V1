@@ -461,7 +461,6 @@ li{
     -webkit-background-clip: text;
             background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-block-end: 2rem;
     user-select: none;
 }
 
@@ -1185,17 +1184,41 @@ input[type="submit"]:hover{
     .navbar{
         display: none;
     }
+
+    /* .landing-text-container{
+        display: flex;
+        
+    } */
+    
     .landing-text h1{
-        font-size: 11rem;
+        font-size: 10rem;
+        text-align: left;
+        /* padding-left:3rem;
+        padding-right:3rem; */
+        margin-left: -5px;
+        padding: 2.5rem 0rem 3rem 0rem;
+        line-height: 0.9;
     }
+
+    .landing-text h1:after{
+        content: ',';
+        margin-left: -1ch;
+    }
+
 
     .landing-text h5{
         font-size: 1.8rem;
+        text-align: left;
+        /* padding-left:3rem;
+        padding-right:3rem; */
     }
 
     .landing-text h6{
         font-size: 1.8rem;
         opacity: 0.7;
+        text-align: left;
+        /* padding-left:3rem;
+        padding-right:3rem; */
     }
 
     .scroll-downs {
@@ -1247,6 +1270,13 @@ input[type="submit"]:hover{
 
     .gallery-section .image{
         flex: 100%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .landing-text h1{
+        font-size: 8rem;
+        padding: none;
     }
 }
 /*End media queries*/
