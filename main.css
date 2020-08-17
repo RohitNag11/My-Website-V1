@@ -1074,6 +1074,14 @@ input[type="submit"]:hover{
 /*Start media queries*/
 
 @media screen and (max-width: 768px) {
+    :root {  
+        --subheading-font-family: 'lato', sans-serif 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
     body{
         background: url("images/background.jpg") no-repeat center fixed;
         background-size: cover;
@@ -1083,9 +1091,6 @@ input[type="submit"]:hover{
         font-size: 15rem;
     }
     
-    .landing-text h6{
-        font-size: 1.7rem;
-    }
 
     li{
         margin: 2 rem 0;
@@ -1108,7 +1113,8 @@ input[type="submit"]:hover{
     }
 
     .section-heading h1{
-        font-size: 3rem;
+        font-size: 5rem;
+        font-weight: 600;
     }
 
     .about-details .social-list{
@@ -1145,6 +1151,7 @@ input[type="submit"]:hover{
         position: relative;
         padding: 1rem;
         width: 100%;
+        border: none;
     }
 
     .timeline h1{
@@ -1178,10 +1185,6 @@ input[type="submit"]:hover{
     }
     .landing-text h1{
         font-size: 12rem;
-    }
-
-    .landing-text h6{
-        font-size: 1.4rem;
     }
 
 
