@@ -1,15 +1,3 @@
-/**
- * ---------------------------------------
- * For more information visit:
- * https://www.amcharts.com/
- * 
- * Documentation is available at:
- * https://www.amcharts.com/docs/v4/
- * ---------------------------------------
- */
-
-
-
 // Themes begin
 am4core.useTheme(am4themes_dark);
 am4core.useTheme(am4themes_animated);
