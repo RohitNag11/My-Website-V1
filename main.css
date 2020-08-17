@@ -1075,12 +1075,8 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px) {
     :root {  
-        --subheading-font-family: 'lato', sans-serif 
+        --subheading-font-family: 'lato', sans-serif
     }
-}
-
-
-@media screen and (max-width: 768px) {
 
     body{
         background: url("images/background.jpg") no-repeat center fixed;
@@ -1089,9 +1085,16 @@ input[type="submit"]:hover{
 
     .landing-text h1{
         font-size: 15rem;
+        font-weight: 600;
     }
-    
 
+    .landing-text h5{
+        color: #009dff;
+    }
+
+    .landing-text h6{
+        color: #00ffb3;
+    }
     li{
         margin: 2 rem 0;
     }
@@ -1184,9 +1187,17 @@ input[type="submit"]:hover{
         display: none;
     }
     .landing-text h1{
-        font-size: 12rem;
+        font-size: 11rem;
     }
 
+    .landing-text h5{
+        font-size: 1.8rem;
+    }
+
+    .landing-text h6{
+        font-size: 1.8rem;
+        opacity: 0.7;
+    }
 
     .scroll-downs {
         display: none;
