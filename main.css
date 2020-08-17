@@ -1116,9 +1116,6 @@ input[type="submit"]:hover{
         height: 40px;
         background-color: #4f5c8d;
         animation-name: swipeup;
-        animation-duration: 2.2s;
-        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-        animation-iteration-count: infinite;
       }
       
       
