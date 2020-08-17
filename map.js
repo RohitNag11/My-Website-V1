@@ -74,11 +74,11 @@ var groupData = [
             }, {
                 "title": "Moved to Oman",
                 "id": "OM",
-                "customData": " after being born"
+                "customData": " in 2001"
             }, {
                 "title": "Moved to Libya",
                 "id": "LY",
-                "customData": " in 2005"
+                "customData": " in 2004"
             }, {
                 "title": "Moved to Brunei",
                 "id": "BN",
@@ -105,13 +105,13 @@ var groupData = [
             }, {
                 "title": "Visited Melbourne and Sydney",
                 "id": "AU",
-                "customData": " in 2008"
+                "customData": " in 2012"
             }, {
                 "title": "Explored South Island",
                 "id": "NZ",
-                "customData": " in 2008"
+                "customData": " in 2012"
             }, {
-                "title": "Been to KL, Miri and Langkawi",
+                "title": "Been to KL, Kuching, Miri and Langkawi",
                 "id": "MY",
                 "customData": ""
             }, {
@@ -121,7 +121,7 @@ var groupData = [
             }, {
                 "title": "Visited Dubai",
                 "id": "AE",
-                "customData": " as a kid"
+                "customData": " in 2002"
             }, {
                 "title": "Explored the Knuckles mountain range",
                 "id": "LK",
@@ -139,9 +139,9 @@ var groupData = [
                 "id": "NL",
                 "customData": " in 2009"
             }, {
-                "title": "Visited Cologne",
+                "title": "Visited Munich and Cologne",
                 "id": "DE",
-                "customData": " in 2009"
+                "customData": " in 2015"
             }
         ]
     },
@@ -444,6 +444,7 @@ function addCity(coords, title) {
 }
 
 var kolkata = addCity({ "latitude": 22.5726, "longitude": 88.3639 }, "Kolkata");
+var mumbai = addCity({ "latitude": 19.0760, "longitude": 72.8777 }, "Kolkata");
 var muscat = addCity({ "latitude": 23.5880, "longitude": 58.3829 }, "Muscat");
 var tripoli = addCity({ "latitude": 32.8872, "longitude": 13.1913 }, "Tripoli");
 var bandar = addCity({ "latitude": 4.9031, "longitude": 114.9398 }, "Bandar Seri Begawan");
@@ -469,7 +470,8 @@ function addLine(from, to) {
     return line;
 }
 
-addLine(kolkata, muscat);
+addLine(kolkata, mumbai);
+addLine(mumbai, muscat);
 addLine(muscat, tripoli);
 addLine(tripoli, bandar);
 addLine(bandar, doha);
