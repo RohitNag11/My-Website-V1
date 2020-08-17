@@ -467,18 +467,21 @@ li{
     user-select: none;
     line-height: 0.9;
     padding: 3rem;
+    word-spacing: -0.2em;
 }
 
 
-
 .landing-text h5{
+    color: #57aeff;
     font-size: 2rem;
     font-family: var(--subheading-font-family);
 }
 
 .landing-text h6{
     font-size: 2rem;
+    color: #00ffb3;
     font-family: var(--subheading-font-family);
+    opacity: 0.9;
 }
 /*End header*/
 
