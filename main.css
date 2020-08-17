@@ -670,7 +670,8 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    background-color: #202331;
+    background-color: #262a38;
+    box-shadow: 8px 0px 8px #202331;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
