@@ -68,7 +68,7 @@
     z-index: 100;
     border: none;
     text-align:center;
-    color: var(--main-txt-color);
+    color: #7c83ad;
     line-height: 30px;
     font-size : 16px;
     font-weight: 500;
@@ -1073,7 +1073,7 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px) {
     :root {  
-        --subheading-font-family: 'lato', sans-serif
+        --subheading-font-family: 'lato', sans-serif;
     }
 
     body{
@@ -1083,16 +1083,18 @@ input[type="submit"]:hover{
 
     .landing-text h1{
         font-size: 15rem;
-        font-weight: 600;
     }
 
     .landing-text h5{
         color: #009dff;
+        font-weight: 300;
     }
 
     .landing-text h6{
         color: #00ffb3;
+        font-weight: 300;
     }
+
     li{
         margin: 2 rem 0;
     }
@@ -1126,6 +1128,11 @@ input[type="submit"]:hover{
     .section-heading h1{
         font-size: 5rem;
         font-weight: 600;
+    }
+
+    .section-heading h6{
+        font-weight: 300;
+        font-size: 1.8rem;
     }
 
     .about-details .social-list{
