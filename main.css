@@ -1,12 +1,14 @@
 /* import fonts */
 @font-face {
     font-family: 'lato thin';
-    src: url(fonts/Lato-Thin.ttf)
+    src: url(fonts/Lato-Thin.ttf);
+    font-style: thin;
 }
 
 @font-face {
     font-family: 'lato';
-    src: url(fonts/Lato-Light.ttf)
+    src: url(fonts/Lato-Light.ttf);
+    font-style: normal;
 }
 
 
@@ -1070,7 +1072,11 @@ input[type="submit"]:hover{
 /*End animations*/
 
 /*Start media queries*/
-
+@media screen and (max-width: 930px) {
+    .navbar-list a{
+        font-size: 1rem;
+    }
+}
 @media screen and (max-width: 768px) {
     :root {  
         --subheading-font-family: 'lato', sans-serif;
