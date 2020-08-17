@@ -816,7 +816,7 @@ li{
 
 .project-description h6{
     font-family: var(--fancy-font-family);
-    /* font-style: italic; */
+    font-style: italic;
     font-size: 1.8rem;
     font-weight: 300;
     text-transform: uppercase;
