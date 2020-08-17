@@ -391,7 +391,9 @@ li{
     border-radius: initial;
 }
 
-
+.navdescription{
+    display: none;
+}
 
 .menu-toggler{
     position: fixed;
@@ -1207,6 +1209,25 @@ input[type="submit"]:hover{
     .navbar{
         display: none;
     }
+
+    .navdescription{
+        display: flex;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 27px;
+        right: 75px;
+        width: fit-content;
+        font-family: var(--fancy-font-family);
+        font-style: italic;
+    }
+
+    .navdescription i{
+        position: relative;
+        /* Adjust these values accordingly */
+        top: 3px;
+        left: 5px;
+      }
+
 
     /* .landing-text-container{
         display: flex;
