@@ -344,7 +344,7 @@ font-style: italic;
 
 .navbar{
     transform: translateY(-100px);
-    animation: 1s forwards 0ms 1 slideInFromTop;
+    animation: 1s forwards 0s 1 slideInFromTop;
 }
 
 .navbar-item1{
@@ -520,6 +520,7 @@ user-select: none;
 line-height: 0.9;
 padding: 3rem;
 word-spacing: -0.2em;
+opacity: 0;
 }
 
 
@@ -536,19 +537,28 @@ font-family: var(--subheading-font-family);
 opacity: 0;
 }
 
-.landing-text h1{
-    animation: fade 5s normal forwards;
-    -webkit-animation: fade 5s normal forwards;
-    -o-animation: fade 5s normal forwards;
+.landing-text h5{
+    animation: fade 8s normal forwards;
+    -webkit-animation: fade 8s normal forwards;
+    -o-animation: fade 8s normal forwards;
 }
 
-.landing-text h6{
-    animation: fade 5s normal forwards;
-    -webkit-animation: fade 5s normal forwards;
-    -o-animation: fade 5s normal forwards;
+.landing-text h1{
+    animation: fade 8s normal forwards;
+    -webkit-animation: fade 8s normal forwards;
+    -o-animation: fade 8s normal forwards;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -o-animation-delay: 1s;
+}
+
+.landing-text h6{
+    animation: fade 8s normal forwards;
+    -webkit-animation: fade 8s normal forwards;
+    -o-animation: fade 8s normal forwards;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
 }
 
 @keyframes fade {
