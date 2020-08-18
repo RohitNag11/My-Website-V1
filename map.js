@@ -444,7 +444,7 @@ function addCity(coords, title) {
 }
 
 var kolkata = addCity({ "latitude": 22.5726, "longitude": 88.3639 }, "Kolkata");
-var mumbai = addCity({ "latitude": 19.0760, "longitude": 72.8777 }, "Kolkata");
+var mumbai = addCity({ "latitude": 19.0760, "longitude": 72.8777 }, "Mumbai");
 var muscat = addCity({ "latitude": 23.5880, "longitude": 58.3829 }, "Muscat");
 var tripoli = addCity({ "latitude": 32.8872, "longitude": 13.1913 }, "Tripoli");
 var bandar = addCity({ "latitude": 4.9031, "longitude": 114.9398 }, "Bandar Seri Begawan");
