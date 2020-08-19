@@ -541,8 +541,8 @@ function flyPlane() {
         direction = 1;
     }
     else if ((currentLine + 1) > numLines) {
-        currentLine = numLines - 1;
-        direction = -1;
+        currentLine = 0;
+        direction = 1;
     }
 
 }
