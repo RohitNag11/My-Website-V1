@@ -207,26 +207,38 @@ groupData.forEach(function (group) {
 });
 
 
-// This auto-generates a legend according to each series' name and fill
-chart.legend = new am4maps.Legend();
+// // This auto-generates a legend according to each series' name and fill
+// chart.legend = new am4maps.Legend();
 
-// Legend styles
-// chart.legend.paddingLeft = -3;
-// chart.legend.paddingRight = 27;
-// chart.legend.marginBottom = -3;
-// chart.legend.width = am4core.percent(100);
-// chart.legend.valign = "bottom";
+// chart.legend.width = 120;
 // chart.legend.contentAlign = "left";
+// chart.legend.valign = "bottom";
+// chart.legend.padding(0, 0, -3, 0);
 
-chart.legend.width = 120;
-chart.legend.contentAlign = "left";
-chart.legend.valign = "bottom";
-chart.legend.padding(0, 0, -3, 0);
+// // Legend items
+// chart.legend.itemContainers.template.interactionsEnabled = true;
+// chart.legend.labels.template.fill = am4core.color("#A6ACCD");
+// chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
 
-// Legend items
-chart.legend.itemContainers.template.interactionsEnabled = true;
-chart.legend.labels.template.fill = am4core.color("#A6ACCD");
-chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
+/* Add legend */
+var legend = new am4maps.Legend();
+legend.parent = chart.chartContainer;
+legend.width = 120;
+legend.contentAlign = "left";
+legend.valign = "bottom";
+legend.padding(0, 0, -3, 0);
+legend.data = [{
+    "name": "Home",
+    "fill": "#00ffb3",
+}, {
+    "name": "Visited",
+    "fill": "#009dff",
+}];
+legend.itemContainers.template.clickable = false;
+legend.itemContainers.template.focusable = false;
+legend.itemContainers.template.interactionsEnabled = false;
+legend.labels.template.fill = am4core.color("#A6ACCD");
+legend.valueLabels.template.fill = am4core.color("#A6ACCD");
 
 // chart.legend.markers.template.disabled = true;
 
