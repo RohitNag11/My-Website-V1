@@ -230,7 +230,7 @@ chart.legend = new am4maps.Legend();
 // chart.legend.contentAlign = "left";
 
 chart.legend.width = 120;
-chart.legend.align = "left";
+chart.legend.contentAlign = "left";
 chart.legend.valign = "bottom";
 chart.legend.padding(0, 0, -3, 0);
 
@@ -238,6 +238,8 @@ chart.legend.padding(0, 0, -3, 0);
 chart.legend.itemContainers.template.interactionsEnabled = true;
 chart.legend.labels.template.fill = am4core.color("#A6ACCD");
 chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
+chart.legend.labels.template.text = "[{color}]{name}";
+// chart.legend.markers.template.disabled = true;
 
 // var as = chart.legend.labels.template.states.getKey("active");
 // as.properties.textDecoration = "line-through";
@@ -245,10 +247,6 @@ chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
 
 // var as2 = chart.legend.valueLabels.template.states.getKey("active");
 // as2.properties.textDecoration = "line-through";
-
-
-
-
 
 // // Add line bullets
 // var cities = chart.series.push(new am4maps.MapImageSeries());
