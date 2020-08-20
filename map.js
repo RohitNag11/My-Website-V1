@@ -238,7 +238,7 @@ chart.legend.padding(0, 0, -3, 0);
 chart.legend.itemContainers.template.interactionsEnabled = true;
 chart.legend.labels.template.fill = am4core.color("#A6ACCD");
 chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
-chart.legend.labels.template.text = "[{color}]{name}";
+chart.legend.labels.template.text = "[{color}]{name}[/]";
 // chart.legend.markers.template.disabled = true;
 
 // var as = chart.legend.labels.template.states.getKey("active");
