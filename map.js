@@ -149,7 +149,6 @@ var groupData = [
 
 
 // This array will be populated with country IDs to exclude from the world series
-var excludedCountries = [];
 
 // Create a series for each group, and populate the above array
 groupData.forEach(function (group) {
@@ -159,7 +158,6 @@ groupData.forEach(function (group) {
     var includedCountries = [];
     group.data.forEach(function (country) {
         includedCountries.push(country.id);
-        excludedCountries.push(country.id);
     });
     series.include = includedCountries;
 
@@ -208,15 +206,6 @@ groupData.forEach(function (group) {
     series.data = JSON.parse(JSON.stringify(group.data));
 });
 
-// // The rest of the world.
-// var worldSeries = chart.series.push(new am4maps.MapPolygonSeries());
-// var worldSeriesName = "world";
-// worldSeries.name = worldSeriesName;
-// worldSeries.useGeodata = true;
-// worldSeries.exclude = excludedCountries;
-// worldSeries.fillOpacity = 0;
-// worldSeries.hiddenInLegend = true;
-// worldSeries.mapPolygons.template.nonScalingStroke = true;
 
 // This auto-generates a legend according to each series' name and fill
 chart.legend = new am4maps.Legend();
@@ -238,7 +227,7 @@ chart.legend.padding(0, 0, -3, 0);
 chart.legend.itemContainers.template.interactionsEnabled = true;
 chart.legend.labels.template.fill = am4core.color("#A6ACCD");
 chart.legend.valueLabels.template.fill = am4core.color("#A6ACCD");
-chart.legend.labels.template.text = "[{color}]{name}[/]";
+
 // chart.legend.markers.template.disabled = true;
 
 // var as = chart.legend.labels.template.states.getKey("active");
