@@ -1007,6 +1007,7 @@ opacity: 1;
 
 .project-description .cta:hover{
 color: #00ffb3;
+font-style: italic;
 }
 
 .project-description .cta::after {
@@ -1066,6 +1067,7 @@ opacity: 1;
 
 .members ul a:hover{
 color: #00ffb3;
+font-style: italic;
 }
 
 .members ul a::before {
@@ -1133,12 +1135,16 @@ border-radius: none;
 
 .swiper-pagination-bullet {
     background: #009dff !important;
-    opacity: 0.2 !important;
+    opacity: 0.3 !important;
+    transition: all .4s;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1 !important;
     background: #00ffb3 !important;
+    width: 30px !important;
+    border-radius: 4px !important;
+    transition: all .4s;
 }
 /*Start arts*/
 .gallery-section .gallery{
