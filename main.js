@@ -99,6 +99,7 @@ $(document).ready(function () {
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -108,6 +109,11 @@ $(document).ready(function () {
         },
         mousewheel: true,
         keyboard: true,
+
+        // autoplay
+        autoplay: {
+            delay: 5000,
+        },
     });
 
 });

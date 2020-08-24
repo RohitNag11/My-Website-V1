@@ -1142,7 +1142,7 @@ border-radius: none;
 .swiper-pagination-bullet-active {
     opacity: 1 !important;
     background: #00ffb3 !important;
-    width: 30px !important;
+    width: 24px !important;
     border-radius: 4px !important;
     transition: all .4s;
 }
