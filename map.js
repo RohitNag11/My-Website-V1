@@ -142,6 +142,10 @@ var groupData = [
                 "title": "Visited Munich and Cologne",
                 "id": "DE",
                 "customData": " in 2015"
+            }, {
+                "title": "Visited Singapore",
+                "id": "SG",
+                "customData": ""
             }
         ]
     },
