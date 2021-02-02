@@ -1,6 +1,3 @@
-<div align="left">
-  <img alt="Logo" src="https://github.com/RohitNag11/My-Website/blob/master/images/Logo-small.ico" width="20" />
-</div>
 <h1 align="left">
   My Personal Website's Source Code
 </h1>
