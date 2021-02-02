@@ -2,7 +2,7 @@
   My Personal Website's Source Code
 </h1>
 <p align="left">
-  The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, Javascript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+  The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 <p align="left">
   <a href="https://app.netlify.com/sites/rohitnag/deploys" target="_blank">
