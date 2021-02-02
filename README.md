@@ -16,7 +16,7 @@
 ![demo](https://github.com/RohitNag11/My-Website/blob/master/images/My%20website%20screenshot.jpg)
 
 
-## 🎨 My Colour Palette 
+## My Colour Palette 
 My website's colour theme was inspired by <a href="https://www.material-theme.com/docs/reference/color-palette/" target="_blank">Material's Palenight theme</a>.
 
 | Color           | Hex                                                                |
