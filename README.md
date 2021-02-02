@@ -10,7 +10,7 @@
   </a>
 </p>
 
-![demo](https://github.com/RohitNag11/My-Website/blob/master/images/My%20website%20screenshot.jpg)
+<a href="rohitnag.com"><img src="https://github.com/RohitNag11/My-Website/blob/master/images/My%20website%20screenshot.jpg" alt="Demo"></a>
 
 
 ## My Colour Palette 
