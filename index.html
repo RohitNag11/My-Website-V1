@@ -8,7 +8,6 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-174262112-1');
     </script>
 
@@ -24,7 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <link rel="shortcut icon" type="images/ico" href="images/Logo-small.ico">
+    <link rel="shortcut icon" type="images/ico" href="images\Logo-small.ico">
     <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -38,31 +37,8 @@
     <script src="https://cdn.amcharts.com/lib/4/themes/dark.js"></script>
     <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
 
-    <!-- Preload fonts: -->
-    <link rel="preload" as="font" type="font/ttf" href="./fonts/Lato-Light.ttf" crossorigin>
-
-    <link rel="preload" as="font" type="font/ttf" href="./fonts/Lato-Thin.ttf" crossorigin>
-
-    <link rel="preload" as="font" type="font/woff2" href="fonts/JetBrains Mono/web/woff2/JetBrainsMono-Regular.woff2"
-        crossorigin>
-
-    <link rel="preload" as="font" type="font/woff" href="fonts/JetBrains Mono/web/woff/JetBrainsMono-Regular.woff"
-        crossorigin>
-
-    <link rel="preload" as="font" type="font/ttf" href="fonts/JetBrains Mono/ttf/JetBrainsMono-Regular.ttf" crossorigin>
-
-    <link rel="preload" as="font" type="font/woff2" href="fonts/JetBrains Mono/web/woff2/JetBrainsMono-Italic.woff2"
-        crossorigin>
-
-    <link rel="preload" as="font" type="font/woff" href="fonts/JetBrains Mono/web/woff/JetBrainsMono-Italic.woff"
-        crossorigin>
-
-
-
-
-    <!-- Preload css and JS -->
-    <link rel="preload" href="main.css" as="style">
-    <link rel="preload" href="main.js" as="script">
+    <!-- Preload background: -->
+    <link rel="preload" as="image" href="images\3dbackground_resized.png">
 
 </head>
 
@@ -80,16 +56,11 @@
 
 
     <!-- SECTION Landing Section: -->
-
-    <header>
+    <header id="header">
         <div class="header">
             <div class="progress-container">
                 <div class="progress-bar" id="progressBar"></div>
             </div>
-        </div>
-        <div class="navdescription">
-            use this to navigate the page
-            <i class="fas fa-long-arrow-alt-right"></i>
         </div>
         <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -99,16 +70,10 @@
         <nav class="top-nav">
             <ul class="nav-list">
                 <li>
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="#header" class="nav-link">Home</a>
                 </li>
                 <li>
                     <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li>
                     <a href="#uniprojects" class="nav-link">Uni Projects</a>
@@ -120,6 +85,12 @@
                     <a href="#art" class="nav-link">Art</a>
                 </li>
                 <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li>
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
@@ -127,41 +98,95 @@
         <nav class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item1">
-                    <a href="index.html" class="navbar-link">Home</a>
+                    <a href="#header" class="navbar-link">Home</a>
                 </li>
                 <li class="navbar-item2">
                     <a href="#about" class="navbar-link">About</a>
                 </li>
                 <li class="navbar-item3">
-                    <a href="#skills" class="navbar-link">Skills</a>
-                </li>
-                <li class="navbar-item4">
-                    <a href="#experience" class="navbar-link">Experience</a>
-                </li>
-                <li class="navbar-item5">
                     <a href="#uniprojects" class="navbar-link">Uni Projects</a>
                 </li>
-                <li class="navbar-item6">
+                <li class="navbar-item4">
                     <a href="#sideprojects" class="navbar-link">Side Projects</a>
                 </li>
-                <li class="navbar-item7">
+                <li class="navbar-item5">
                     <a href="#art" class="navbar-link">Art</a>
+                </li>
+                <li class="navbar-item6">
+                    <a href="#experience" class="navbar-link">Experience</a>
+                </li>
+                <li class="navbar-item7">
+                    <a href="#skills" class="navbar-link">Skills</a>
                 </li>
                 <li class="navbar-item8">
                     <a href="#contact" class="navbar-link">Contact</a>
                 </li>
             </ul>
         </nav>
-        <div class="container">
-            <div class="landing-text" id="landing-text">
-                <h5>Welcome to my website! I am</h5>
-                <h1>
-                    <span class="first-name">Rohit</span>
-                    <span class="last-name">Nag</span>
-                </h1>
-                <h6>a Mechanical Engineering Student</h6>
-                <h6>at Imperial College London</h6>
+        <div class="container perspective">
+            <div class="hero-text" id="landing-text">
+                <div class="hero-top">
+                    <div class="hero-first">
+                        Hello! I'm&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="hero-name" id="elevated-text" id="3d-text">
+                        <div class="elevated-text">Rohit Nag</div>
+                        <div class="shadow">Rohit Nag</div>
+                        <div class="reflection">Rohit Nag</div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <span class="text-type-animation">, a <span class="txt-rotate"> mechanical engineering </span>
+                        student
+                        <br>
+                        , and a
+                        questionable<br>
+                        <span class="txt-rotate" data-period="2000"
+                            data-rotate='["product", "graphic", "UI / UX", "web"]'>
+                        </span>
+                        designer.
+                    </span>
+                </div>
+                <br>
+                <div class="hero-bottom">
+                    My portfolios:
+                </div>
+                <div class="hero-bottom card-container">
+                    <a class="card tilt" href="#uniprojects">
+                        <div class="card-content">
+                            <h2>1</h2>
+                            <h3>Uni</h3>
+                            <p>Major projects I've completed during degree.</p>
+                        </div>
+                    </a>
+                    <a class="card tilt" href="#sideprojects">
+                        <div class="card-content">
+                            <h2>2</h2>
+                            <h3>Side</h3>
+                            <p>Hobby and competition projects.</p>
+                        </div>
+                    </a>
+                    <a class="card tilt" href="#art">
+                        <div class="card-content">
+                            <h2>3</h2>
+                            <h3>Art</h3>
+                            <p>A collection of my recent artwork.</p>
+                        </div>
+                    </a>
+                </div>
             </div>
+        </div>
+
+        <!--Built Info:-->
+        <div class="build-info">
+            <a href="https://github.com/RohitNag11/My-Website" target="blank">
+                <p>Version 2.001 <i class="fab fa-github"></i></p>
+            </a>
+
+            <p>
+                Updated on Jul 25, 2021
+            </p>
+
         </div>
 
         <!-- Scroll button -->
@@ -181,13 +206,13 @@
     <!-- SECTION About Section: -->
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                <img src="images/profile.jpeg" alt="Profile Picture">
+            <div class="profile-img" data-aos="fade-right">
+                <img src="images/profile.jpeg" data-tilt data-tilt-gyroscope="true" data-tilt-reverse="true"
+                    data-tilt-full-page-listening alt="Profile Picture">
             </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-                <div class="about-heading">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="50">
+                <div class="section-heading" data-aos="fade-down">
                     <h1>About</h1>
-                    <h6>myself</h6>
                 </div>
                 <p>
                     I am currently an undergraduate student studying <a
@@ -215,7 +240,8 @@
                 <br>
                 <p class="disclaimer">
                     <u>Note</u>:
-                    This website is brand new and there may be a few errors and twitches. I'm working on fixing
+                    This website is brand new (not anymore) and there may be a few errors and twitches. I'm working on
+                    fixing
                     these and I'll try updating the page with new information. Any suggestions would be
                     highly appreciated and please feel free to drop me a message using the contact section at the
                     bottom
@@ -247,237 +273,340 @@
     </section>
     <!-- !SECTION -->
 
-    <!-- SECTION Skills Section: -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <h1>Skills</h1>
-                <h6>Some of the things I've picked up</h6>
-            </div>
-            <div class="my-skills">
-                <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h2>Programming</h2>
-                    <h1>Languages</h1>
-                    <ul class="skill-list">
-                        <li class="skill-list-item"><a href="https://www.python.org/" target="_blank">Python</a></li>
-                        <li class="skill-list-item"><a href="https://uk.mathworks.com/products/matlab.html"
-                                target="_blank">MATLAB</a></li>
-                        <li class="skill-list-item"><a href="https://www.iso.org/standard/74528.html"
-                                target="_blank">C</a></li>
-                        <li class="skill-list-item"><a href="https://www.w3.org/TR/html52/" target="_blank">HTML5</a>
-                        </li>
-                        <li class="skill-list-item"><a href="https://www.w3.org/TR/CSS/#css" target="_blank">CSS</a>
-                        </li>
-                        <li class="skill-list-item"><a href="https://www.javascript.com/" target="_blank">JavaScript</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="600">
-                    <div class="icon-container">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h2>CAD &</h2>
-                    <h1>FEAA</h1>
-                    <ul class="skill-list">
-                        <li class="skill-list-item"><a href="https://www.solidworks.com/" target="_blank">SolidWorks</a>
-                        </li>
-                        <li class="skill-list-item"><a href="https://www.autodesk.co.uk/products/fusion-360/overview"
-                                target="_blank">Fusion
-                                360</a></li>
-                        <li class="skill-list-item"><a href="https://www.sketchup.com/" target="_blank">SketchUp</a>
-                        </li>
-                        <li class="skill-list-item"><a href="https://www.tiertime.com/up-studio/"
-                                target="_blank">UPStudio</a></li>
-                        <li class="skill-list-item"><a href="https://www.bikecad.ca/" target="_blank">BikeCAD</a></li>
-                        <li class="skill-list-item"><a href="https://www.ansys.com/en-gb" target="_blank">Ansys</a></li>
-                    </ul>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="900">
-                    <div class="icon-container">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h2>Creative</h2>
-                    <h1>Tools</h1>
-                    <ul class="skill-list">
-                        <li class="skill-list-item"><a href="https://www.adobe.com/uk/products/illustrator.html"
-                                target="_blank">Adobe
-                                Illustrator</a></li>
-                        <li class="skill-list-item"><a href="https://www.adobe.com/uk/products/xd.html"
-                                target="_blank">Adobe XD</a></li>
-                        <li class="skill-list-item"><a href="https://procreate.art/" target="_blank">Procreate</a></li>
-                        <li class="skill-list-item"><a href="https://www.wix.com/" target="_blank">Wix</a></li>
-                    </ul>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="1200">
-                    <div class="icon-container">
-                        <i class="fas fa-glasses"></i>
-                    </div>
-                    <h2>Computer Vision,</h2>
-                    <h1>ML Libraries</h1>
-                    <ul class="skill-list">
-                        <li class="skill-list-item"><a href="https://opencv.org/" target="_blank">OpenCV</a></li>
-                        <li class="skill-list-item"><a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a>
-                        </li>
-                        <li class="skill-list-item"><a href="https://pjreddie.com/darknet/yolo/"
-                                target="_blank">YOLO</a></li>
-                        <li class="skill-list-item"><a href="https://developer.nvidia.com/cuda-zone"
-                                target="_blank">Nvidia CUDA</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- !SECTION -->
-
-    <!-- SECTION Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <h1>Experience</h1>
-                <h6>Past and current jobs</h6>
-            </div>
-            <div class="timeline" data-aos="fade-up" data-aos-delay="300">
-                <ul>
-                    <li class="date" data-date="Summer 2020">
-                        <h1 id="cancelled">Rolls Royce, UK</h1>
-                        <h2 id="cancelled">Summer Engineering Intern (Cancelled)</h2>
-                        <p>Whilst the internship was ultimately cancelled due to COVID-19, I am extremely grateful
-                            to
-                            have been given the
-                            opportunity to experience a full
-                            day at Rolls Royce's civil aerospace division at Derby during the assessment centre
-                            phase of
-                            the application process.
-                        </p>
-                        <br>
-                        <p>
-                            - Engaged with various engineers about turbo-machinery related technological
-                            advancements being implemented.
-                            <br>
-                            -Discussed with an ex-graduate about the design of Rolls Royce's future UltraFan
-                            engines.
-                            <br>
-                            -Learnt about the importance of ceramic matrix composites being used in turbine shrouds,
-                            and
-                            how an increased bypass ratio is accommodated with the implementation of a new power
-                            gearbox.
-                        </p>
-                    </li>
-                    <li class="date" data-date="Apr - May 2020">
-                        <h1>BP, UK</h1>
-                        <h2>Spring Engineering Intern</h2>
-                        <p>
-                            The one-week internship was modified to a fully virtual experience due to COVID-19.
-                        </p>
-                        <br>
-                        <p>
-                            -Attended virtual seminars and learnt about BP’s upstream activities and strategies to
-                            meet
-                            future carbon emission goals.
-                            <br>
-                            -Discussed technological innovations being implemented in BP to aid upstream operations
-                            such
-                            as AI-driven seabed robots and advanced seismic imaging.
-                        </p>
-                    </li>
-                    <li class="date" data-date="Oct 2019">
-                        <h1>Shell, UK</h1>
-                        <h2>Energy Transition Challenge</h2>
-                        <p>
-                            Selected to participate in a live role-playing challenge, meant to simulate the global
-                            market transition to a lower-carbon future. Participants were assigned to the roles of
-                            industry, consumer, government, energy provider or NGO, with different associated criteria.
-                            <br><br>
-                            -Obtained the highest profit amongst other participants as an energy provider by negotiating
-                            unit prices of either renewable or non-renewable energies while selling to industries or
-                            governments with green energy-based subsidies. Practised my negotiation skills and developed
-                            a deeper understanding of the challenges associated with the current energy transition.
-                            <br>
-                            -Discussed the prospectives of a greener future with the manager of Shell UK's Energy
-                            Transition Programme.
-                    </li>
-                    <li class="date" data-date="Mar 2019">
-                        <h1>Beckett Rankine, UK</h1>
-                        <h2>Insight and Work Shadow</h2>
-                        <p>
-                            -Developed a basic understanding of marine civil engineering.
-                            <br>
-                            -Gained insight into the Thames Tideway Scheme and the construction of cofferdams on
-                            Victoria embankment.
-                            <br>
-                            -Designed initial phased development plans on CAD for an upcoming port project in
-                            Kamchatka
-                            Krai, Russia.
-                            <br>
-                            -Understood the basics of functioning breakwaters and the different wave propagation
-                            prevention techniques used in
-                            ports.
-                        </p>
-                    </li>
-                    <li class="date" data-date="Mar 2019">
-                        <h1>BP Global Energy Trading, UK</h1>
-                        <h2>Supply & Trading Discovery Day</h2>
-                        <p>
-                            One-day insight day programme organised by the Imperial Energy Society and BP's Energy
-                            Trading division.
-                            <br><br>
-                            -Understood more about BP's supply and trading business through Q&A sessions with senior
-                            staff and by networking with previous graduates.
-                            <br>
-                            -Participated in a crude-oil trading simulation game.
-                            <br>
-                            -Received a trading floor tour at BP headquarters in London.
-                        </p>
-                    </li>
-                    <li class="date" data-date="Jul 2017">
-                        <h1>SAIL, India</h1>
-                        <h2>Insight</h2>
-                        <p>
-                            -Received a two-day insight into the workings of an integrated steel plant.
-                            <br>
-                            -Observed the functioning of different multi-disciplinary groups in large
-                            scale production lines.
-                        </p>
-                    </li>
-                    <li class="date" data-date="Apr 2016">
-                        <h1>Shell, Qatar</h1>
-                        <h2>Work Shadow</h2>
-                        <p>
-                            -Experienced a full day of work shadowing and had the opportunity to
-                            spend
-                            time with a team of wells engineers.
-                            <br>
-                            -Got provided with a basic insight into well engineering and the production of oil and gas.
-                            <br>
-                            -Was shared an overview of the Pearl GTL plant at Ras Laffan, Qatar.
-                            <br>
-                            -Completed mini assigned tasks based on the upstream sector.
-                            <br>
-                            -Gained a valuable perspective of the economics involved in the petroleum industry from a
-                            wells
-                            economist.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- !SECTION -->
-
     <!-- SECTION University Projects Section -->
     <section class="projects" id="uniprojects">
         <div class="container">
-            <div class="section-heading" data-aos="fade-up">
-                <h1>University Projects</h1>
-                <h6>Projects I've completed during my mechanical engineering degree</h6>
+            <div class="section-heading" data-aos="fade-down">
+                <h1>Uni Projects</h1>
+                <h6>Major projects I've completed during my mechanical engineering degree.</h6>
             </div>
 
-            <!--SECTION Mobula Ray -->
-            <div class="project-item">
-                <div class="swiper-container  has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!--SUBSECTION Uni Projects Gallery: -->
+            <div class="mySwiper" id="project-gallery" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#ebike">
+                            <p>E-Bike</p>
+                            <img src="images\University Projects\EBike\eBike.jpg" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#buggy">
+                            <p>Mine Rescue Buggy</p>
+                            <img src="images\University Projects\Buggy\Buggy night.jpg" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#mobula_ray">
+                            <p>Mobula Ray</p>
+                            <img src="images\University Projects\Mobula Ray\Render 1.jpg" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#2d_heat">
+                            <p>Heat Diffusion Model</p>
+                            <img src="images\University Projects\Computing CW\CW Gif negative.gif" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#sonic">
+                            <p>Sonic</p>
+                            <img src="images\University Projects\Sonic\SonicRender 1.jpg" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#lift_door">
+                            <p>Lift Door</p>
+                            <img src="images\University Projects\Lift Door\Render 1.jpg" />
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- !SUBSECTION End Uni Projects Gallery-->
+
+            <!--SUBSECTION 6. EBike Frame -->
+            <div class="project-item" id="ebike">
+                <!-- Swiper Slides  (left side) -->
+                <div class="swiper-container  has-margin-right" data-aos="fade-right">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\1. Final Intergroup v2 25.png"
+                                alt="Mobula Ray image 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\2. Frame.png" alt="Mobula Ray image 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\3. Final Intergroup v2.png"
+                                alt="Mobula Ray image 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\4. Current Dropouts Assembly Render 5.png"
+                                alt="Mobula Ray image 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\5. Current Dropouts Assembly Render 8.png"
+                                alt="Mobula Ray image 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\6. Dropouts Exploded View.png"
+                                alt="Mobula Ray image 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\7. Frame Dimensions.png"
+                                alt="Mobula Ray image 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\8. Material Selection.png"
+                                alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\9. FEAA.png" alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\10. Strain Gauge Welding.JPEG"
+                                alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\11. Rear Wheel Detail.png"
+                                alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\12. Test Setup.JPEG" alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\13. Strain Gauge Locations.png"
+                                alt="Mobula Ray image 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\University Projects\EBike\14. Strain Gauge Readings.png"
+                                alt="Mobula Ray image 7">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
+                    <h1>E-Bike Frame</h1>
+                    <h6>ME3 Design Project, Sep 2020 - Jun 2021</h6>
+                    <p>
+                        Worked with a group of third year mechanical engineering students to design, make, and test an
+                        urban electric bike from the ground up. Was specifically responsible for the engineering design,
+                        validation, manufacturing, and testing of the frame in a 5-member subgroup.
+                    </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        The bespoke geometry is designed around human anthropometrics under urban
+                                        commuting
+                                        conditions. In the most basic form, the frame is dual triangular in structure
+                                        with
+                                        silver brazed steel tubing. The cold-drawn, low-carbon Omnicom tubes provide
+                                        high
+                                        tensile strength, fatigue resistance and transition temperature. Each tube is
+                                        butted
+                                        for added thermal resistance near braze joints while saving material weight
+                                        elsewhere.
+                                        <br><br>
+                                        To be compatible with disc brake callipers while having a chain-tensioning
+                                        mechanism, custom sliding rear dropouts were designed. The three-piece design
+                                        allows
+                                        the entire rear wheel assembly to move horizontally without conflicting with
+                                        other
+                                        parts. Furthermore, motor and battery integrations were achieved through a
+                                        square-sectioned seat tube and downtube for increased easier manufacturing.
+                                        <br><br>
+                                        Extensive Finite Elements analysis and incremental load tests using strain
+                                        gauges
+                                        were used to iterate and validate the design.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
+                    <div class="members">
+                        <h3>Project Members:</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/theo-hales-a80132141/" target="_blank">Theo
+                                    Hales</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mingquan-melvin-c-39957313b/"
+                                    target="_blank">Mingquan Cheng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/rohhil-chhabra/" target="_blank">Rohhil Chhabra
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/zhongtian-huang-808a61180/"
+                                    target="_blank">Zhongtian Huang
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Members List -->
+
+                    <!-- Downloads List: -->
+                    <div class="downloads">
+                        <a href="/files/Uni Projects/ME3 DMT Group 1A Poster.pdf" target="_blank" class="cta">View
+                            Poster
+                        </a>
+                        <a href="/files/Uni Projects/Group 1A Design Report.pdf" target="_blank" class="cta">View
+                            Design Report
+                        </a>
+                        <a href="/files/Uni Projects/DMT Group 1A Testing and Analysis Report Final 2.pdf"
+                            target="_blank" class="cta">View
+                            Testing & Analysis Report
+                        </a>
+                        <a href="/files/Uni Projects/Group 1A Seminar Presentation.pdf" target="_blank" class="cta">View
+                            Seminar Presentation
+                        </a>
+                    </div>
+                    <!-- End Downloads List: -->
+                </div>
+                <!-- End Project Text (right side)  -->
+            </div>
+            <!-- !SUBSECTION End 6. E-bike-->
+
+            <!--SUBSECTION 5. Mine Rescue Buggy -->
+            <div class="project-item" id="buggy">
+                <!-- Project Text (left side)  -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
+                    <h1>Mine Rescue Buggy</h1>
+                    <h6>ME3 Embedded C for Microcontrollers Project, Mar 2021</h6>
+                    <p>
+                        As part of the final project of the Embedded-C for Microcontrollers module, we developed an
+                        autonomous mine rescue robot. The buggy can navigate a conceptual mine using a set of
+                        instructions coded in coloured cards and return to its starting position – simulating a scenario
+                        of determining the location of trapped miners.
+                        <br>
+                        <br>
+                        Enjoy exploring the set of videos which explain the key functionalities of the buggy and feature
+                        a live demonstration at the end.
+                    </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        Hardware: PIC18F67K40 microchip, Clicker-2 PCB, Tricolour LED, TCS3471 Colour
+                                        Light-to-digital convertor, 3.7V 2000mA LiPo battery, DRV833RTY differential
+                                        motor drivers.
+                                        <br><br>
+                                        Six core functions: movement, colour-detection, lighting, memory, calibration,
+                                        and a set of fail-safes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
+                    <div class="members">
+                        <h3>Project Members:</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/frederik-masure-a97415173/"
+                                    target="_blank">Frederik
+                                    Masure</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <div class="downloads">
+                        <a href="/files/Uni Projects/final-project-ecm-team-13-fm-rn.X.zip" target="_blank"
+                            class="nta">Download
+                            Code Repository
+                        </a>
+                    </div>
+                    <!-- End Downloads List: -->
+                </div>
+                <!-- End Project Text (left side) -->
+                <!-- Swiper Slides (right side)  -->
+                <div class="swiper-container" data-aos="fade-left">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <video controls preload="none"
+                                src="images\University Projects\Buggy\1. Functionality Overview.mp4"
+                                alt="Buggy functionality overiew.">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls preload="none" src="images\University Projects\Buggy\2. Colour Reading.mp4"
+                                alt="Buggy functionality overiew video.">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls preload="none"
+                                src="images\University Projects\Buggy\3. Colour Identification.mp4"
+                                alt="Colour identification method video..">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls preload="none"
+                                src="images\University Projects\Buggy\4. Colour Calibration.mp4"
+                                alt="Colour calibration method video.">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls preload="none"
+                                src="images\University Projects\Buggy\5. Turning Calibration.mp4"
+                                alt="Turning calibration method video.">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video controls preload="none" src="images\University Projects\Buggy\6. Full Demo.mp4"
+                                alt="Mine buggy full demo video.">
+                                Your browser does not support the HTML5 Video element.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- End Swiper Slides (right side)  -->
+            </div>
+            <!-- !SUBSECTION End 5. Mine Rescue Buggy-->
+
+            <!--SUBSECTION 4. Mobula Ray -->
+            <div class="project-item" id="mobula_ray">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container  has-margin-right" data-aos="fade-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -513,7 +642,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>Mobula Ray</h1>
                     <h6>ME2 Design Week Project, Feb 2020</h6>
                     <p>
@@ -526,8 +657,8 @@
                         talented team to complete the entire design process in one week, from the initial idea to
                         the final engineering delivery. See our final pitching poster below.
                     </p>
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -545,58 +676,82 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
                     <a href="/files/Uni Projects/Mobula Ray Poster.pdf" target="_blank" class="cta">View Poster</a>
+                    <!-- End Downloads List: -->
                 </div>
+                <!-- End Project Text (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION 4. End Mobula Ray-->
 
-            <!--SECTION Heat Transfer Analysis -->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+            <!--SUBSECTION 3. Heat Transfer Analysis -->
+            <div class="project-item" id="2d_heat">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>2D Heat Diffusion Model</h1>
-                    <h6>ME2 Computing Coursework Project, Feb 2020</h6>
+                    <h6>ME2 Computing Project, Feb 2020</h6>
                     <p>
                         Worked as a pair to perform a heat transfer analysis of a hot long rectangular rod being
-                        quenched
-                        in a cold fluid. Using python, we modelled the temperature distribution through the rod as
-                        it changes with time. We chose a mixed composition of brick and steel (AISI 1010) for the
-                        rod,
-                        although it could be modified to fit any
-                        composition. The rod was long enough that the heat transfer along the longest length could
-                        be
-                        neglected, hence was modelled in two space dimensions, and time.
-                        <br>
-                        <br>
-                        The location and area of
-                        the secondary material was chosen to be a small rectangle, slightly offset from the centre,
-                        however, could easily be adjusted to model different problems.
-                        <br>
-                        <br>
-                        We assumed each section of the rod to have uniform density, uniform specific heat and no
-                        internal heat generation. Overall, the model was
-                        described by a 3rd order parabolic partial derivative equation.
+                        quenched in a cold fluid. Using python, we modelled the temperature distribution through the rod
+                        in the x - y directions, as it changes with time.
                     </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        A mixed composition of brick and steel (AISI 1010) was chosen for the rod,
+                                        although this could be modified to fit any composition. The rod was long enough
+                                        that the heat transfer along the longest length could be neglected, hence was
+                                        modelled in two space dimensions, and time.
+                                        <br><br>
+                                        The location and area of the secondary material was chosen to be a small
+                                        rectangle, slightly offset from the centre, however, could easily be adjusted to
+                                        model different problems.
+                                        <br><br>
+                                        We assumed each section of the rod to have uniform density, uniform specific
+                                        heat, and no internal heat generation. Overall, the model was described by a 3rd
+                                        order parabolic partial derivative equation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
                                 <a href="https://www.linkedin.com/in/frederik-masure-a97415173/"
-                                    target="_blank">Frederik Masure</a>
+                                    target="_blank">Frederik
+                                    Masure</a>
                             </li>
                         </ul>
                     </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
                     <a href="/files/Uni Projects/Computing CW.pdf" target="_blank" class="cta">View Report</a>
+                    <!-- End Downloads List: -->
                 </div>
-                <div class="project-img" data-aos="fade-left" data-aos-delay="300">
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="project-img" data-aos="fade-left">
                     <img src="/images/University Projects/Computing CW/CW Gif negative.gif" alt="Heat Diffusion Gif">
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 3. Heat Transfer Analysis-->
 
-            <!-- SECTION SONIC -->
-            <div class="project-item">
-                <div class="swiper-container has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!-- SUBSECTION 2.SONIC -->
+            <div class="project-item" id="sonic">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container has-margin-right" data-aos="fade-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -639,7 +794,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>SONIC</h1>
                     <h6>ME2 Autumn Term Project, Oct - Dec 2019</h6>
                     <p>
@@ -651,13 +808,17 @@
                         the ease of manufacturing, reduce the race completion time and many other criteria. Find out
                         more about the complete design and manufacturing journey down below.
                     </p>
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
                                 <a href="https://www.linkedin.com/in/james-lum-kh/" target="_blank">James
                                     Lum</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ionas-alexopoulos-8504b020b/" target="_blank">Ionas
+                                    Alexopoulos</a>
                             </li>
                             <li class="nonlink">
                                 <!-- NOTE: ask for linkedin or remove link -->
@@ -667,21 +828,24 @@
                                 <!-- NOTE: ask for linkedin or remove link -->
                                 Yilong Huang
                             </li>
-                            <li class="nonlink">
-                                <!-- NOTE: ask for linkedin or remove link -->
-                                Ionas Alexopoulos
-                            </li>
+
                         </ul>
                     </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
                     <a href="/files/Uni Projects/Sonic Design Report.pdf" target="_blank" class="cta">View Design
-                        Report</a>
+                        Report
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
+                <!-- End Project Text (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 2. Sonic-->
 
-            <!-- SECTION Lift Door -->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+            <!-- SUBSECTION 1. Lift Door -->
+            <div class="project-item" id="lift_door">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>Lift Door Transmission</h1>
                     <h6>ME1 Drive Transmission Project, Jan - Mar 2019</h6>
                     <p>
@@ -693,10 +857,15 @@
                         The design features a
                         two-step speed increase and converts rotary motor motion to double-acting linear motion.
                     </p>
+                    <!-- Downloads List: -->
                     <a href="/files/Uni Projects/Lift Door Presntation.pdf" target="_blank" class="cta">View Gateway
-                        Presentation</a>
+                        Presentation
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
-                <div class="swiper-container" data-aos="fade-left" data-aos-delay="300">
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="swiper-container" data-aos="fade-left">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -716,29 +885,341 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 1. Lift Door -->
         </div>
     </section>
-    <!-- !SECTION -->
+    <!-- !SECTION End Uni Projects Section-->
 
     <!-- SECTION Side Projects Section -->
     <section class="projects" id="sideprojects">
         <div class="container">
-            <div class="section-heading" data-aos="fade-up">
+            <div class="section-heading" data-aos="fade-down">
                 <h1>Side Projects</h1>
                 <h6>Projects I've been part of, in my spare time or in competitions.</h6>
             </div>
 
-            <!-- SECTION OPENCV -->
-            <div class="project-item">
-                <div class="project-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!--SUBSECTION Side Projects Gallery: -->
+            <div class="mySwiper" id="project-gallery" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#Lunar_Rover">
+                            <p>Lunar-Rover Deployer</p>
+                            <img src="images\Side Projects\Rover Deployment\Side View Render Thumbnail.png"
+                                alt="Lunar rover actuation system." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#BiSpace">
+                            <p>BiSpace</p>
+                            <img src="images\Side Projects\BiSpace\BiSpace Thumbnail.png"
+                                alt="BiSpace bike stand concept." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#OpenCV">
+                            <p>Object Detection App</p>
+                            <img src="images\Side Projects\Object Detection\Blinking Detector.jpg"
+                                alt="OpenCV code demo." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#My_Website">
+                            <p>This Website</p>
+                            <img src="images\Side Projects\Website\My Website Thumbnail.jpg"
+                                alt="Website code screenshot." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#CheckApp">
+                            <p>CheckApp</p>
+                            <img src="images\Side Projects\CheckApp\CheckApp Thumbnail.jpg" alt="CheckApp Mock-up." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#PC_Build">
+                            <p>PC Build</p>
+                            <img src="images\Side Projects\PC Build\PC 1.jpg" alt="Custom NZXT H510 Build." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#Railguide">
+                            <p>Rail-Guide</p>
+                            <img src="images\Side Projects\Rail-Guide\RailGuide Thumbnail.png"
+                                alt="Custom Railguide and rocket render." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#Project_Daedalus">
+                            <p>Project Daedalus</p>
+                            <img src="images\Side Projects\Project Daedalus\Project Daedalus Thumbnail.png"
+                                alt="Helmet concept sketch." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#SpaceHack">
+                            <p>SPIDERMAN</p>
+                            <img src="images\Side Projects\SpaceHack\SH1.jpg" alt="Booster Module concept." />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#Bioreactor">
+                            <p>Bioreactor</p>
+                            <img src="images\Side Projects\Bioreactor\BR2.jpg" alt="Bioreactor Prototype" />
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- !SUBSECTION End Side Projects Gallery-->
+
+            <!-- SUBSECTION 10. Lunar-Rover Deployment -->
+            <div class="project-item" id="Lunar_Rover">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container has-margin-right" data-aos="fade-right">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Full assembly Render.png"
+                                alt="Rover Deployment Full assembly Render">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Transparent Cover Render.png"
+                                alt="Winch Render 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Winch Close-up Render.png"
+                                alt="Winch Render 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Side View Render.png" alt="Winch Render 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Winch Gif 3.gif" alt="Winch gif 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Winch Gif 4.gif" alt="Winch gif 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\Rover Deployment\Rover Rotate (2).gif"
+                                alt="Rover Rotate gif">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
+                    <h1>Lunar Rover Deployment</h1>
+                    <h6>Making for the Moon Hackathon hosted by SpaceBit and BAE Systems, Feb 2021</h6>
+                    <p>
+                        Participated in 2021's Making for the Moon Hackathon with a group of five inter-university and
+                        cross-disciplinary students. The challenge was to design a solution to deploy SpaceBit's Asagumo
+                        rover from a height of 1m on the moon. Our proposed solution went back to the basics and relied
+                        on a simple winch and hook mechanism to both deploy and retrieve the rover. I responsible for
+                        designing the mechanical actuation system, CAD, and rendering.
+                    </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        The actuation subsystem houses a 1W DC motor, a 1:30 Planetary reduction
+                                        gearbox, the spool-shaft assembly and the control system for motor control and
+                                        sensors. Additionally, the unit was carefully designed to meet Asagumo rover’s
+                                        specifications and Astrobotic Tech's Peregrine lunar lander's payload dimension
+                                        / weight specifications.
+                                        <br><br>
+                                        The slotted and sealed casing design also featured methods of minimising loads:
+                                        sine-vibrational, random vibrational, acoustic and shock. The casing and
+                                        internal components were designed for a nominal temperature range of -120°C to
+                                        100°C.
+                                        <br><br>
+                                        The grasping subsystem featured a self-orientating magnetic hook and clamp
+                                        mechanism for attachment and detachment. This allows for both deployment and
+                                        recovery of the rover.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
+                    <div class="members">
+                        <h3>Project Members:</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/joao-matias/" target="_blank">João Matias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/mj-see/" target="_blank">Ming Jie See
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/manith-adikari/" target="_blank">Manith Adikari
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/andrew-chen-siyuan-13025913a/"
+                                    target="_blank">Andrew Chen Siyuan
+                                </a>
+                            </li>
+                            <li class="nonlink">
+                                <!-- NOTE: ask for linkedin or remove link -->
+                                Wang Jiale
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="https://www.youtube.com/watch?v=R4yxMDOaoE4" target="_blank" class="nta">
+                        View Pitch
+                        Video
+                    </a>
+                    <!-- End Downloads List: -->
+                </div>
+                <!-- End Project Text (right side)  -->
+            </div>
+            <!-- !SUBSECTION End 10. Lunar-Rover Deployment-->
+
+            <!-- SUBSECTION 9. BISPACE -->
+            <div class="project-item" id="BiSpace">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
+                    <h1>BiSpace</h1>
+                    <h6>Design Project, Oct 2020 - Dec 2020</h6>
+                    <p>
+                        Designed and prototyped a compact bike storage, focusing on increased functionality compared to
+                        existing market solutions and minimal aesthetics.
+                        <br><br>
+                        Bispace was designed by a group of four Imperial mechanical engineering students. A prototype
+                        made of MDF was also developed as a proof of concept. I was responsible for the overall design,
+                        CAD, rendering and core website layout. Feel free to check out our website to find more about
+                        product details and our full design journey.
+
+                    </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        General Design: 3-part design constituting of a beech platform, ABS centre piece
+                                        and ABS side panels. The wooden platform provides a low CG for added lateral
+                                        stability has an inbuilt back plate to act as the rear wheel pivot for
+                                        effortless mounting. The centrepiece has an integrated wheel slot to avoid
+                                        slippage and the material choice allows for customer preference colouring. The
+                                        side panels feature locking slot pins and auto-retracting tension hooks for
+                                        added mounting security. Additionally, the outward tapering top maximises
+                                        compatibility of varying bike frame geometries.
+                                        <br><br>
+                                        The stand is compatible with 95% of bikes of varying frame dimensions and wheel
+                                        sizes - based off testing and analysis of bikes in London.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
+                    <div class="members">
+                        <h3>Project Members:</h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/thomasjswatson/" target="_blank">Thomas Watson
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/frederik-masure-a97415173/"
+                                    target="_blank">Frederik Masure
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/luke-walters-184238208/" target="_blank">Luke
+                                    Walters
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="https://www.dacgroup4.com/" class="nta" target="blank">
+                        Open Project Website
+                    </a>
+                    <!-- End Downloads List: -->
+                </div>
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="swiper-container" data-aos="fade-left">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\1. Rack w Bike.png" alt="BiSpace Render 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\2b. stand w bike closeup.png" alt="BiSpace Render 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\3. Angled View 4.png" alt="BiSpace Render 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\4. Side View.png" alt="BiSpace Render 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\5. Front View.png" alt="BiSpace Render 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\6. Exploded View.png" alt="BiSpace Render 6">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\7. Slot Pin.png" alt="BiSpace Render 7">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\8. Colours Gif.gif" alt="BiSpace Gif 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images\Side Projects\BiSpace\9. Usage Gif.gif" alt="BiSpace Gif 2">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- End Swiper Slides (right side)  -->
+            </div>
+            <!-- !SUBSECTION End 9. BiSpace-->
+
+            <!-- SUBSECTION 8. OpenCV -->
+            <div class="project-item" id="OpenCV">
+                <!-- Swiper Slides (left side)  -->
+                <div class="project-img has-margin-right" data-aos="fade-right">
                     <img src="/images/Side Projects/Object Detection/Blinking Detector.jpg"
                         alt="Screenshot of blinking detector code">
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>Object Detection App</h1>
-                    <h6>Summer Project, Ongoing</h6>
+                    <h6>Summer Project, Aug 2020</h6>
                     <p>
                         Work in progress! How cool would it be for everyone to have a car distance alert system and
                         a
@@ -749,28 +1230,39 @@
                         front.
                         Based on the screen real-estate taken up by the car, the app could output an estimated
                         distance.
-                        <br>
-                        <br>
-                        However, knowing nothing about object detection and neural networks, learning more about
-                        these
-                        was a good place to start. So far, using OpenCV on Python, I've made a few basic programs
-                        which
-                        receive real-time video feeds. These include a basic motion detector, road lane-detector and
-                        a
-                        generic frontal face detector.
-                        <br>
-                        <br>
-                        The next step is learning about mobile application development and I'll try to keep this
-                        page
-                        updated with any new progress.
                     </p>
-                </div>
-            </div>
-            <!-- !SECTION -->
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        Knowing nothing about object detection and neural networks previously, learning
+                                        more about these was a good place to start. So far, using OpenCV on Python, I've
+                                        made a few basic programs which receive real-time video feeds. These include a
+                                        basic motion detector, road lane-detector and a generic frontal face detector.
+                                        <br><br>
+                                        The next step is learning about mobile application development, and I'll try to
+                                        keep this page updated with any new progress.
 
-            <!-- SECTION Website -->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                </div>
+                <!-- End Project Text (right side)  -->
+            </div>
+            <!-- !SUBSECTION End 8. OpenCV -->
+
+            <!-- SUBSECTION 7. My Website -->
+            <div class="project-item" id="My_Website">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>This Website!</h1>
                     <h6>Summer Project, Jul 2020</h6>
                     <p>
@@ -784,18 +1276,24 @@
                         the
                         new things I learnt.
                     </p>
-                    <a href="https://github.com/RohitNag11/My-Website" class="cta" target="_blank">View Git
-                        Repository</a>
+                    <!-- Downloads List: -->
+                    <a href="https://github.com/RohitNag11/My-Website" class="nta" target="_blank">
+                        View Git Repository
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
-                <div class="project-img" data-aos="fade-left" data-aos-delay="300">
+                <!-- Swiper Slides (right side) -->
+                <div class="project-img" data-aos="fade-left">
                     <img src="/images/Side Projects/Website/Wgif.gif" alt="GIF of html code">
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 7. My Website -->
 
-            <!-- SECTION CheckApp -->
-            <div class="project-item">
-                <div class="swiper-container has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!-- SUBSECTION 6. CheckApp -->
+            <div class="project-item" id="CheckApp">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container has-margin-right" data-aos="fade-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -815,7 +1313,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>CheckApp</h1>
                     <h6>Code2Care Hackathon hosted by Imperial Business School, Jul 2020</h6>
                     <p>
@@ -831,16 +1331,29 @@
                         turn,
                         allow for more informed medical and lifestyle decisions for both users and healthcare
                         providers.
-                        <br><br>
-                        Currently, healthcare systems are out of date and there exists an information imbalance
-                        between
-                        patients and doctors, leading to less accurate advice. With an improved database of
-                        information
-                        and a deep learning model that considers family medical history, we can provide personalized
-                        assessments of a user’s health risks, reducing the strain on healthcare systems.
                     </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        Currently, healthcare systems are out of date and there exists an information
+                                        imbalance between patients and doctors, leading to less accurate advice. With an
+                                        improved database of information and a deep learning model that considers family
+                                        medical history, we can provide personalized assessments of a user’s health
+                                        risks, reducing the strain on healthcare systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -859,14 +1372,20 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="https://www.youtube.com/watch?v=N3Q4C4mHopA" class="cta">View Pitch Video</a>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="https://www.youtube.com/watch?v=N3Q4C4mHopA" target="_blank" class="nta">
+                        View Pitch Video
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 6. CheckApp-->
 
-            <!-- SECTION PC Build -->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+            <!-- SUBSECTION 5. PC Build -->
+            <div class="project-item" id="PC_Build">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>Custom PC Build</h1>
                     <h6>Summer Project, Jun 2020</h6>
                     <p>
@@ -880,22 +1399,37 @@
                         Overall, I'd say I am very
                         happy with the build and it definitely inspired a computing-themed summer.
                     </p>
-                    <dl>
-                        <dt>CPU</dt>
-                        <dd>AMD Ryzen 5 3600 3.6 GHz</dd>
-                        <dt>Motherboard</dt>
-                        <dd>MSI B450M MORTAR MAX Micro ATX</dd>
-                        <dt>Memory</dt>
-                        <dd>Corsair Vengeance RGB Pro 16 GB</dd>
-                        <dt>Storage</dt>
-                        <dd>Western Digital Blue 500 GB 2.5" SSD</dd>
-                        <dt>GPU</dt>
-                        <dd>Gigabyte GeForce GTX 1660 SUPER 6 GB</dd>
-                        <dt>Power Supply</dt>
-                        <dd>Corsair CX 450 W</dd>
-                    </dl>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                View Specs:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <dl>
+                                        <dt>CPU</dt>
+                                        <dd>AMD Ryzen 5 3600 3.6 GHz</dd>
+                                        <dt>Motherboard</dt>
+                                        <dd>MSI B450M MORTAR MAX Micro ATX</dd>
+                                        <dt>Memory</dt>
+                                        <dd>Corsair Vengeance RGB Pro 16 GB</dd>
+                                        <dt>Storage</dt>
+                                        <dd>Western Digital Blue 500 GB 2.5" SSD</dd>
+                                        <dt>GPU</dt>
+                                        <dd>Gigabyte GeForce GTX 1660 SUPER 6 GB</dd>
+                                        <dt>Power Supply</dt>
+                                        <dd>Corsair CX 450 W</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
                 </div>
-                <div class="swiper-container" data-aos="fade-left" data-aos-delay="300">
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="swiper-container" data-aos="fade-left">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -918,12 +1452,14 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 5. PC Build -->
 
-            <!-- SECTION Railguide -->
-            <div class="project-item">
-                <div class="swiper-container has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!-- SUBSECTION 4. Railguide -->
+            <div class="project-item" id="Railguide">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container has-margin-right" data-aos="fade-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -946,7 +1482,9 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>Fly-away Rail Guides</h1>
                     <h6>UKSEDS National Rocketry Competition, Oct 2019 - Mar 2020</h6>
                     <p>
@@ -960,8 +1498,9 @@
                         They are designed to automatically detach from the rocket body without needing any external
                         electronic feedback.
                     </p>
+                    <br><br>
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -973,47 +1512,64 @@
                             </li>
                         </ul>
                     </div>
+                    <!-- End Members List -->
                 </div>
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End  4. Railguide -->
 
-            <!-- SECTION Project Daedalus-->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+            <!-- SUBSECTION 3. Project Daedalus-->
+            <div class="project-item" id="Project_Daedalus">
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>Project Daedalus</h1>
                     <h6>STEM Awards 2020, Dec 2019 - Feb 2020</h6>
                     <p>
                         Daedulus is a cockpit overhaul concept for 6th gen jet fighters. This concept provides
                         improvements over current HOTAS systems in areas such as reaction time, programmability,
                         functionality and intuitiveness.
-                        <br>
-                        <br>
-                        The design features a calibrated cueing system to eye movements. This is done by the
-                        integrated
-                        iris trackers in the edges of the helmet visor. The reticle will be able to interact with:
-                        <br>
-                        -Onboard targeting systems such as air-to-air radar, FLIR and others to
-                        designate singular or multiple targets.
-                        <br>
-                        -The front panel of the aircraft, with the reticle acting as a “mouse
-                        cursor.”
-                        <br>
-                        -Controls on the throttle will simplify to two buttons, equivalent to left and
-                        right mouse buttons.
-                        <br>
-                        <br>
-                        Navigation of options will be done through the sight-controlled reticle,
-                        and alternatively through voice commands. Similarly, the control stick will only have
-                        buttons
-                        for countermeasures,
-                        trigger and weapon release, with a multi-axis hat for trimming.
-                        These changes allow for pilots to
-                        achieve at least 80% of the aircraft’s combat and
-                        logistical functions without ever removing their hands
-                        from the throttle or control stick.
                     </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        The design features a calibrated cueing system to eye movements. This is done by
+                                        the
+                                        integrated
+                                        iris trackers in the edges of the helmet visor. The reticle will be able to
+                                        interact with:
+                                        <br>
+                                        -Onboard targeting systems such as air-to-air radar, FLIR and others to
+                                        designate singular or multiple targets.
+                                        <br>
+                                        -The front panel of the aircraft, with the reticle acting as a “mouse
+                                        cursor.”
+                                        <br>
+                                        -Controls on the throttle will simplify to two buttons, equivalent to left and
+                                        right mouse buttons.
+                                        <br>
+                                        <br>
+                                        Navigation of options will be done through the sight-controlled reticle,
+                                        and alternatively through voice commands. Similarly, the control stick will only
+                                        have
+                                        buttons
+                                        for countermeasures,
+                                        trigger and weapon release, with a multi-axis hat for trimming.
+                                        These changes allow for pilots to
+                                        achieve at least 80% of the aircraft’s combat and
+                                        logistical functions without ever removing their hands
+                                        from the throttle or control stick.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -1022,11 +1578,18 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="/files/Side Projects/Project-Daedalus Presentation.pdf" class="cta" target="_blank">View
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="/files/Side Projects/Project-Daedalus Presentation.pdf" class="cta" target="_blank">
+                        View
                         Presentation
-                        Slides</a>
+                        Slides
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
-                <div class="swiper-container has-margin-right" data-aos="fade-left" data-aos-delay="300">
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="swiper-container" data-aos="fade-left">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -1046,12 +1609,14 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 3. Project Daedalus-->
 
-            <!-- SECTION SpaceHack-->
-            <div class="project-item">
-                <div class="swiper-container has-margin-right" data-aos="fade-right" data-aos-delay="300">
+            <!-- SUBSECTION 2. SpaceHack-->
+            <div class="project-item" id="SpaceHack">
+                <!-- Swiper Slides (left side)  -->
+                <div class="swiper-container has-margin-right" data-aos="fade-right">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -1086,35 +1651,46 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
-                <div class="project-description" data-aos="fade-left" data-aos-delay="600">
+                <!-- End Swiper Slides (left side)  -->
+                <!-- Project Text (right side)  -->
+                <div class="project-description" data-aos="fade-left">
                     <h1>S-P-I-D-E-R-M-A-N</h1>
                     <h6>SpaceHack by OneWeb, Nov 2019</h6>
                     <p>
                         2019's SpackHack hosted by OneWeb tasked us with finding a solution to the ever-growing
-                        low-Earth orbit space debris problem. As a group of 6 aeronautical and mechanical
-                        engineering
-                        students, we proposed implementing
-                        optimally positioned nodes in the current satellites network. Each node would house a
-                        booster
-                        module containing a deployable net mechanism to capture 'dead' satellites which have
-                        malfunctioned in the process of self-deorbiting at the end of their life-cycle.
-                        <br><br>
-                        A soft capture
-                        is ensured with our net proposal and is important to reduce the risk of debris being created
-                        from an impact.
-                        Once captured, the booster module could accelerate the dead satellite into an exaggerated
-                        elliptical orbit, forcing disintegration on re-entry at a much faster pace than current
-                        procedures.
-                        <br><br>
-                        It was a thoroughly enjoyable experience coming together as a team and was ecstatic to be
-                        awarded
-                        1st place out of
-                        40 teams for our idea. Furthermore, we were invited to OneWeb's head office in London for
-                        the
-                        official launch event of 34 of their satellites.
+                        low-Earth orbit space debris problem. As a group of 6 aeronautical and mechanical engineering
+                        students, we proposed implementing optimally positioned nodes in the current satellites network.
+                        Each node would house a booster module containing a deployable net mechanism to capture 'dead'
+                        satellites which have malfunctioned in the process of self-deorbiting at the end of their
+                        life-cycle.
                     </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        A soft capture is ensured with our net proposal and is important to reduce the
+                                        risk of debris being created from an impact. Once captured, the booster module
+                                        could accelerate the dead satellite into an exaggerated elliptical orbit,
+                                        forcing disintegration on re-entry at a much faster pace than current
+                                        procedures.
+                                        <br><br>
+                                        It was a thoroughly enjoyable experience coming together as a team and was
+                                        ecstatic to be awarded 1st place out of 40 teams for our idea. Furthermore, we
+                                        were invited to OneWeb's head office in London for the official launch event of
+                                        34 of their satellites.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -1135,43 +1711,56 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="/files/Side Projects/Space Hackathon Pitch Presentation.pdf" class="cta"
-                        target="_blank">View
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="/files/Side Projects/Space Hackathon Pitch Presentation.pdf" class="cta" target="_blank">
+                        View
                         Presentation
-                        Slides</a>
+                        Slides
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
+                <!-- End Project Text (right side)-->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 2. SpaceHack-->
 
-            <!-- SECTION Bioreactor-->
-            <div class="project-item">
-                <div class="project-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+            <!-- SUBSECTION 1. Bioreactor-->
+            <div class="project-item" id="Bioreactor">
+                <!-- Project Text -->
+                <div class="project-description has-margin-right" data-aos="fade-right">
                     <h1>Fluorescent Biorector</h1>
                     <h6>Imperial Horizons, Making & Prototyping Jan - Feb 2019</h6>
                     <p>
-                        As part of the Imperial Horizons, Making and Prototyping course, the final project required
-                        a
-                        device to
-                        be manufactured to actively detect cell growth and count. This project proved to be
-                        particularly
-                        challenging
-                        for our team of three, which comprised of students with no bio-related backgrounds.
-                        <br><br>
-                        Our design involved the detection
-                        of fluorescent proteins produced by the GM bacteria culture used. A servo motor based pump
-                        system was implemented to introduce a chemical inducer
-                        into the sample to start this process.
-                        <br>
-                        <br>
-                        A photodiode was used to measure the intensity of light from an LED after passing through
-                        the
-                        fluorescent sample.
-                        As the light intensity was proportional to the cell count, an Arduino code
-                        was composed to translate the voltage output of the
-                        photodiode to a meaningful cell count reading.
+                        As part of the Imperial Horizons, Making and Prototyping course, the final project required a
+                        device to be manufactured to actively detect cell growth and count. This project proved to be
+                        particularly challenging for our team of three, which comprised of students with no bio-related
+                        backgrounds.
                     </p>
+                    <!-- Collapsible Text: -->
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-item-header">
+                                Read more:
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p>
+                                        Our design involved the detection of fluorescent proteins produced by the GM
+                                        bacteria culture used. A servo motor based pump system was implemented to
+                                        introduce a chemical inducer into the sample to start this process.
+                                        <br><br>
+                                        A photodiode was used to measure the intensity of light from an LED after
+                                        passing through the fluorescent sample. As the light intensity was proportional
+                                        to the cell count, an Arduino code was composed to translate the voltage output
+                                        of the photodiode to a meaningful cell count reading.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Collapsible Text: -->
+                    <!-- Members List -->
                     <div class="members">
-                        <br>
                         <h3>Project Members:</h3>
                         <ul>
                             <li>
@@ -1183,10 +1772,16 @@
                             </li>
                         </ul>
                     </div>
-                    <a href="/files/Side Projects/Bioreactor Project Poster.pdf" class="cta" target="_blank">View
-                        Poster</a>
+                    <!-- End Members List -->
+                    <!-- Downloads List: -->
+                    <a href="/files/Side Projects/Bioreactor Project Poster.pdf" class="cta" target="_blank">
+                        View Poster
+                    </a>
+                    <!-- End Downloads List: -->
                 </div>
-                <div class="swiper-container" data-aos="fade-left" data-aos-delay="300">
+                <!-- End Project Text -->
+                <!-- Swiper Slides (right side) -->
+                <div class="swiper-container" data-aos="fade-left">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
@@ -1209,165 +1804,121 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                 </div>
+                <!-- End Swiper Slides (right side)  -->
             </div>
-            <!-- !SECTION -->
+            <!-- !SUBSECTION End 1. Bioreactor-->
         </div>
     </section>
-    <!-- !SECTION -->
+    <!-- !SECTION End Projects Section-->
 
     <!-- SECTION Art Section -->
     <section class="art" id="art">
         <div class="container">
-            <div class="section-heading" data-aos="fade-up">
+            <div class="section-heading" data-aos="fade-down">
                 <h1>Artwork</h1>
-                <h6>A few of my drawings</h6>
+                <h6>A few of my recent drawings and illustrations.</h6>
             </div>
             <div class="gallery-section">
                 <div class="gallery">
-
-
-                    <a href="images\Art\City\San-Francisco.gif" class="image" data-aos="fade-in" data-aos-delay="300">
+                    <a href="images\Art\City\San-Francisco.gif" class="image" data-aos="fade-up">
                         <img src="images\Art\City\San-Francisco.gif" alt="San Francisco">
                     </a>
-
-                    <a href="images\Art\City\Kyoto.gif" class="image" data-aos="fade-in" data-aos-delay="600">
+                    <a href="images\Art\City\Kyoto.gif" class="image" data-aos="fade-up">
                         <img src="images\Art\City\Kyoto.gif" alt="Kyoto">
                     </a>
-
-                    <a href="images\Art\City\Tokyo.jpg" class="image" data-aos="fade-in" data-aos-delay="900">
+                    <a href="images\Art\City\Tokyo.jpg" class="image" data-aos="fade-up">
                         <img src="images\Art\City\Tokyo.jpg" alt="Tokyo">
                     </a>
-
-                    <a href="images\Art\Museum\Speed Art Museum.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
+                    <a href="images\Art\Museum\Speed Art Museum.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Museum\Speed Art Museum.JPEG" alt="Speed Art Museum">
                     </a>
-
-                    <a href="images\Art\Design\eBike Frame Concept.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="300">
+                    <a href="images\Art\Cars\R32_Drawing.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Cars\R32_Drawing.JPEG" alt="R32 Drawing">
+                    </a>
+                    <a href="images\Art\Cars\HondaNSX_Drawing.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Cars\HondaNSX_Drawing.JPEG" alt="Honda NSX Drawing">
+                    </a>
+                    <a href="images\Art\Design\eBike Frame Concept.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Design\eBike Frame Concept.JPEG" alt="eBike Frame Concept">
                     </a>
-
-                    <a href="images\Art\Cars\HondaNSX_Drawing.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="600">
-                        <img src="images\Art\Cars\HondaNSX_Drawing.JPEG" alt="Icy Reflection">
-                    </a>
-
-                    <a href="images\Art\Design\Razor Sketch.JPEG" class="image" data-aos="fade-in" data-aos-delay="900">
+                    <a href="images\Art\Design\Razor Sketch.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Design\Razor Sketch.JPEG" alt="Razor Industrial Design">
                     </a>
-
-                    <a href="images\Art\Design\Disinfectant Bottle.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
+                    <a href="images\Art\Design\Disinfectant Bottle.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Design\Disinfectant Bottle.JPEG"
                             alt="Disinfectant Bottle Industrial Design">
                     </a>
-
-                    <a href="images\Art\Museum\Musée Rodin.JPEG" class="image" data-aos="fade-in" data-aos-delay="300">
-                        <img src="images\Art\Museum\Musée Rodin.JPEG" alt="The Cathedral">
+                    <a href="images\Art\Museum\Musée Rodin.JPEG" class="image" data-aos="fade-in">
+                        <img src="images\Art\Museum\Musée Rodin.JPEG" alt="The Cathedral drawing.">
                     </a>
-
-                    <a href="images\Art\Museum\Nerfertiti.JPEG" class="image" data-aos="fade-in" data-aos-delay="600">
-                        <img src="images\Art\Museum\Nerfertiti.JPEG" alt="Nerfertiti">
+                    <a href="images\Art\Museum\Nerfertiti.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Museum\Nerfertiti.JPEG" alt="Nerfertiti drawing.">
                     </a>
-
-                    <a href="images\Art\Museum\The Angel.JPEG" class="image" data-aos="fade-in" data-aos-delay="900">
-                        <img src="images\Art\Museum\The Angel.JPEG" alt="The Angel">
+                    <a href="images\Art\Museum\The Angel.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Museum\The Angel.JPEG" alt="The Angel drawing.">
                     </a>
-
-                    <a href="images\Art\Museum\Townley Discobolus.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
-                        <img src="images\Art\Museum\Townley Discobolus.JPEG" alt="Townley Discobolus">
+                    <a href="images\Art\Museum\Townley Discobolus.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Museum\Townley Discobolus.JPEG" alt="Townley Discobolus drawing.">
                     </a>
-
-                    <a href="images\Art\Nature\Butterfly.JPEG" class="image" data-aos="fade-in" data-aos-delay="300">
-                        <img src="images\Art\Nature\Butterfly.JPEG" alt="Butterfly">
+                    <a href="images\Art\Nature\Butterfly.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Nature\Butterfly.JPEG" alt="Butterfly drawing.">
                     </a>
-
-                    <a href="images\Art\Nature\Cat.jpg" class="image" data-aos="fade-in" data-aos-delay="600">
-                        <img src="images\Art\Nature\Cat.jpg" alt="Cat">
+                    <a href="images\Art\Nature\Cat.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Nature\Cat.jpg" alt="Cat drawing.">
                     </a>
-
-                    <a href="images\Art\Nature\Eagle.JPG" class="image" data-aos="fade-in" data-aos-delay="900">
-                        <img src="images\Art\Nature\Eagle.JPG" alt="Eagle">
+                    <a href="images\Art\Nature\Eagle.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Nature\Eagle.JPG" alt="Eagle drawing.">
                     </a>
-
-                    <a href="images\Art\Nature\Kingfisher.JPEG" class="image" data-aos="fade-in" data-aos-delay="1200">
-                        <img src="images\Art\Nature\Kingfisher.JPEG" alt="Kingfisher">
+                    <a href="images\Art\Nature\Kingfisher.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Nature\Kingfisher.JPEG" alt="Kingfisher drawing.">
                     </a>
-
-                    <a href="images\Art\Landscape\Mountain.JPEG" class="image" data-aos="fade-in" data-aos-delay="900">
-                        <img src="images\Art\Landscape\Mountain.JPEG" alt="Project Daedalus Concept">
+                    <a href="images\Art\Landscape\Mountain.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Landscape\Mountain.JPEG" alt="Mountain drawing.">
                     </a>
-
-                    <a href="images\Art\Portraits\Danaerys.jpg" class="image" data-aos="fade-in" data-aos-delay="300">
-                        <img src="images\Art\Portraits\Danaerys.jpg" alt="Danaerys">
+                    <a href="images\Art\Portraits\Danaerys.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Portraits\Danaerys.jpg" alt="Danaerys drawing.">
                     </a>
-
-                    <a href="images\Art\Portraits\Dark Room Portrait.JPG" class="image" data-aos="fade-in"
-                        data-aos-delay="600">
-                        <img src="images\Art\Portraits\Dark Room Portrait.JPG" alt="Dark Light">
+                    <a href="images\Art\Portraits\Dark Room Portrait.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Portraits\Dark Room Portrait.JPG" alt="Dark Light drawing.">
                     </a>
-
-                    <a href="images\Art\Portraits\Smoke-Dance.jpg" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
-                        <img src="images\Art\Portraits\Smoke-Dance.jpg" alt="Smoke Dance">
+                    <a href="images\Art\Portraits\Smoke-Dance.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Portraits\Smoke-Dance.jpg" alt="Smoke Dance drawing.">
                     </a>
-
-                    <a href="images\Art\Room\Artificial Light.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="300">
-                        <img src="images\Art\Room\Artificial Light.JPEG" alt="Artificial Light">
+                    <a href="images\Art\Room\Artificial Light.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Room\Artificial Light.JPEG" alt="Artificial Light drawing.">
                     </a>
-
-                    <a href="images\Art\Room\Glass.JPG" class="image" data-aos="fade-in" data-aos-delay="600">
-                        <img src="images\Art\Room\Glass.JPG" alt="Glass">
+                    <a href="images\Art\Room\Glass.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Room\Glass.JPG" alt="Glass drawing.">
                     </a>
-
-                    <a href="images\Art\Room\My PC drawing.JPG" class="image" data-aos="fade-in" data-aos-delay="900">
-                        <img src="images\Art\Room\My PC drawing.JPG" alt="My PC">
+                    <a href="images\Art\Room\My PC drawing.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Room\My PC drawing.JPG" alt="My PC Drawing">
                     </a>
-
-                    <a href="images\Art\Self Portraits\Hand.JPG" class="image" data-aos="fade-in" data-aos-delay="1200">
-                        <img src="images\Art\Self Portraits\Hand.JPG" alt="My Hand">
+                    <a href="images\Art\Self Portraits\Hand.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Self Portraits\Hand.JPG" alt="My Hand Drawing">
                     </a>
-
-                    <a href="images\Art\Self Portraits\Ballpoint Self Portrait.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="300">
+                    <a href="images\Art\Self Portraits\Ballpoint Self Portrait.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Self Portraits\Ballpoint Self Portrait.JPEG" alt="Ballpoint Self Portrait">
                     </a>
-
-                    <a href="images\Art\Self Portraits\Cartoon Self Portrait.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="600">
+                    <a href="images\Art\Self Portraits\Cartoon Self Portrait.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Self Portraits\Cartoon Self Portrait.JPEG" alt="Cartoon Self Portrait">
                     </a>
-
-                    <a href="images\Art\Self Portraits\Egg Sketch Self Portrait.jpg" class="image" data-aos="fade-in"
-                        data-aos-delay="900">
-                        <img src="images\Art\Self Portraits\Egg Sketch Self Portrait.jpg" alt="Egg Self Portrait">
+                    <a href="images\Art\Self Portraits\Egg Sketch Self Portrait.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Self Portraits\Egg Sketch Self Portrait.jpg" alt="Egg sketch Portrait">
                     </a>
-
-                    <a href="images\Art\Self Portraits\Eyes Sketch Self Portrait.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
+                    <a href="images\Art\Self Portraits\Eyes Sketch Self Portrait.JPEG" class="image" data-aos="fade-up">
                         <img src="images\Art\Self Portraits\Eyes Sketch Self Portrait.JPEG" alt="Eyes Self Portrait">
                     </a>
-
-                    <a href="images\Art\Projects\ICAV_Logo.jpg" class="image" data-aos="fade-in" data-aos-delay="300">
-                        <img src="images\Art\Projects\ICAV_Logo.jpg" alt="Eyes Self Portrait">
+                    <a href="images\Art\Projects\ICAV_Logo.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Projects\ICAV_Logo.jpg" alt="ICAV Logo">
                     </a>
-
-                    <a href="images\Art\Projects\Cockpit_Concept.JPEG" class="image" data-aos="fade-in"
-                        data-aos-delay="600">
-                        <img src="images\Art\Projects\Cockpit_Concept.JPEG" alt="Eyes Self Portrait">
+                    <a href="images\Art\Projects\Cockpit_Concept.JPEG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Projects\Cockpit_Concept.JPEG" alt="Cockpit Concept">
                     </a>
-
-                    <a href="images\Art\Projects\Project-Daedalus-Concept.jpg" class="image" data-aos="fade-in"
-                        data-aos-delay="900">
-                        <img src="images\Art\Projects\Project-Daedalus-Concept.jpg" alt="Eyes Self Portrait">
+                    <a href="images\Art\Projects\Project-Daedalus-Concept.jpg" class="image" data-aos="fade-up">
+                        <img src="images\Art\Projects\Project-Daedalus-Concept.jpg" alt="Project Daedalus Concept">
                     </a>
-
-                    <a href="images\Art\Projects\Booster_Module_Concept.JPG" class="image" data-aos="fade-in"
-                        data-aos-delay="1200">
-                        <img src="images\Art\Projects\Booster_Module_Concept.JPG" alt="Eyes Self Portrait">
+                    <a href="images\Art\Projects\Booster_Module_Concept.JPG" class="image" data-aos="fade-up">
+                        <img src="images\Art\Projects\Booster_Module_Concept.JPG" alt="Booster Module Concept">
                     </a>
                 </div>
             </div>
@@ -1382,9 +1933,251 @@
             }
         });
     </script>
-    <!-- !SECTION -->
+    <!-- !SECTION End Arts Section-->
 
-    <!-- SECTION Contact Section -->
+    <!-- SECTION Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading" data-aos="fade-down">
+                <h1>Experience</h1>
+                <h6>Past and current jobs</h6>
+            </div>
+            <div class="timeline" data-aos="fade-up" data-aos-delay="300">
+                <ul>
+                    <!-- SUBSECTION Rolls-Royce ACE-->
+                    <li class="date" data-date="Jun 2021 - Present" data-aos="fade-left">
+                        <h1>Rolls-Royce, UK</h1>
+                        <h2>Naval Automation & Control Engineering Intern</h2>
+                        <p>First of two 6-month placements with Rolls-Royce Defence in Bristol.</p>
+                        <br>
+                        <p>
+                            - Working within the
+                            <a class="xp_link"
+                                href="https://www.rolls-royce.com/products-and-services/defence/naval/advanced-technology/artificial-chief-engineer.aspx"
+                                target="_blank">Artificial Chief Engineer (ACE)
+                            </a>
+                            team, developing RR's new autonomous
+                            machinery control system for Naval vessels.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION Rolls-Royce ACE-->
+
+                    <!-- SUBSECTION BP Spring Engineering Intern-->
+                    <li class="date" data-date="Apr - May 2020" data-aos="fade-left">
+                        <h1>BP, UK</h1>
+                        <h2>Spring Engineering Intern</h2>
+                        <p>
+                            The spring internship was modified to a fully virtual experience due to COVID-19.
+                        </p>
+                        <br>
+                        <p>
+                            -Attended virtual seminars and learnt about BP’s upstream activities and strategies to
+                            meet
+                            future carbon emission goals.
+                            <br>
+                            -Discussed technological innovations being implemented in BP to aid upstream operations
+                            such
+                            as AI-driven seabed robots and advanced seismic imaging.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION BP Spring Engineering Intern-->
+
+                    <!-- SUBSECTION Shell Energy Transition Challenge-->
+                    <li class="date" data-date="Oct 2019" data-aos="fade-left">
+                        <h1>Shell, UK</h1>
+                        <h2>Energy Transition Challenge</h2>
+                        <p>
+                            Selected to participate in a live role-playing challenge, meant to simulate the global
+                            market transition to a lower-carbon future. Participants were assigned to the roles of
+                            industry, consumer, government, energy provider or NGO, with different associated criteria.
+                            <br><br>
+                            -Obtained the highest profit amongst other participants as an energy provider by negotiating
+                            unit prices of either renewable or non-renewable energies while selling to industries or
+                            governments with green energy-based subsidies. Practised my negotiation skills and developed
+                            a deeper understanding of the challenges associated with the current energy transition.
+                            <br>
+                            -Discussed the prospectives of a greener future with the manager of Shell UK's Energy
+                            Transition Programme.
+                    </li>
+                    <!-- !SUBSECTION Shell Energy Transition Challenge-->
+
+                    <!-- SUBSECTION Beckett Rankine Insight and Work Shadow-->
+                    <li class="date" data-date="Mar 2019" data-aos="fade-left">
+                        <h1>Beckett Rankine, UK</h1>
+                        <h2>Insight and Work Shadow</h2>
+                        <p>
+                            -Developed a basic understanding of marine civil engineering.
+                            <br>
+                            -Gained insight into the Thames Tideway Scheme and the construction of cofferdams on
+                            Victoria embankment.
+                            <br>
+                            -Designed initial phased development plans on CAD for an upcoming port project in
+                            Kamchatka
+                            Krai, Russia.
+                            <br>
+                            -Understood the basics of functioning breakwaters and the different wave propagation
+                            prevention techniques used in
+                            ports.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION Beckett Rankine Insight and Work Shadow-->
+
+                    <!-- SUBSECTION BP Supply & Trading Discovery Day-->
+                    <li class="date" data-date="Mar 2019" data-aos="fade-left">
+                        <h1>BP Global Energy Trading, UK</h1>
+                        <h2>Supply & Trading Discovery Day</h2>
+                        <p>
+                            One-day insight day programme organised by the Imperial Energy Society and BP's Energy
+                            Trading division.
+                            <br><br>
+                            -Understood more about BP's supply and trading business through Q&A sessions with senior
+                            staff and by networking with previous graduates.
+                            <br>
+                            -Participated in a crude-oil trading simulation game.
+                            <br>
+                            -Received a trading floor tour at BP headquarters in London.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION BP Supply & Trading Discovery Day-->
+
+                    <!-- SUBSECTION SAIL Insight-->
+                    <li class="date" data-date="Jul 2017" data-aos="fade-left">
+                        <h1>SAIL, India</h1>
+                        <h2>Insight</h2>
+                        <p>
+                            -Received a two-day insight into the workings of an integrated steel plant.
+                            <br>
+                            -Observed the functioning of different multi-disciplinary groups in large
+                            scale production lines.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION SAIL Insight-->
+
+                    <!-- SUBSECTION Shell Work Shadow-->
+                    <li class="date" data-date="Apr 2016" data-aos="fade-left">
+                        <h1>Shell, Qatar</h1>
+                        <h2>Work Shadow</h2>
+                        <p>
+                            -Experienced a full day of work shadowing and had the opportunity to
+                            spend
+                            time with a team of wells engineers.
+                            <br>
+                            -Got provided with a basic insight into well engineering and the production of oil and gas.
+                            <br>
+                            -Was shared an overview of the Pearl GTL plant at Ras Laffan, Qatar.
+                            <br>
+                            -Completed mini assigned tasks based on the upstream sector.
+                            <br>
+                            -Gained a valuable perspective of the economics involved in the petroleum industry from a
+                            wells
+                            economist.
+                        </p>
+                    </li>
+                    <!-- !SUBSECTION Shell Work Shadow-->
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- !SECTION End Experience Section -->
+
+    <!-- SECTION Skills Section: -->
+    <section class="skills" id="skills" data-aos="fade-down">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Skills</h1>
+                <h6>Some of the things I've picked up</h6>
+            </div>
+            <div class="my-skills">
+                <!-- SUBSECTION Programming Languages-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h2>Programming</h2>
+                    <h1>Languages</h1>
+                    <ul class="skill-list">
+                        <li class="skill-list-item"><a href="https://www.python.org/" target="_blank">Python</a></li>
+                        <li class="skill-list-item"><a href="https://uk.mathworks.com/products/matlab.html"
+                                target="_blank">MATLAB</a></li>
+                        <li class="skill-list-item"><a href="https://www.iso.org/standard/74528.html"
+                                target="_blank">C</a></li>
+                        <li class="skill-list-item"><a href="https://www.w3.org/TR/html52/" target="_blank">HTML5</a>
+                        </li>
+                        <li class="skill-list-item"><a href="https://www.w3.org/TR/CSS/#css" target="_blank">CSS</a>
+                        </li>
+                        <li class="skill-list-item"><a href="https://www.javascript.com/" target="_blank">JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- !SUBSECTION Programming Languages-->
+
+                <!-- SUBSECTION CAD & FEAA-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="600">
+                    <div class="icon-container">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h2>CAD &</h2>
+                    <h1>FEAA</h1>
+                    <ul class="skill-list">
+                        <li class="skill-list-item"><a href="https://www.solidworks.com/" target="_blank">SolidWorks</a>
+                        </li>
+                        <li class="skill-list-item"><a href="https://www.autodesk.co.uk/products/fusion-360/overview"
+                                target="_blank">Fusion
+                                360</a></li>
+                        <li class="skill-list-item"><a href="https://www.sketchup.com/" target="_blank">SketchUp</a>
+                        </li>
+                        <li class="skill-list-item"><a href="https://www.tiertime.com/up-studio/"
+                                target="_blank">UPStudio</a></li>
+                        <li class="skill-list-item"><a href="https://www.bikecad.ca/" target="_blank">BikeCAD</a></li>
+                        <li class="skill-list-item"><a href="https://www.ansys.com/en-gb" target="_blank">Ansys</a></li>
+                    </ul>
+                </div>
+                <!-- !SUBSECTION CAD & FEAA-->
+
+                <!-- SUBSECTION Creative Tools-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="900">
+                    <div class="icon-container">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h2>Creative</h2>
+                    <h1>Tools</h1>
+                    <ul class="skill-list">
+                        <li class="skill-list-item"><a href="https://www.adobe.com/uk/products/illustrator.html"
+                                target="_blank">Adobe
+                                Illustrator</a></li>
+                        <li class="skill-list-item"><a href="https://www.adobe.com/uk/products/xd.html"
+                                target="_blank">Adobe XD</a></li>
+                        <li class="skill-list-item"><a href="https://procreate.art/" target="_blank">Procreate</a></li>
+                        <li class="skill-list-item"><a href="https://www.wix.com/" target="_blank">Wix</a></li>
+                    </ul>
+                </div>
+                <!-- !SUBSECTION Creative Tools-->
+
+                <!-- SUBSECTION Computer Vision Libraries-->
+                <div class="skill" data-aos="fade-in" data-aos-delay="1200">
+                    <div class="icon-container">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <h2>Computer Vision,</h2>
+                    <h1>ML Libraries</h1>
+                    <ul class="skill-list">
+                        <li class="skill-list-item"><a href="https://opencv.org/" target="_blank">OpenCV</a></li>
+                        <li class="skill-list-item"><a href="https://www.tensorflow.org/" target="_blank">Tensorflow</a>
+                        </li>
+                        <li class="skill-list-item"><a href="https://pjreddie.com/darknet/yolo/"
+                                target="_blank">YOLO</a></li>
+                        <li class="skill-list-item"><a href="https://developer.nvidia.com/cuda-zone"
+                                target="_blank">Nvidia CUDA</a></li>
+                    </ul>
+                </div>
+                <!-- !SUBSECTION Computer Vision Libraries-->
+            </div>
+        </div>
+    </section>
+    <!-- !SECTION End Skills Section-->
+
+
+    <!-- SECTION Contact Section-->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-heading" data-aos="fade-up">
@@ -1409,9 +2202,9 @@
             </form>
         </div>
     </section>
-    <!-- !SECTION -->
+    <!-- !SECTION Contact Section-->
 
-    <!-- SECTION Footer: -->
+    <!-- SECTION Footer-->
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
@@ -1438,18 +2231,20 @@
         </div>
         <p>&copy; 2020 Rohit Nag</p>
     </footer>
-    <!-- !SECTION -->
-
+    <!-- !SECTION Footer-->
 </body>
 
 <!-- Javascript: -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="main.js"></script>
-<script src="map.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+
 <!-- Swiper: -->
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<!-- Spinner: -->
 
+<!-- Vinall-Tilt: -->
+<script type="text/javascript" src="js\vanilla-tilt.js"></script>
 
 </html>
