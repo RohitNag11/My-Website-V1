@@ -1191,6 +1191,23 @@ margin-left: 0.4ch;
     height: fit-content;
 }
 
+.video-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 600 / 463;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1.6rem;
+    border: 0;
+}
+
 .swiper-button-next:after {
     color: var(--blue-color);
     opacity: 0.6;
