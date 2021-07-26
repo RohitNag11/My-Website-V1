@@ -812,6 +812,10 @@ li {
     margin-right: 5rem;
 }
 
+.profile-img img {
+    width: 90%;
+}
+
 .about-details {
     flex: 1;
 }
