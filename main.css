@@ -208,7 +208,7 @@ html {
 }
 
 header, body {
-    background: url("images/3dbackground_resized.png") no-repeat center #2a2e3f;
+    background: url("images/Backgrounds/background.jpg") no-repeat center #2a2e3f;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -1596,7 +1596,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 930px) {
     body {
-        background: url("images/3dbackground_smaller_resized.png") no-repeat center;
+        background: url("images/Backgrounds/smaller_background.jpg") no-repeat center;
         background-attachment: fixed;
         background-size: cover;
     }
@@ -1803,7 +1803,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 550px) {
     body {
-        background: url("images/3dbackground_smallest_resized.png") no-repeat right;
+        background: url("images/Backgrounds/smallest_background.jpg") no-repeat right;
         background-attachment: fixed;
         background-size: cover;
     }
