@@ -208,7 +208,7 @@ html {
 }
 
 header, body {
-    background: url("images/3dbackground_resized.png") no-repeat center;
+    background: url("images/3dbackground_resized.png") no-repeat center #2a2e3f;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
