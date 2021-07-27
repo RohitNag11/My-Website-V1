@@ -571,6 +571,32 @@ li {
     perspective-origin: -100% 150%;
 }
 
+.oops-text {
+    font-family: var(--fancy-font-family);
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    text-align: center;
+}
+
+.oops-text h1 {
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+.oops-text h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
 .hero-text {
     position: absolute;
     top: 25%;
