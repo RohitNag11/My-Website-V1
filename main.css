@@ -272,6 +272,12 @@ img {
     /* box-shadow: 8px 8px 8px var(--darker-color); */
 }
 
+video {
+    width: 100%;
+    border-radius: 1rem;
+    /* box-shadow: 8px 8px 8px var(--darker-color); */
+}
+
 /*!SECTION End global*/
 
 /*Start reusable*/
