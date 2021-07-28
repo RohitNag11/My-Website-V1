@@ -353,8 +353,8 @@ header {
     background-color: rgba(var(--darkest-alpha), 0.3);
     text-align: center;
     z-index: 10;
-    box-shadow: 0px 3px 6px rgba(var(--darkest-alpha), 0.9);
-    backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 6px rgba(var(--darkest-alpha), 0.9);
+    backdrop-filter: blur(5px);
     text-transform: uppercase;
 }
 
