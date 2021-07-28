@@ -1136,6 +1136,24 @@ margin-left: 0.4ch;
     flex-direction: column;
 }
 
+/*Define aspect ratios:*/
+
+.ar-widescreen {
+    aspect-ratio: 16 / 9;
+}
+
+.ar-three-two {
+    aspect-ratio: 3 / 2;
+}
+
+.ar-ten-eight {
+    aspect-ratio: 10 / 8;
+}
+
+.ar-square {
+    aspect-ratio: 1 / 1;
+}
+
 .swiper-container {
     width: 100%;
     height: 100%;
