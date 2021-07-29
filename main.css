@@ -47,7 +47,7 @@
     --shadow-alpha: 0, 0, 0;
     /*DARK MODE:****************************/
     --normal-background: url("images/Backgrounds/background.jpg") no-repeat center #2a2e3f;
-    --small-background: url("images/Backgrounds/smaller_background.jpg") no-repeat center #2a2e3f;
+    --smaller-background: url("images/Backgrounds/smaller_background.jpg") no-repeat center #2a2e3f;
     --smallest-background: url("images/Backgrounds/smallest_background.jpg") no-repeat right;
     --test-color: #ffff00;
     --test-alpha: 255, 255, 0;
@@ -65,11 +65,13 @@
     --darkest-alpha: 12, 12, 29;
     --black-color: #000000;
     --black-alpha: 0, 0, 0;
+    --theme-symbol: "\f185";
+    --theme-name: "  Light";
 }
 
 /*LIGHT MODE:****************************/
 
-/* [data-theme="light"] {
+[data-theme="light"] {
     --normal-background: no-repeat center #d8e5f8;
     --small-background: no-repeat center #d8e5f8;
     --smallest-background: no-repeat right;
@@ -89,24 +91,25 @@
     --darkest-alpha: 161, 193, 236;
     --black-color: #ffffff;
     --black-alpha: 255, 255, 255;
-} */
+    --theme-symbol: "\f186";
+    --theme-name: "  Dark";
+}
 
 /*THEME TOGGLE slider switch css */
 
-/* .theme-switch-wrapper {
+.theme-switch-wrapper {
     display: flex;
     align-items: center;
-    width: 100%;
-    position: fixed;
-    z-index: 12;
-    padding: 20px;
+    height: 100%;
 }
 
 .theme-switch {
-    display: inline-block;
-    height: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    height: fit-content;
     position: relative;
-    width: 35px;
+    width: fit-content;
+    align-items: flex-end;
 }
 
 .theme-switch input {
@@ -114,46 +117,38 @@
 }
 
 .slider {
-    background-color: black;
-    bottom: 0;
     cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 8px;
 }
 
 .slider:before {
-    background-color: white;
-    bottom: 3px;
-    content: "";
-    height: 14px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 14px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: var(--theme-symbol);
+    font-size: 14px;
+    position: relative;
+    transition: 0.4s;
 }
 
-input:checked+.slider {
-    background-color: white;
+.slider:hover:before {
+    color: var(--neon-green-color);
 }
 
-input:checked+.slider:before {
-    background-color: black;
+.slider:after {
+    content: var(--theme-name);
+    font-size: 16px;
+    position: relative;
+    transition: 0.4s;
+    font-family: var(--fancy-font-family);
 }
 
-input:checked+.slider:before {
-    transform: translateX(13px);
+.slider:hover:after {
+    font-style: italic;
+    color: var(--neon-green-color);
 }
-
-.slider.round {
-    border-radius: 10px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-} */
 
 /* !SECTION */
 
@@ -476,6 +471,15 @@ header {
     -o-animation: 1s forwards 1500ms 1 slideInFromTop;
     -moz-animation: 1s forwards 1500ms 1 slideInFromTop;
     -ms-animation: 1s forwards 1500ms 1 slideInFromTop;
+}
+
+.navbar-item9 {
+    transform: translateY(-100px);
+    animation: 1s forwards 1700ms 1 slideInFromTop;
+    -webkit-animation: 1s forwards 1700ms 1 slideInFromTop;
+    -o-animation: 1s forwards 1700ms 1 slideInFromTop;
+    -moz-animation: 1s forwards 1700ms 1 slideInFromTop;
+    -ms-animation: 1s forwards 1700ms 1 slideInFromTop;
 }
 
 /* hamburger menu */
@@ -1708,6 +1712,12 @@ input[type="submit"]:hover {
     .navbar-list a {
         font-size: 1rem;
     }
+    .slider:before {
+        font-size: 1rem;
+    }
+    .slider:after {
+        font-size: 1rem;
+    }
     .perspective {
         perspective: 6000px;
         perspective-origin: -280% 170%;
@@ -1856,6 +1866,13 @@ input[type="submit"]:hover {
     }
     .navbar {
         display: none;
+    }
+    .slider:before {
+        font-size: 35px;
+    }
+    .slider:after {
+        font-size: 35px;
+        font-weight: 500;
     }
     .about .container {
         flex-direction: column;
