@@ -73,7 +73,7 @@
 
 [data-theme="light"] {
     --normal-background: no-repeat center #d8e5f8;
-    --small-background: no-repeat center #d8e5f8;
+    --smaller-background: no-repeat center #d8e5f8;
     --smallest-background: no-repeat right;
     --test-color: rgb(255, 0, 212);
     --test-alpha: 255, 255, 0;
