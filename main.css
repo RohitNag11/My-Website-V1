@@ -246,7 +246,7 @@ header {
 
 #skills {
     background: rgba(var(--darkest-alpha), 0.6);
-    box-shadow: 0 5px 5px rgba(var(--shadow-alpha), 0.9);
+    box-shadow: 0 8px 8px rgba(var(--shadow-alpha), 0.5);
     margin-bottom: 5rem;
 }
 
@@ -1440,7 +1440,7 @@ margin-left: 0.4ch;
     width: 10rem;
     height: 10rem;
     background-color: var(--darker-color);
-    box-shadow: 8px 0px 8px var(--shadow-color);
+    box-shadow: 8px 0px 8px rgba(var(--shadow-alpha), 0.5);
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
@@ -1486,7 +1486,7 @@ margin-left: 0.4ch;
     border-left: 2px solid rgba(var(--light-alpha), 0.5);
     border-radius: 1.5rem;
     background-color: rgba(var(--darkest-alpha), 0.6);
-    box-shadow: 8px 8px 8px rgba(var(--shadow-alpha), 0.9);
+    box-shadow: 8px 8px 8px rgba(var(--shadow-alpha), 0.5);
     margin: 0 auto;
     position: relative;
     padding: 5rem;
@@ -1746,7 +1746,7 @@ input[type="submit"]:hover {
     }
     #skills {
         background: rgba(var(--darkest-alpha), 0.6);
-        box-shadow: 0 5px 5px rgba(var(--shadow-alpha), 0.9);
+        box-shadow: 0 8px 8px rgba(var(--shadow-alpha), 0.5);
         margin-bottom: 5rem;
     }
     .navbar-list a {
@@ -1994,7 +1994,7 @@ input[type="submit"]:hover {
     }
     #skills {
         background: rgba(var(--darkest-alpha), 0.6);
-        box-shadow: 0 5px 5px rgba(var(--shadow-alpha), 0.9);
+        box-shadow: 0 8px 8px rgba(var(--shadow-alpha), 0.5);
         margin-bottom: 5rem;
     }
     .hero-text {
