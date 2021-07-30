@@ -623,6 +623,7 @@ li {
 .perspective {
     perspective: 6000px;
     perspective-origin: -100% 150%;
+    position: relative;
 }
 
 .oops-text {
@@ -652,7 +653,7 @@ li {
 }
 
 .hero-text {
-    position: absolute;
+    position: relative;
     top: 25%;
     right: 23%;
     /* hero text primary parent container: */
@@ -1762,6 +1763,7 @@ input[type="submit"]:hover {
     .perspective {
         perspective: 6000px;
         perspective-origin: -280% 170%;
+        position: relative;
     }
     .hero-text {
         left: 10%;
