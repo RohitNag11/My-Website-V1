@@ -46,9 +46,9 @@
     --shadow-color: #000000;
     --shadow-alpha: 0, 0, 0;
     /*DARK MODE:****************************/
-    --normal-background: url("images/Backgrounds/background.jpg") no-repeat center #2a2e3f;
-    --smaller-background: url("images/Backgrounds/smaller_background.jpg") no-repeat center #2a2e3f;
-    --smallest-background: url("images/Backgrounds/smallest_background.jpg") no-repeat right;
+    --normal-background: url("images/Backgrounds/dark_background.jpg") no-repeat center var(--dark-color);
+    --smaller-background: url("images/Backgrounds/dark_smaller_background.jpg") no-repeat center var(--dark-color);
+    --smallest-background: url("images/Backgrounds/dark_smallest_background.jpg") no-repeat right var(--dark-color);
     --test-color: #ffff00;
     --test-alpha: 255, 255, 0;
     --neon-green-color: #00ffb3;
@@ -72,9 +72,9 @@
 /*LIGHT MODE:****************************/
 
 [data-theme="light"] {
-    --normal-background: no-repeat center #d8e5f8;
-    --smaller-background: no-repeat center #d8e5f8;
-    --smallest-background: no-repeat right;
+    --normal-background: url("images/Backgrounds/light_background.jpg") no-repeat center var(--dark-color);
+    --smaller-background: url("images/Backgrounds/light_smaller_background.jpg") no-repeat center var(--dark-color);
+    --smallest-background: url("images/Backgrounds/light_smallest_background.jpg") no-repeat right var(--dark-color);
     --test-color: rgb(255, 0, 212);
     --test-alpha: 255, 255, 0;
     --neon-green-color: #2600af;
