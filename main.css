@@ -360,10 +360,11 @@ header {
     width: 100%;
     background-color: rgba(var(--darkest-alpha), 0.3);
     text-align: center;
-    z-index: 10;
+    z-index: 100;
     box-shadow: 0px 6px 6px rgba(var(--shadow-alpha), 0.5);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(50px);
     text-transform: uppercase;
+    border-bottom: 2px solid rgba(var(--shadow-alpha), 0.2)
 }
 
 .navbar-list {
