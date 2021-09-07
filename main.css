@@ -1382,6 +1382,10 @@ margin-left: 0.4ch;
     transition: 0.4s;
 }
 
+.mfp-container {
+    position: absolute;
+}
+
 /* img.mfp-img {
     border-radius: none;
     box-shadow: none;
