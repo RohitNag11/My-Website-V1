@@ -1387,6 +1387,41 @@ margin-left: 0.4ch;
     position: absolute;
 }
 
+.mfp-arrow {
+    opacity: 0.7 !important;
+    color: white !important;
+}
+
+.mfp-arrow:hover{
+    opacity: 1 !important;
+    color: var(--neon-green-color) !important;
+}
+
+.mfp-arrow:before {
+    display: none !important;
+}
+
+.mfp-arrow:after {
+    border: none !important;
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+    text-shadow: 0px 0px 15px var(--shadow-color) !important;
+}
+
+.mfp-arrow-right:after {
+    content: "\f054" !important;
+}
+
+.mfp-arrow-left:after {
+    content: "\f053" !important;
+}
+
+.mfp-close:hover{
+    color: var(--neon-green-color) !important;
+    opacity: 1 !important;
+}
+
 /* img.mfp-img {
     border-radius: none;
     box-shadow: none;
