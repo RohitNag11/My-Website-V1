@@ -1422,28 +1422,28 @@ margin-left: 0.4ch;
     opacity: 1 !important;
 }
 
-/* img.mfp-img {
-    border-radius: none;
-    box-shadow: none;
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  /* ideally, transition speed should match zoom duration */
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
-.mfp-counter {
-    font-family: var(--fancy-font-family);
-    color: var(--neon-green-color) !important;
-    width: fit-content;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.mfp-close:hover {
-    color: var(--neon-green-color) !important;
+.mfp-with-zoom.mfp-ready .mfp-container {
     opacity: 1;
 }
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
 
-.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-    color: var(--neon-green-color) !important;
-    padding-right: 10px !important;
-} */
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
 
 /*End arts*/
 
