@@ -1914,7 +1914,7 @@ input[type="submit"]:hover {
 
 /*SUBSECTION 768px*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .hero-top {
         flex-direction: column;
     }
@@ -2312,6 +2312,17 @@ input[type="submit"]:hover {
 
 /*!SUBSECTION 370px*/
 
+
+/*SUBSECTION  h<700px & w>500px*/
+@media screen and (max-height: 800px) and (min-width: 500px) {
+    .hero-text{
+        transform: scale(0.7);
+        top: 8rem;
+    }
+}
+
+/*!SUBSECTION End h<700px & w>500px*/
+
 /*!SECTION End Media Queries*/
 
 /*ANCHOR Animations*/
@@ -2361,3 +2372,4 @@ input[type="submit"]:hover {
         opacity: 0;
     }
 }
+
