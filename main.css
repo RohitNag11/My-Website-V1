@@ -775,9 +775,9 @@ li {
 
 .card-container .card {
     position: relative;
-    width: 150px;
+    width: 200px;
     height: 100%;
-    margin: 2rem;
+    margin: 1.5rem;
     box-shadow: -10px -4px 2px rgba(var(--shadow-alpha), 0.3);
     background: rgba(var(--darkest-alpha), 0.2);
     overflow: hidden;
@@ -791,13 +791,13 @@ li {
 }
 
 .card-container .card .card-content {
-    padding: 20px;
+    padding: 15px;
     text-align: left;
 }
 
 .card-container .card .card-content h2 {
     position: absolute;
-    right: 20px;
+    right: 12px;
     top: -20px;
     font-size: 6rem;
     color: rgba(var(--light-alpha), 0.2);
@@ -805,7 +805,7 @@ li {
 }
 
 .card-container .card .card-content h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 900;
     color: var(--light-color);
     z-index: 1;
@@ -813,7 +813,7 @@ li {
 }
 
 .card-container .card .card-content p {
-    font-size: 14px;
+    font-size: 12px;
     font-family: var(--main-font-family);
     color: var(--light-color);
     z-index: 1;
