@@ -1078,6 +1078,7 @@ li {
 .project-description .nta:hover {
     color: var(--neon-green-color);
     font-style: italic;
+    cursor: pointer;
 }
 
 .project-description .nta::after {

@@ -37,6 +37,27 @@ $(document).ready(function () {
             tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
         }
     });
+
+    $('.youtube-link').magnificPopup({
+        items: {
+            src: 'https://www.youtube.com/watch?v=7eo8XpT4CmM'
+        },
+        type: 'iframe',
+        iframe: {
+            markup: '<div class="mfp-iframe-scaler">' +
+                '<div class="mfp-close"></div>' +
+                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                '</div>',
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: 'null',
+                    src: 'https://www.youtube.com/embed/R4yxMDOaoE4?autoplay=1&modestbranding=1&showinfo=0&rel=0&color=white'
+                }
+            },
+            srcAction: 'iframe_src',
+        }
+    });
     //!SECTION Magnific Popup
 
     //SECTION Navigation Menus:
