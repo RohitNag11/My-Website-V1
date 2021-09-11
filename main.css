@@ -2103,6 +2103,7 @@ input[type="submit"]:hover {
 
     .mySwiper .swiper-wrapper .swiper-slide a img{
         height: 16rem;
+        width: auto;
     }
 }
 /*!SUBSECTION End 650px*/
