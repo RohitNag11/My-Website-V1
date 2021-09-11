@@ -1313,7 +1313,7 @@ margin-left: 0.4ch;
 .swiper-slide video {
     width: 100%;
     background-color: #000000;
-    height: fit-content;
+    height: auto;
 }
 
 .video-container {
