@@ -1489,7 +1489,8 @@ margin-left: 0.4ch;
 }
 
 .mySwiper .swiper-wrapper .swiper-slide{
-    width: fit-content !important;
+    /* width: fit-content !important; */
+    width: max-content;
     border-radius: 1rem;
     overflow: hidden;
 }
