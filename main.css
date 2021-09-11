@@ -240,6 +240,11 @@ header {
     background: linear-gradient(var(--dark-color), rgba(var(--darkest-alpha), 1), rgba(var(--darkest-alpha), 1));
 }
 
+
+#graphics {
+    background: rgba(var(--darkest-alpha), 1);
+}
+
 #experience {
     background: linear-gradient( rgba(var(--darkest-alpha), 1), rgba(var(--dark-alpha), 0.5));
     padding-bottom: 15rem;
@@ -484,6 +489,14 @@ header {
     -ms-animation: 1s forwards 1700ms 1 slideInFromTop;
 }
 
+.navbar-item10 {
+    transform: translateY(-100px);
+    animation: 1s forwards 1900ms 1 slideInFromTop;
+    -webkit-animation: 1s forwards 1900ms 1 slideInFromTop;
+    -o-animation: 1s forwards 1900ms 1 slideInFromTop;
+    -moz-animation: 1s forwards 1900ms 1 slideInFromTop;
+    -ms-animation: 1s forwards 1900ms 1 slideInFromTop;
+}
 /* hamburger menu */
 
 .top-nav {
@@ -509,7 +522,7 @@ header {
 }
 
 li {
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .nav-link {
@@ -1216,7 +1229,8 @@ margin-left: 0.4ch;
     aspect-ratio: 1 / 1;
 }
 
-.swiper-container {
+
+.defaultSwiper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -1248,20 +1262,20 @@ margin-left: 0.4ch;
     align-items: center;
 }
 
-.mySwiper .swiper-slide {
+.coverflowSwiper .swiper-slide {
     opacity: 60%;
     margin-top: 5rem;
 }
 
-.mySwiper .swiper-slide-active {
+.coverflowSwiper .swiper-slide-active {
     opacity: 100%;
 }
 
-.mySwiper .swiper-slide:hover {
+.coverflowSwiper .swiper-slide:hover {
     opacity: 100%;
 }
 
-.mySwiper .swiper-pagination-bullets {
+.coverflowSwiper .swiper-pagination-bullets {
     position: relative;
     margin-top: 2rem;
 }
@@ -1359,25 +1373,25 @@ margin-left: 0.4ch;
 
 /*Start arts*/
 
-.gallery-section .gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.gallery-section .image {
+.gallery .image {
     flex: 25%;
     cursor: pointer;
 }
 
-.gallery-section .image img {
+.gallery .image img {
     width: 85%;
     height: 85%;
     object-fit: cover;
     transition: 0.4s;
 }
 
-.gallery-section .image:hover img {
+.gallery .image:hover img {
     transform: scale(1.2);
     box-shadow: 0px 0px 200px 20px rgba(var(--neon-green-alpha), 0.6);
     transition: 0.4s;
@@ -1457,8 +1471,50 @@ margin-left: 0.4ch;
 
 /*End arts*/
 
-/*Start skills*/
+/*Start Graphics*/
+.Graphics .container{
+    width: 100%;
+    max-width: 100%;
+}
 
+.mySwiper .swiper-wrapper .swiper-slide{
+    width: fit-content !important;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide a {
+    width: fit-content;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide a img{
+    opacity: 0.2;
+    object-fit: cover;
+    height: 30rem;
+    transition: 0.4s;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide-active a img{
+    opacity: 1;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide-next a img{
+    opacity: 0.5;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide-prev a img{
+    opacity: 0.5;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide a img:hover {
+    opacity: 1;
+    transform: scale(0.9);
+    box-shadow: 0px 0px 15px 2px rgba(var(--neon-green-alpha), 0.6);
+    transition: 0.4s;
+}
+/*End Graphics*/
+
+/*Start skills*/
 .my-skills {
     display: flex;
     justify-content: center;
@@ -1795,6 +1851,9 @@ input[type="submit"]:hover {
     #art {
         background: linear-gradient(var(--dark-color), rgba(var(--darkest-alpha), 1), rgba(var(--darkest-alpha), 1));
     }
+    #graphics {
+        background: rgba(var(--darkest-alpha), 1);
+    }
     #experience {
         background: linear-gradient( rgba(var(--darkest-alpha), 1), rgba(var(--dark-alpha), 0.5));
         padding-bottom: 15rem;
@@ -1897,6 +1956,9 @@ input[type="submit"]:hover {
     .icon-container i {
         font-size: 4rem;
     }
+    .mySwiper .swiper-wrapper .swiper-slide a img{
+        height: 20rem;
+    }
     .timeline .date:before {
         text-align: left;
         left: 0;
@@ -1919,7 +1981,7 @@ input[type="submit"]:hover {
     .timeline :last-child {
         margin-bottom: 2rem;
     }
-    .gallery-section .image {
+    .gallery .image {
         flex: 33%;
     }
 }
@@ -1947,7 +2009,7 @@ input[type="submit"]:hover {
     .swiper-slide p {
         display: none;
     }
-    .mySwiper .swiper-slide {
+    .coverflowSwiper .swiper-slide {
         margin-top: 0.5rem;
     }
     .mobile-nav {
@@ -1996,7 +2058,7 @@ input[type="submit"]:hover {
         margin: 0 0 2rem 0;
         order: 1;
     }
-    .swiper-container {
+    .defaultSwiper {
         margin: 0 0 2rem 0;
         order: 1;
     }
@@ -2016,8 +2078,15 @@ input[type="submit"]:hover {
     .up {
         right: 2rem;
     }
-    .gallery-section .image {
+    .gallery .image {
         flex: 33%;
+    }
+    .Graphics .section-heading{
+        width: 80%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
     }
 }
 
@@ -2043,6 +2112,10 @@ input[type="submit"]:hover {
     }
     #art {
         background: linear-gradient(var(--dark-color), rgba(var(--darkest-alpha), 1), rgba(var(--darkest-alpha), 1));
+    }
+    
+    #graphics {
+        background: rgba(var(--darkest-alpha), 1);
     }
     #experience {
         background: linear-gradient( rgba(var(--darkest-alpha), 1), rgba(var(--dark-alpha), 0.5));

@@ -1,3 +1,4 @@
+//SECTION Theme Toggler:
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
@@ -21,3 +22,4 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener('change', switchTheme, false);
+//!SECTION End Theme Toggler:

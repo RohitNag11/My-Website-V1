@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.gallery-section').magnificPopup({
+    //SECTION Magnific Popup:
+    $('.lightbox').magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
         type: 'image',
         // other options
@@ -11,11 +12,34 @@ $(document).ready(function () {
         mainClass: 'mfp-fade',
         gallery: {
             enabled: true,
-
             preload: [1, 3],
+        },
+        image: {
+            markup: '<div class="mfp-figure">' +
+                '<div class="mfp-close"></div>' +
+                '<div class="mfp-img"></div>' +
+                '<div class="mfp-bottom-bar">' +
+                '<div class="mfp-title"></div>' +
+                '<div class="mfp-counter"></div>' +
+                '</div>' +
+                '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
+
+            cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
+
+            titleSrc: 'alt', // Attribute of the target element that contains caption for the slide.
+            // Or the function that should return the title. For example:
+            // titleSrc: function(item) {
+            //   return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            // }
+
+            verticalFit: true, // Fits image in area vertically
+
+            tError: '<a href="%url%">The image</a> could not be loaded.' // Error message
         }
     });
+    //!SECTION Magnific Popup
 
+    //SECTION Navigation Menus:
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.top-nav').toggleClass('open');
@@ -25,14 +49,15 @@ $(document).ready(function () {
         $('.menu-toggler').removeClass('open');
         $('.top-nav').removeClass('open');
     });
+    //!SECTION End Navigation Menus:
 
+    //SECTION Smooth Scroll Links:
     $('nav a[href*="#"]').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
         }, 2000);
     });
 
-    //Smooth Scroll:
     $('a[href*="#"]').on('click', function () {
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top - 100
@@ -44,16 +69,18 @@ $(document).ready(function () {
             scrollTop: 0
         }, 2000);
     });
+    //!SECTION End Smooth Scroll Links:
 
 
-    //Animate on scroll:
+    //SECTION Animate on Scroll:
     AOS.init({
         easing: 'ease',
         duration: 1800,
         once: true,
     });
+    //!SECTION End Animate on Scroll:
 
-    //Progress bar:
+    //SECTION Progress bar:
     function progressBarScroll() {
         let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
             height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
@@ -63,12 +90,9 @@ $(document).ready(function () {
     window.onscroll = function () {
         progressBarScroll();
     };
+    //!SECTION End Progress bar:
 
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #00ffb3 }";
-    document.body.appendChild(css);
-
+    //SECTION Vanilla Tilt:
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         reverse: true,  // reverse the tilt direction
         max: 5,     // max tilt rotation (degrees)
@@ -93,8 +117,9 @@ $(document).ready(function () {
         gyroscopeMinAngleY: -45,     // This is the bottom limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the top border of the element;
         gyroscopeMaxAngleY: 45,      // This is the top limit of the device angle on Y axis, meaning that a device rotated at this angle would tilt the element as if the mouse was on the bottom border of the element;
     });
+    //!SECTION End Vanilla Tilt:
 
-
+    //SECTION Accordian (read more icon):
     const accordionItemHeader = document.querySelectorAll(".accordion-item-header");
     accordionItemHeader.forEach(accordionItemHeader => {
         accordionItemHeader.addEventListener("click", event => {
@@ -108,6 +133,7 @@ $(document).ready(function () {
             }
         })
     })
+    //!SECTION Accordian (read more icon):
 });
 
 

@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.defaultSwiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -23,7 +23,7 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".coverflowSwiper", {
     effect: "coverflow",
     loop: true,
     grabCursor: true,
@@ -52,5 +52,26 @@ var swiper = new Swiper(".mySwiper", {
     // autoplay
     autoplay: {
         delay: 2000,
+    },
+});
+
+var swiper_two = new Swiper(".mySwiper", {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    mousewheel: true,
+    keyboard: true,
+
+    // autoplay
+    autoplay: {
+        delay: 2000,
+    },
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
 });
