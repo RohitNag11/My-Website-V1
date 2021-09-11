@@ -2105,6 +2105,17 @@ input[type="submit"]:hover {
         height: 16rem;
         width: fit-content;
     }
+
+    .mfp-title {
+        font-size: 14px;
+        font-weight: 400;
+        text-align: left !important;
+        max-width: 60%;
+    }
+    
+    .mfp-counter {
+        font-size: 14px !important;
+    }
 }
 /*!SUBSECTION End 650px*/
 
