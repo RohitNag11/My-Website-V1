@@ -2100,10 +2100,14 @@ input[type="submit"]:hover {
     margin: 0 auto;
     position: relative;
     }
+
+    .mySwiper .swiper-wrapper .swiper-slide a img{
+        height: 16rem;
+    }
 }
+/*!SUBSECTION End 650px*/
 
 /*SUBSECTION 550px*/
-
 @media screen and (max-width: 550px) {
     body {
         background: var(--smallest-background);
