@@ -1397,6 +1397,16 @@ margin-left: 0.4ch;
     transition: 0.4s;
 }
 
+.mfp-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center !important;
+}
+
+.mfp-counter {
+    font-size: 16px !important;
+}
+
 .mfp-container {
     position: absolute;
 }
@@ -1669,7 +1679,7 @@ margin-left: 0.4ch;
     font-size: 1.5rem;
 }
 
-.timeline .date::after {
+/* .timeline .date::after {
     content: '';
     border-left: 2px solid rgba(var(--light-alpha), 0.5);
     ;
@@ -1678,7 +1688,7 @@ margin-left: 0.4ch;
     height: 2rem;
     width: 2rem;
     background-color: rgba(var(--darkest-alpha), 1);
-}
+} */
 
 /*End experience*/
 
