@@ -2320,6 +2320,11 @@ input[type="submit"]:hover {
         top: 8rem;
     }
 }
+@media screen and (max-height: 500px) and (min-width: 500px) {
+    .hero-bottom{
+        display: none;
+    }
+}
 
 /*!SUBSECTION End h<700px & w>500px*/
 
