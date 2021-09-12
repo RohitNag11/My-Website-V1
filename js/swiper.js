@@ -14,7 +14,7 @@ var mySwiper = new Swiper('.defaultSwiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    mousewheel: true,
+    //mousewheel: true,
     keyboard: true,
 
     // autoplay
@@ -46,7 +46,7 @@ var swiper = new Swiper(".coverflowSwiper", {
         nextEl: '.swiper-button-next2',
         prevEl: '.swiper-button-prev2',
     },
-    mousewheel: true,
+    //mousewheel: true,
     keyboard: true,
 
     // autoplay
@@ -62,7 +62,7 @@ var swiper_two = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 20,
-    mousewheel: true,
+    //mousewheel: true,
     keyboard: true,
 
     // autoplay
