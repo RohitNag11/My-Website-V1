@@ -43,11 +43,11 @@ var swiper = new Swiper(".coverflowSwiper", {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next2',
-        prevEl: '.swiper-button-prev2',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-    //mousewheel: true,
     keyboard: true,
+    mousewheel: true,
 
     // autoplay
     autoplay: {
@@ -62,7 +62,7 @@ var swiper_two = new Swiper(".mySwiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     spaceBetween: 20,
-    //mousewheel: true,
+    mousewheel: true,
     keyboard: true,
 
     // autoplay
