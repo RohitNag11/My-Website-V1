@@ -2319,12 +2319,19 @@ input[type="submit"]:hover {
         transform: scale(0.7);
         top: 8rem;
     }
+    .mousey{
+        display: none;
+    }
 }
+/*!SUBSECTION  End h<700px & w>500px*/
+
+/*SUBSECTION  h<500px & w>500px*/
 @media screen and (max-height: 500px) and (min-width: 500px) {
     .hero-bottom{
         display: none;
     }
 }
+/*SUBSECTION  End h<500px & w>500px*/
 
 /*!SUBSECTION End h<700px & w>500px*/
 
