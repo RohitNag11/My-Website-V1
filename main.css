@@ -625,9 +625,9 @@ li {
 .perspective {
     perspective: 6000px;
     perspective-origin: -100% 150%;
-    position: absolute;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    position: absolute !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
 }
 
 .oops-text {
