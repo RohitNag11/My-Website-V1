@@ -368,6 +368,7 @@ header {
     z-index: 100;
     box-shadow: 0px 6px 6px rgba(var(--shadow-alpha), 0.5);
     backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
     text-transform: uppercase;
     border-bottom: 2px solid rgba(var(--shadow-alpha), 0.2)
 }
@@ -550,6 +551,7 @@ li {
     z-index: 12;
     background: rgba(var(--darkest-alpha), 0.8);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0px 5px 5px rgba(var(--shadow-alpha), 0.7);
     justify-content: center;
 }
