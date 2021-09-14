@@ -900,6 +900,7 @@ li {
 .profile-img {
     flex: 1;
     margin-right: 5rem;
+    margin-top: 10rem;
 }
 
 .profile-img img {
@@ -931,6 +932,12 @@ li {
 
 .social-media {
     margin-top: 5rem;
+}
+.social-right {
+    display: none;
+}
+.social-left {
+    margin-right: 10%;
 }
 
 .social-list {
@@ -2073,6 +2080,12 @@ input[type="submit"]:hover {
     }
     .profile-img {
         margin: 0 0 7rem 0;
+    }
+    .social-right {
+        display: flex;
+    }
+    .social-left {
+        display: none;
     }
     .project-item {
         flex-direction: column;
