@@ -2254,14 +2254,8 @@ input[type="submit"]:hover {
         font-size: 12px;
     }
     .section-heading h1{
-        font-size: 6rem;
+        font-size: 5.5rem;
         hyphens: auto;
-    }
-    .graphics-heading{
-        font-size: 5rem !important;
-    }
-    .xp-heading{
-        font-size: 4.5rem !important;
     }
 }
 
