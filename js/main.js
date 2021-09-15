@@ -161,25 +161,5 @@ $(document).ready(function () {
     //!SECTION Accordian (read more icon):
 });
 
-window.addEventListener('resize', removeClass);
-
-function removeClass() {
-    width = window.innerWidth || $(window).width();
-
-    if (window.innerWidth < 700) {
-        var elements = document.querySelectorAll('a.nta');
-        [].forEach.call(elements, function (el) {
-            el.classList.remove("iframe-popup");
-        });
-    }
-}
-
-setTimeout(function () {
-    var elements = document.querySelectorAll('a.nta');
-    [].forEach.call(elements, function (el) {
-        el.classList.remove("iframe-popup");
-    });
-}, 2000);
-
 
 

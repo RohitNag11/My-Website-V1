@@ -2141,6 +2141,13 @@ input[type="submit"]:hover {
         width: auto;
     }
 
+    .mfp-iframe-holder .mfp-content {
+        height: 90%;
+        max-height: 90%;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .mfp-title {
         font-size: 14px;
         font-weight: 400;
