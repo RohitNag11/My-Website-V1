@@ -1397,14 +1397,21 @@ margin-left: 0.4ch;
     transition: 0.4s;
 }
 
+.mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 1400px;
+    max-width: 80%;
+    max-height: 90%;
+}
+
 .mfp-title {
     font-size: 16px;
     font-weight: bold;
-    text-align: center !important;
+    text-align: center;
 }
 
 .mfp-counter {
-    font-size: 16px !important;
+    font-size: 16px;
 }
 
 .mfp-container {
@@ -1412,38 +1419,38 @@ margin-left: 0.4ch;
 }
 
 .mfp-arrow {
-    opacity: 0.7 !important;
-    color: white !important;
+    opacity: 0.7;
+    color: white;
 }
 
 .mfp-arrow:hover{
-    opacity: 1 !important;
-    color: var(--neon-green-color) !important;
+    opacity: 1;
+    color: var(--neon-green-color);
 }
 
 .mfp-arrow:before {
-    display: none !important;
+    display: none;
 }
 
 .mfp-arrow:after {
-    border: none !important;
-    font-family: "Font Awesome 5 Free" !important;
-    font-weight: 900 !important;
-    font-size: 3rem !important;
-    text-shadow: 0px 0px 15px var(--shadow-color) !important;
+    border: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3rem;
+    text-shadow: 0px 0px 15px var(--shadow-color);
 }
 
 .mfp-arrow-right:after {
-    content: "\f054" !important;
+    content: "\f054";
 }
 
 .mfp-arrow-left:after {
-    content: "\f053" !important;
+    content: "\f053";
 }
 
 .mfp-close:hover{
-    color: var(--neon-green-color) !important;
-    opacity: 1 !important;
+    color: var(--neon-green-color);
+    opacity: 1;
 }
 /* overlay at start */
 .mfp-fade.mfp-bg {

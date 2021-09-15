@@ -58,6 +58,10 @@ $(document).ready(function () {
             srcAction: 'iframe_src',
         }
     });
+
+    $('.iframe-popup').magnificPopup({
+        type: 'iframe'
+    });
     //!SECTION Magnific Popup
 
     //SECTION Navigation Menus:
