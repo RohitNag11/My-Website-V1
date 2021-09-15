@@ -216,6 +216,10 @@ header, body {
     background-size: cover;
     width: 100%;
     height: 100%;
+    -webkit-transition: background 1s ease-out;
+  -moz-transition: background 1s ease-out;
+  -o-transition: background 1s ease-out;
+  transition: background 1s ease-out;
 }
 
 header {
@@ -223,7 +227,7 @@ header {
 }
 
 #about {
-    background: linear-gradient(rgba(var(--darkest-alpha), 0.7), rgba(var(--darkest-alpha), 1))
+    background: linear-gradient(rgba(var(--darkest-alpha), 0.7), rgba(var(--darkest-alpha), 1));
 }
 
 #uniprojects {
@@ -245,7 +249,6 @@ header {
 
 #experience {
     background: linear-gradient( rgba(var(--darkest-alpha), 1), rgba(var(--dark-alpha), 0.5));
-    padding-bottom: 15rem;
 }
 
 #skills {
