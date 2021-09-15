@@ -1405,13 +1405,15 @@ margin-left: 0.4ch;
 }
 
 .mfp-title {
-    font-size: 16px;
-    font-weight: bold;
+    font-family: var(--fancy-font-family);
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
 }
 
 .mfp-counter {
-    font-size: 16px;
+    font-family: var(--fancy-font-family);
+    font-size: 20px;
 }
 
 .mfp-container {
