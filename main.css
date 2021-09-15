@@ -518,6 +518,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 li {
@@ -529,6 +531,7 @@ li {
     font-size: 4rem;
     padding: 1rem;
     font-weight: 500;
+    color: var(--main-text-color);
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -550,7 +553,7 @@ li {
     background: rgba(var(--darkest-alpha), 0.8);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0px 5px 5px rgba(var(--shadow-alpha), 0.7);
+    box-shadow: 0px 5px 5px rgba(var(--shadow-alpha), 0.5);
     justify-content: center;
 }
 
