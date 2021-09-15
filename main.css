@@ -48,7 +48,6 @@
     /*DARK MODE:****************************/
     --normal-background: url("images/Backgrounds/dark_background.jpg") no-repeat center var(--dark-color);
     --smaller-background: url("images/Backgrounds/dark_smaller_background.jpg") no-repeat center var(--dark-color);
-    --smallest-background: url("images/Backgrounds/dark_smallest_background.jpg") no-repeat right var(--dark-color);
     --test-color: #ffff00;
     --test-alpha: 255, 255, 0;
     --neon-green-color: #00ffb3;
@@ -74,7 +73,6 @@
 [data-theme="light"] {
     --normal-background: url("images/Backgrounds/light_background.jpg") no-repeat center var(--dark-color);
     --smaller-background: url("images/Backgrounds/light_smaller_background.jpg") no-repeat center var(--dark-color);
-    --smallest-background: url("images/Backgrounds/light_smallest_background.jpg") no-repeat right var(--dark-color);
     --test-color: rgb(255, 0, 212);
     --test-alpha: 255, 255, 0;
     --neon-green-color: #2600af;
@@ -1860,9 +1858,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 930px) {
     header, body {
-        background: var(--smaller-background);
-        background-attachment: fixed;
-        background-size: cover;
+        background: var(--dark-color);
     }
     header {
         background: linear-gradient(rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0.7))
@@ -2166,9 +2162,7 @@ input[type="submit"]:hover {
 /*SUBSECTION 550px*/
 @media screen and (max-width: 550px) {
     body {
-        background: var(--smallest-background);
-        background-attachment: fixed;
-        background-size: cover;
+        background: var(--dark-color);
     }
     header {
         background: linear-gradient(rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0.7))
