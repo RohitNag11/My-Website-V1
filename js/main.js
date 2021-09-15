@@ -58,9 +58,13 @@ $(document).ready(function () {
             srcAction: 'iframe_src',
         }
     });
-
     $('.iframe-popup').magnificPopup({
-        type: 'iframe'
+        type: 'iframe',
+        markup: '<div class="mfp-iframe-scaler">' +
+            '<div class="mfp-close"></div>' +
+            '<iframe  height="100%" width="100%"></iframe>' +
+            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
     });
     //!SECTION Magnific Popup
 
