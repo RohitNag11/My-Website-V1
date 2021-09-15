@@ -1,5 +1,10 @@
 (function () {
 
+  //remove pdf iframe popup class if in mobile mode:
+  if ($(window).width() < 650) {
+    $('.card').removeClass('tilt');
+  }
+
   if (typeof window.CustomEvent === "function") return false;
 
   function CustomEvent(event, params) {
