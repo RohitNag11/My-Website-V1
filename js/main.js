@@ -58,6 +58,12 @@ $(document).ready(function () {
             srcAction: 'iframe_src',
         }
     });
+
+    //remove pdf iframe popup class if in mobile mode:
+    if ($(window).width() < 650) {
+        $('a.nta').removeClass('iframe-popup');
+    }
+
     $('.iframe-popup').magnificPopup({
         type: 'iframe',
         markup: '<div class="mfp-iframe-scaler">' +
