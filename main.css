@@ -42,7 +42,7 @@
     /* --main-font-family: 'Montserrat', sans-serif; */
     /* --main-font-family: 'Michroma', sans-serif; */
     /*Shadow Variables:*/
-    --txt-neon-glow: 0px 0px 0.5em var(--neon-green-color);
+    --txt-highlight-glow: 0px 0px 0.5em var(--highlight-color);
     --shadow-color: #000000;
     --shadow-alpha: 0, 0, 0;
     /*DARK MODE:****************************/
@@ -50,8 +50,8 @@
     --smaller-background: url("images/Backgrounds/dark_smaller_background.jpg") no-repeat center var(--dark-color);
     --test-color: #ffff00;
     --test-alpha: 255, 255, 0;
-    --neon-green-color: #00ffb3;
-    --neon-green-alpha: 0, 255, 179;
+    --highlight-color: #00ffb3;
+    --highlight-alpha: 0, 255, 179;
     --blue-color: #65a8ff;
     --blue-alpha: 101, 168, 255;
     --light-color: #A6ACCD;
@@ -75,8 +75,8 @@
     --smaller-background: url("images/Backgrounds/light_smaller_background.jpg") no-repeat center var(--dark-color);
     --test-color: rgb(255, 0, 212);
     --test-alpha: 255, 255, 0;
-    --neon-green-color: #2600af;
-    --neon-green-alpha: 0, 66, 53;
+    --highlight-color: hsl(278, 100%, 33%);
+    --highlight-alpha: 0, 66, 53;
     --blue-color: #006eff;
     --blue-alpha: 101, 168, 255;
     --light-color: #001027;
@@ -133,7 +133,7 @@
 }
 
 .slider:hover:before {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .slider:after {
@@ -146,7 +146,7 @@
 
 .slider:hover:after {
     /* font-style: italic; */
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 /* !SECTION */
@@ -176,17 +176,17 @@
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to top, var(--neon-green-color), var(--blue-color));
+    background: linear-gradient(to top, var(--highlight-color), var(--blue-color));
 }
 
 ::selection {
-    background: var(--neon-green-color);
+    background: var(--highlight-color);
     /* WebKit/Blink Browsers */
     color: var(--darkest-color);
 }
 
 ::-moz-selection {
-    background: var(--neon-green-color);
+    background: var(--highlight-color);
     /* Gecko Browsers */
     color: var(--dark-color);
 }
@@ -267,7 +267,7 @@ a {
 }
 
 a:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 p {
@@ -350,7 +350,7 @@ header {
 }
 
 .progress-bar {
-    background: linear-gradient(to left, var(--neon-green-color), var(--blue-color));
+    background: linear-gradient(to left, var(--highlight-color), var(--blue-color));
     height: 4px;
     width: 0%;
     border-radius: 0px 2px 2px 0px;
@@ -361,12 +361,12 @@ header {
 /* Navbar: */
 
 a.active{
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .navbar-link:hover, .navbar-link:focus {
     /* background-color: rgba(var(--darkest-alpha), 1); */
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     /* font-style: italic; */
 }
 
@@ -542,7 +542,7 @@ li {
 }
 
 .nav-link:hover, .nav-link:focus {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     /* font-style: italic; */
 }
 
@@ -603,7 +603,7 @@ li {
 }
 
 .bar {
-    background: linear-gradient(to right, var(--neon-green-color), var(--blue-color));
+    background: linear-gradient(to right, var(--highlight-color), var(--blue-color));
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -735,7 +735,7 @@ li {
     z-index: 2;
     font-size: 72px;
     color: var(--light-color);
-    /* background: -webkit-linear-gradient(var(--neon-green-color), var(--blue-color));
+    /* background: -webkit-linear-gradient(var(--highlight-color), var(--blue-color));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent; */
     /* color: #56e4fd; */
@@ -784,7 +784,7 @@ li {
     display: flex;
     justify-content: right;
     align-items: center;
-    border-right: 1px solid rgba(var(--neon-green-alpha), 0.1);
+    border-right: 1px solid rgba(var(--highlight-alpha), 0.1);
     border-radius: 10px;
     border-bottom: 3px solid rgba(var(--blue-alpha), 0.3);
     /* border-left: 6px solid rgba(var(--darkest-alpha), 0.3); */
@@ -834,7 +834,7 @@ li {
 
 .card-container .card:hover .card-content h3 {
     transform: translateY(0px);
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     transition: 0.5s;
 }
 
@@ -890,12 +890,12 @@ li {
 }
 
 .scroll a:hover>div>div {
-    border-color: var(--neon-green-color);
+    border-color: var(--highlight-color);
 }
 
 .scroll a:hover>div>div>div {
-    background-color: var(--neon-green-color);
-    box-shadow: 0px 0px 4em 1em var(--neon-green-color);
+    background-color: var(--highlight-color);
+    box-shadow: 0px 0px 4em 1em var(--highlight-color);
 }
 
 /* End Mouse Animation */
@@ -992,7 +992,7 @@ li {
 }
 
 .general-link:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-style: italic;
 }
 
@@ -1036,7 +1036,7 @@ li {
     font-size: 3rem;
     font-weight: 300;
     margin-bottom: 0;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .project-description h6 {
@@ -1045,7 +1045,7 @@ li {
     font-size: 1.8rem;
     font-weight: 300;
     text-transform: uppercase;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     opacity: 0.6;
     margin-bottom: 1.5rem;
 }
@@ -1061,7 +1061,7 @@ li {
 }
 
 .project-description .cta:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-style: italic;
 }
 
@@ -1083,7 +1083,7 @@ li {
 }
 
 .project-description .nta:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-style: italic;
     cursor: pointer;
 }
@@ -1127,7 +1127,7 @@ li {
 }
 
 .accordion-item-header:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .accordion-item-header::after {
@@ -1193,7 +1193,7 @@ margin-left: 0.4ch;
 }
 
 .members ul a:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-style: italic;
 }
 
@@ -1254,7 +1254,7 @@ margin-left: 0.4ch;
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1297,7 +1297,7 @@ margin-left: 0.4ch;
 }
 
 .swiper-slide a:hover {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-style: italic;
 }
 
@@ -1346,7 +1346,7 @@ margin-left: 0.4ch;
 }
 
 .swiper-button-next:hover:after {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     opacity: 1;
 }
 
@@ -1356,7 +1356,7 @@ margin-left: 0.4ch;
 }
 
 .swiper-button-prev:hover:after {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     opacity: 1;
 }
 
@@ -1367,13 +1367,13 @@ margin-left: 0.4ch;
 }
 
 .swiper-pagination-bullet:hover {
-    background: var(--neon-green-color) !important;
+    background: var(--highlight-color) !important;
     opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1 !important;
-    background: var(--neon-green-color) !important;
+    background: var(--highlight-color) !important;
     width: 24px !important;
     border-radius: 4px !important;
     transition: all .4s;
@@ -1401,7 +1401,7 @@ margin-left: 0.4ch;
 
 .gallery .image:hover img {
     transform: scale(1.2);
-    box-shadow: 0px 0px 200px 20px rgba(var(--neon-green-alpha), 0.6);
+    box-shadow: 0px 0px 200px 20px rgba(var(--highlight-alpha), 0.6);
     transition: 0.4s;
 }
 
@@ -1435,7 +1435,7 @@ margin-left: 0.4ch;
 
 .mfp-arrow:hover{
     opacity: 1;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .mfp-arrow:before {
@@ -1459,7 +1459,7 @@ margin-left: 0.4ch;
 }
 
 .mfp-close:hover{
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     opacity: 1;
 }
 /* overlay at start */
@@ -1537,7 +1537,7 @@ margin-left: 0.4ch;
 .mySwiper .swiper-wrapper .swiper-slide a img:hover {
     opacity: 1;
     transform: scale(0.9);
-    box-shadow: 0px 0px 15px 2px rgba(var(--neon-green-alpha), 0.6);
+    box-shadow: 0px 0px 15px 2px rgba(var(--highlight-alpha), 0.6);
     transition: 0.4s;
 }
 
@@ -1567,7 +1567,7 @@ margin-left: 0.4ch;
 .skill h1 {
     font-family: var(--fancy-font-family);
     font-size: 2rem;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-weight: 300;
     letter-spacing: 2px;
     margin: 2rem -2px 2rem 0;
@@ -1576,7 +1576,7 @@ margin-left: 0.4ch;
 .skill h2 {
     font-family: var(--fancy-font-family);
     font-size: 2rem;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-weight: 300;
     letter-spacing: 2px;
     margin: 2rem -2px -2rem 0;
@@ -1594,7 +1594,7 @@ margin-left: 0.4ch;
 }
 
 .icon-container i {
-    background: linear-gradient(to top, var(--neon-green-color), var(--blue-color));
+    background: linear-gradient(to top, var(--highlight-color), var(--blue-color));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1621,7 +1621,7 @@ margin-left: 0.4ch;
 
 .skill-list-item a:hover {
     font-style: italic;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 /*End skills*/
@@ -1646,7 +1646,7 @@ margin-left: 0.4ch;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 100;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 #cancelled {
@@ -1663,7 +1663,7 @@ margin-left: 0.4ch;
     font-family: var(--subheading-font-family);
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     opacity: 0.6;
 }
 
@@ -1673,7 +1673,7 @@ margin-left: 0.4ch;
 
 .timeline a:hover {
     font-style: italic;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
 }
 
 .timeline .date {
@@ -1738,7 +1738,7 @@ input, select, textarea {
     border-radius: 0.8rem;
     background-color: rgba(var(--darker-alpha), 1);
     box-shadow: inset 3px 3px 2px rgba(var(--shadow-alpha), 0.1);
-    outline-color: var(--neon-green-color);
+    outline-color: var(--highlight-color);
     color: var(--light-color);
 }
 
@@ -1756,7 +1756,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     border: none;
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     background-color: rgba(var(--darkest-alpha), 1);
     box-shadow: inset 3px 3px 2px rgba(var(--shadow-alpha), 0.1);
 }
@@ -1795,11 +1795,11 @@ input[type="submit"]:hover {
 
 .up:hover {
     animation: none;
-    box-shadow: 0 0 5rem 0rem var(--neon-green-color);
+    box-shadow: 0 0 5rem 0rem var(--highlight-color);
 }
 
 .up:hover>i {
-    color: var(--neon-green-color);
+    color: var(--highlight-color);
     font-size: 3rem;
     margin: auto;
 }
@@ -2255,7 +2255,7 @@ input[type="submit"]:hover {
         margin: 1rem;
         background: rgba(var(--darkest-alpha), 0.5);
         box-shadow: -5px -2px 2px rgba(var(--shadow-alpha), 0.3);
-        border-top: 2px solid rgba(var(--neon-green-alpha), 0.1);
+        border-top: 2px solid rgba(var(--highlight-alpha), 0.1);
     }
     .card-container .card .card-content {
         padding: 10px;

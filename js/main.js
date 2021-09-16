@@ -74,7 +74,7 @@ $(document).ready(function () {
     });
     //!SECTION Magnific Popup
 
-    //SECTION Navigation Menus:
+    //SECTION Hamburger Menu:
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
         $('.hamburger-nav').toggleClass('open');
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $('.menu-toggler').removeClass('open');
         $('.hamburger-nav').removeClass('open');
     });
-    //!SECTION End Navigation Menus:
+    //!SECTION End Hamburger Menu:
 
     //SECTION Smooth Scroll Links:
     $('nav a[href*="#"]').on('click', function () {
