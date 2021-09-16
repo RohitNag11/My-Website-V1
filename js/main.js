@@ -77,12 +77,12 @@ $(document).ready(function () {
     //SECTION Navigation Menus:
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
+        $('.hamburger-nav').toggleClass('open');
     });
 
-    $('.top-nav .nav-link').on('click', function () {
+    $('.hamburger-nav .nav-link').on('click', function () {
         $('.menu-toggler').removeClass('open');
-        $('.top-nav').removeClass('open');
+        $('.hamburger-nav').removeClass('open');
     });
     //!SECTION End Navigation Menus:
 
