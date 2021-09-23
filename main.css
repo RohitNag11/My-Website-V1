@@ -99,8 +99,8 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding-top: 20px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -111,11 +111,6 @@
 
 .slider {
     cursor: pointer;
-    /* border-radius: 10px;
-    text-decoration: none; */
-    /* display: inline-block;
-    margin-top: 8px; */
-    /* transition: all 1s; */
     transition: transform ease-out 1s;
 }
 
@@ -133,8 +128,7 @@
     text-shadow: 0px 0px 10px var(--highlight-color);
     transition: 0.5s;
 }
-
-.slider:after {
+/* .slider:after {
     content: var(--theme-name);
     font-size: 16px;
     position: relative;
@@ -144,10 +138,10 @@
 .slider:hover:after {
     font-style: italic;
     color: var(--highlight-color);
-}
+} */
 
 .slider:active{
-    transform: translateY(-100px);
+    transform: rotate(180deg);
     transition: transform 0.1s;
     color: var(--highlight-color);
 }
@@ -367,13 +361,6 @@ a.active{
     color: var(--highlight-color);
 }
 
-.navbar-link:hover, .navbar-link:focus {
-    /* background-color: rgba(var(--darkest-alpha), 1); */
-    color: var(--highlight-color);
-    font-style: italic;
-    /* font-style: italic; */
-}
-
 .navbar {
     position: fixed;
     top: 0;
@@ -402,11 +389,36 @@ a.active{
     position: relative;
     color: var(--light-color);
     text-decoration: none;
-    padding-top: 20px;
-    padding-bottom: 11px;
+    padding-top: 15px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
     display: inline-block;
+}
+
+.navbar-link:hover, .navbar-link:focus {
+    /* background-color: rgba(var(--darkest-alpha), 1); */
+    color: var(--highlight-color);
+    font-style: italic;
+    /* font-style: italic; */
+}
+
+.nav-logo {
+    font-weight: 700;
+    font-size: 2.4rem;
+    background: linear-gradient(to bottom right, var(--highlight-color), var(--blue-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+}
+
+.nav-logo:hover{
+    text-shadow: 0 0 10px var(--highlight-color);
+    font-style: normal;
+    transition: 0.5s;
 }
 
 .navbar {
@@ -419,6 +431,7 @@ a.active{
 }
 
 .navbar-item1 {
+    margin-right: 60px;
     transform: translateY(-100px);
     animation: 1s forwards 100ms 1 slideInFromTop;
     -webkit-animation: 1s forwards 100ms 1 slideInFromTop;
