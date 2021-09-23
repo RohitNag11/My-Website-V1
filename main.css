@@ -116,7 +116,7 @@
     /* display: inline-block;
     margin-top: 8px; */
     /* transition: all 1s; */
-    transition: transform 1s;
+    transition: transform ease-out 1s;
 }
 
 .slider:before {
@@ -149,6 +149,7 @@
 .slider:active{
     transform: translateY(-100px);
     transition: transform 0.1s;
+    color: var(--highlight-color);
 }
 
 /* !SECTION */
