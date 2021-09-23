@@ -64,8 +64,8 @@
     --darkest-alpha: 12, 12, 29;
     --black-color: #000000;
     --black-alpha: 0, 0, 0;
-    --theme-symbol: "\f185";
-    --theme-name: "  Light";
+    --theme-symbol: "\f186";
+    --theme-name: "  Dark";
 }
 
 /*LIGHT MODE:****************************/
@@ -89,8 +89,8 @@
     --darkest-alpha: 161, 193, 236;
     --black-color: #ffffff;
     --black-alpha: 255, 255, 255;
-    --theme-symbol: "\f186";
-    --theme-name: "  Dark";
+    --theme-symbol: "\f185";
+    --theme-name: "  Light";
 }
 
 /*THEME TOGGLE slider switch css */
