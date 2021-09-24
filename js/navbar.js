@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     // grab the sections (targets) and navbar_links (triggers)
     // for menu items to apply active link styles to
     const sections = document.querySelectorAll(".section");

@@ -74,6 +74,17 @@ $(document).ready(function () {
     });
     //!SECTION Magnific Popup
 
+    //SECTION Navbar Menu change on scroll:
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            var $navList = $(".navbar-list");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            $navList.toggleClass('scrolled', $(this).scrollTop() > $navList.height());
+        });
+    });
+    //!SECTION End Navbar Menu change on scroll:
+
     //SECTION Hamburger Menu:
     $('.menu-toggler').on('click', function () {
         $(this).toggleClass('open');
