@@ -381,9 +381,8 @@ a.active{
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 2px solid rgba(var(--shadow-alpha), 0.2);
-    transition: background box-shadow border-bottom 0.2s ease-out;
-    transition: box-shadow 0.2s ease-out;
-    transition-delay: 0.2s;
+    transition: background-color 0.2s ease-out 0.2s;
+    transition: box-shadow 0.2s ease-out 0.2s;
 }
 
 .navbar-list {
@@ -392,7 +391,7 @@ a.active{
     justify-content: center;
     align-items: center;
     list-style: none;
-    transform: translateY(40px);
+    transform: translateY(20px);
     transition: transform 0.2s ease-out;
 }
 
