@@ -874,6 +874,11 @@ li {
     transition: 0.5s;
 }
 
+/* .js-tilt-glare-inner{
+    background-image: linear-gradient(
+0deg, rgba(var(--highlight-alpha),0), rgba(var(--highlight-alpha),1)) !important;
+} */
+
 .build-info {
     position: absolute;
     padding: 2em;
