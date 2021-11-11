@@ -220,7 +220,7 @@ header, body {
 }
 
 header {
-    background: linear-gradient(rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0.7))
+    background: linear-gradient(rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0), rgba(var(--darkest-alpha), 0.7));
 }
 
 #about {
