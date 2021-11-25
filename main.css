@@ -1456,10 +1456,6 @@ margin-left: 0.4ch;
     opacity: 1;
     transition: all 0.2s ease-out;
     transition-property: transform, opacity;
-} 
-
-.threeDModel canvas{
-    aspect-ratio: 1;
 }
 
 /*Start arts*/
@@ -2205,10 +2201,6 @@ input[type="submit"]:hover {
         order: 2;
     }
 
-    .threeDModel {
-        display: none;
-    }
-
     .timeline p {
         font-size: 1.4rem
     }
@@ -2382,6 +2374,9 @@ input[type="submit"]:hover {
     .section-heading h1{
         font-size: 5.5rem;
         hyphens: auto;
+    }
+    .threeDModel {
+        display: none;
     }
 }
 

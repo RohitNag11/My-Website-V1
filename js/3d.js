@@ -12,19 +12,14 @@ render();
 
 function init() {
 
-    // const container = document.createElement('div');
-    // const parentContainer = document.getElementById('3DModel')
-    // parentContainer.appendChild(container);
-
-    // const container = document.querySelector('.container');
-
     let container = document.getElementById('3DModel');
-    // document.body.appendChild(container);
-
-    camera = new THREE.PerspectiveCamera(20, container.offsetWidth / container.offsetHeight, 0.2, 50);
-    console.log(container.offsetWidth);
-    // container.offsetWidth
-    camera.position.set(0, 0.05, container.offsetWidth / (-2400));
+    let containerWidth = container.clientWidth;
+    let containerHeight = container.clientHeight
+    camera = new THREE.PerspectiveCamera(20, containerWidth / containerHeight, 0.2, 50);
+    camera.position.set(0, 0.05, ((0.0011) * containerWidth) - 1.77);
+    // camera.position.set(0, 0.05, -0.5);
+    console.log(camera.position);
+    console.log(containerWidth);
 
     scene = new THREE.Scene();
 
@@ -67,8 +62,7 @@ function init() {
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    // renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setSize(container.offsetWidth, container.offsetHeight);
+    renderer.setSize(containerWidth, containerHeight);
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1;
     renderer.outputEncoding = THREE.sRGBEncoding;
@@ -77,28 +71,25 @@ function init() {
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', render); // use if there is no animation loop
     controls.minDistance = 0.32;
-    controls.maxDistance = 1;
+    controls.maxDistance = 1.5;
     controls.target.set(0, 0.05, 0);
     controls.update();
 
-    window.addEventListener('resize', onWindowResize);
+    window.addEventListener('resize', resize, { passive: true })
 }
 
-function onWindowResize() {
+
+function resize() {
     let container = document.getElementById('3DModel');
-    camera.aspect = container.offsetWidth / container.offsetHeight;
+    renderer.width = container.clientWidth;
+    renderer.height = container.clientHeight;
+    renderer.setSize(renderer.width, renderer.height);
+    camera.aspect = renderer.width / renderer.height;
     camera.updateProjectionMatrix();
-
-    renderer.setSize(container.offsetWidth, container.offsetHeight);
-
     render();
-
 }
 
-//
 
 function render() {
-    let container = document.getElementById('3DModel');
     renderer.render(scene, camera);
-
 }
