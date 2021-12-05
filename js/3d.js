@@ -11,7 +11,6 @@ init();
 render();
 
 function init() {
-
     let container = document.getElementById('3DModel');
     let containerWidth = container.clientWidth;
     let containerHeight = container.clientHeight
@@ -67,6 +66,11 @@ function init() {
     renderer.toneMappingExposure = 1;
     renderer.outputEncoding = THREE.sRGBEncoding;
     container.appendChild(renderer.domElement);
+    //add fade-right attribute to canvas:
+    let canv = container.childNodes[0];
+    canv.setAttribute('data-aos', 'long-fade-right');
+    canv.setAttribute('data-aos-easing', 'ease-in-out');
+    canv.setAttribute('data-aos-duration', '2000');
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', render); // use if there is no animation loop

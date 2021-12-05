@@ -2466,3 +2466,18 @@ input[type="submit"]:hover {
     }
 }
 
+[data-aos="long-fade-right"] {
+    opacity: 0;
+    transform: translateX(-1000px);
+    transition-property: transform, opacity;
+}
+
+[data-aos="long-fade-right"].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+
+
+
