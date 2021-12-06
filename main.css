@@ -1713,7 +1713,7 @@ margin-left: 0.4ch;
     background-color: rgba(var(--darkest-alpha), 0.6);
     box-shadow: 8px 8px 8px rgba(var(--shadow-alpha), 0.5);
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     padding: 5rem;
     list-style: none;
     text-align: left;
@@ -2102,6 +2102,7 @@ input[type="submit"]:hover {
         padding: 1rem;
         width: 100%;
         border: none;
+        overflow: hidden;
     }
     .timeline h1 {
         margin-top: 3rem;
