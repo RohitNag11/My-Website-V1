@@ -71,6 +71,10 @@ function init() {
     canv.setAttribute('data-aos', 'long-fade-right');
     canv.setAttribute('data-aos-easing', 'ease-in-out');
     canv.setAttribute('data-aos-duration', '2000');
+    let label = document.createElement("div");   // Create a <button> element
+    label.innerHTML = "360°";
+    label.classList.add("threeDLabel");
+    container.appendChild(label);
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', render); // use if there is no animation loop
