@@ -10,7 +10,7 @@
   </a>
 </p>
 
-<a href="https://rohitnag.com" target="_blank"><img src="https://github.com/RohitNag11/My-Website/images/Side Projects/My Website/website_screenshot.jpg" alt="Demo"></a>
+<a href="https://rohitnag.com" target="_blank"><img src="https://raw.githubusercontent.com/RohitNag11/My-Website/master/images/Side%20Projects/My%20Website/website_screenshot.jpg" alt="Demo"></a>
 
 
 ## My Colour Palette 
