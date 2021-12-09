@@ -54,3 +54,57 @@ Only two typefaces are used. Both are google fonts.
   - 600 font weight
   
 All icons are stylized <a href="https://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
+
+## Project Structure
+
+```bash
+My-Website:.
+├───.git
+├───.github
+├───.idea
+├───.vscode
+├───files
+│   ├───Side Projects
+│   └───Uni Projects
+├───images
+│   ├───Art
+│   │   ├───Gallery
+│   │   └───Thumbnails
+│   ├───Backgrounds
+│   ├───Graphics
+│   │   ├───Large
+│   │   └───Thumbnails
+│   ├───Profile
+│   ├───Side Projects
+│   │   ├───Bioreactor
+│   │   ├───BiSpace
+│   │   ├───CheckApp
+│   │   ├───DataOpen
+│   │   ├───Lunar Deployer
+│   │   ├───My Website
+│   │   ├───Object Detection
+│   │   ├───PC Build
+│   │   ├───Project-Daedalus
+│   │   ├───Rail-Guide
+│   │   └───Spiderman
+│   └───University Projects
+│       ├───Buggy
+│       ├───EBike
+│       ├───Heat Diffusion
+│       ├───Lift Door
+│       ├───Mobula Ray
+│       └───Sonic
+└───js
+    └───three.js
+        ├───build
+        └───examples
+            ├───jsm
+            │   ├───controls
+            │   ├───loaders
+            │   └───utils
+            ├───models
+            │   └───gltf
+            │       └───Sonic 3d
+            └───textures
+                └───equirectangular
+```
