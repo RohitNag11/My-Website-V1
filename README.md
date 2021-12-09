@@ -53,4 +53,4 @@ Only two typefaces are used. Both are google fonts.
 - <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Poppins</a> for general text.
   - 600 font weight
   
-All icons are stylized <a href="hhttps://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
+All icons are stylized <a href="https://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
