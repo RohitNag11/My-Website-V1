@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-<a href="https://rohitnag.com" target="_blank"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" width="50%" border-radius="10px"></a>
+<a href="https://rohitnag.com" target="_blank"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" width="70%" style="border-radius:50%"></a>
 </p>    
 
 ## Technologies
