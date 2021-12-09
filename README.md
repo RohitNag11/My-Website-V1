@@ -7,7 +7,7 @@
 
 <p align="center">
     <a href="https://app.netlify.com/sites/rohitnag/deploys" target="_blank">
-      <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
+      <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status"/>
     </a>
 </p>
 <h1 align="center">
@@ -17,7 +17,7 @@
   The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
-<a href="https://rohitnag.com" target="_blank" align="center"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Demo" borderRadius="10px"></a>
+<a href="https://rohitnag.com" target="_blank" align="center" width="50%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" borderRadius="10px"></a>
 
 ## Technologies
 
@@ -51,4 +51,4 @@ Only two typefaces are used. Both are google fonts.
 - <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Poppins</a> for general text.
   - 600 font weight
   
-All icons are stylized <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Font Awesome 6</a> icons.
+All icons are stylized <a href="hhttps://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
