@@ -13,7 +13,7 @@
 <h1 align="center">
   My Personal Website's Source Code
 </h1>
-<p align="left">
+<p align="center">
   The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
