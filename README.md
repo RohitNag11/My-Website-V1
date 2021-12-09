@@ -17,7 +17,7 @@
   The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
-<a href="https://rohitnag.com" target="_blank" align="center" width="50%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" borderRadius="10px"></a>
+<a href="https://rohitnag.com" target="_blank" align="center" width="30%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" borderRadius="10px"></a>
 
 ## Technologies
 
