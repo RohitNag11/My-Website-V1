@@ -51,7 +51,6 @@ Only two typefaces are used. Both are google fonts.
   - 600 font weight
 
 All icons are stylized <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Font Awesome 6</a> icons.
-All icons are stylized <a href="https://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
 
 ## Project Structure
 
