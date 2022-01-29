@@ -13,11 +13,17 @@
 <h1 align="center">
   My Personal Website's Source Code
 </h1>
-<p align="left">
+<p align="center">
   The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
+<<<<<<< HEAD
 <a href="https://rohitnag.com" target="_blank" align="center" width="50%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" borderRadius="10px"></a>
+=======
+<p align="center">
+<a href="https://rohitnag.com" target="_blank"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" width="70%" style="border-radius:50%"></a>
+</p>    
+>>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
 
 ## Technologies
 
@@ -51,7 +57,11 @@ Only two typefaces are used. Both are google fonts.
 - <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Poppins</a> for general text.
   - 600 font weight
   
+<<<<<<< HEAD
 All icons are stylized <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Font Awesome 6</a> icons.
+=======
+All icons are stylized <a href="https://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
+>>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
 
 ## Project Structure
 
@@ -105,4 +115,8 @@ My-Website:.
             │       └───Sonic 3d
             └───textures
                 └───equirectangular
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
