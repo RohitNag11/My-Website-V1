@@ -17,19 +17,13 @@
   The source code for <a href="https://rohitnag.com" target="_blank">rohitnag.com</a>, made with vanilla HTML, CSS, JavaScript and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
 </p>
 
-<<<<<<< HEAD
-<a href="https://rohitnag.com" target="_blank" align="center" width="50%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" borderRadius="10px"></a>
-=======
-<p align="center">
-<a href="https://rohitnag.com" target="_blank"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" width="70%" style="border-radius:50%"></a>
-</p>    
->>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
+<a href="https://rohitnag.com" target="_blank" align="center" width="50%"><img src="images/Side Projects/My Website/website_screenshot.jpg" alt="Thumbnail" style="border-radius:15px"></a>
 
 ## Technologies
 
-| Languages | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E"> |
-| --------- | - |
-| JS Libraries | <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"> <img src="https://img.shields.io/badge/-Swiper.js-6332F6?style=flat&logo=swiper&logoColor=white"> <img src="https://img.shields.io/badge/-Three.js-000000?style=flat&logo=Three.js&logoColor=white">|
+| Languages    | <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E">       |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| JS Libraries | <img src="https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white"> <img src="https://img.shields.io/badge/-Swiper.js-6332F6?style=flat&logo=swiper&logoColor=white"> <img src="https://img.shields.io/badge/-Three.js-000000?style=flat&logo=Three.js&logoColor=white"> |
 
 ## Design
 
@@ -56,12 +50,9 @@ Only two typefaces are used. Both are google fonts.
   - 100 italic for sub-headings.
 - <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Poppins</a> for general text.
   - 600 font weight
-  
-<<<<<<< HEAD
+
 All icons are stylized <a href="https://fonts.google.com/specimen/Poppins" target="_blank">Font Awesome 6</a> icons.
-=======
 All icons are stylized <a href="https://fontawesome.com/v6.0/icons" target="_blank">Font Awesome 6</a> icons.
->>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
 
 ## Project Structure
 
@@ -115,8 +106,3 @@ My-Website:.
             │       └───Sonic 3d
             └───textures
                 └───equirectangular
-<<<<<<< HEAD
-```
-=======
-```
->>>>>>> f00ea94074bae8ef675be19f6169e5b483872fa6
