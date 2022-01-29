@@ -4,10 +4,9 @@
         <img src="images/icon-nobg.png" alt="Website logo">
     </a>
 </p>
-
 <p align="center">
     <a href="https://app.netlify.com/sites/rohitnag/deploys" target="_blank">
-      <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status"/>
+      <img src="https://api.netlify.com/api/v1/badges/d1c97846-16cf-406d-9a95-e7991fcf940e/deploy-status" alt="Netlify Status"/>
     </a>
 </p>
 <h1 align="center">
